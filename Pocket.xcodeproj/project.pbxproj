@@ -13,6 +13,12 @@
 		3B25B8111AC732BD00C1A669 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B25B8101AC732BD00C1A669 /* Images.xcassets */; };
 		3B25B8141AC732BD00C1A669 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B25B8121AC732BD00C1A669 /* LaunchScreen.xib */; };
 		3B25B8201AC732BD00C1A669 /* PocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25B81F1AC732BD00C1A669 /* PocketTests.swift */; };
+		3B25B82A1AC79D6600C1A669 /* CustomTabControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25B8291AC79D6600C1A669 /* CustomTabControllerViewController.swift */; };
+		3B25B82C1AC8DCAF00C1A669 /* Maestro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25B82B1AC8DCAF00C1A669 /* Maestro.swift */; };
+		3B25B82E1AC8DDC200C1A669 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25B82D1AC8DDC200C1A669 /* RoundButton.swift */; };
+		3B9BBC301ACB01340081A443 /* MaestroInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */; };
+		3B9BBC321ACB28C30081A443 /* MaestroInstrumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */; };
+		3B9BBC341ACB29D00081A443 /* MaestroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC331ACB29D00081A443 /* MaestroView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		3B25B8191AC732BD00C1A669 /* PocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B25B81E1AC732BD00C1A669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B25B81F1AC732BD00C1A669 /* PocketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketTests.swift; sourceTree = "<group>"; };
+		3B25B8291AC79D6600C1A669 /* CustomTabControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabControllerViewController.swift; sourceTree = "<group>"; };
+		3B25B82B1AC8DCAF00C1A669 /* Maestro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maestro.swift; sourceTree = "<group>"; };
+		3B25B82D1AC8DDC200C1A669 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroInstrument.swift; sourceTree = "<group>"; };
+		3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroInstrumentView.swift; sourceTree = "<group>"; };
+		3B9BBC331ACB29D00081A443 /* MaestroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +91,13 @@
 			children = (
 				3B25B8091AC732BD00C1A669 /* AppDelegate.swift */,
 				3B25B80B1AC732BD00C1A669 /* ViewController.swift */,
+				3B25B8291AC79D6600C1A669 /* CustomTabControllerViewController.swift */,
 				3B25B80D1AC732BD00C1A669 /* Main.storyboard */,
+				3B9BBC331ACB29D00081A443 /* MaestroView.swift */,
+				3B25B82D1AC8DDC200C1A669 /* RoundButton.swift */,
+				3B25B82B1AC8DCAF00C1A669 /* Maestro.swift */,
+				3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */,
+				3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */,
 				3B25B8101AC732BD00C1A669 /* Images.xcassets */,
 				3B25B8121AC732BD00C1A669 /* LaunchScreen.xib */,
 				3B25B8071AC732BD00C1A669 /* Supporting Files */,
@@ -212,8 +230,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B9BBC301ACB01340081A443 /* MaestroInstrument.swift in Sources */,
+				3B9BBC321ACB28C30081A443 /* MaestroInstrumentView.swift in Sources */,
+				3B9BBC341ACB29D00081A443 /* MaestroView.swift in Sources */,
+				3B25B82A1AC79D6600C1A669 /* CustomTabControllerViewController.swift in Sources */,
+				3B25B82E1AC8DDC200C1A669 /* RoundButton.swift in Sources */,
 				3B25B80C1AC732BD00C1A669 /* ViewController.swift in Sources */,
 				3B25B80A1AC732BD00C1A669 /* AppDelegate.swift in Sources */,
+				3B25B82C1AC8DCAF00C1A669 /* Maestro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pocket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -349,6 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pocket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -407,6 +433,7 @@
 				3B25B8251AC732BD00C1A669 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B25B8261AC732BD00C1A669 /* Build configuration list for PBXNativeTarget "PocketTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +442,7 @@
 				3B25B8281AC732BD00C1A669 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
