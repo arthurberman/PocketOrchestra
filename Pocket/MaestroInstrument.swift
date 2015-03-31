@@ -10,6 +10,12 @@ import UIKit
 import Foundation
 class MaestroInstrument: NSObject {
     var color : CGColor = UIColor.greenColor().CGColor
+    
+    convenience init(color : CGColor) {
+        self.init()
+        self.color = color
+        
+    }
     func draw(context : CGContext, rect: CGRect) {
         CGContextSetFillColorWithColor(context, color)
         CGContextFillRect(context, rect)

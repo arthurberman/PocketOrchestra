@@ -8,21 +8,44 @@
 
 import UIKit
 
-class Maestro: UIViewController {
-    var instruments : [MaestroInstrument]?
+class Maestro: UIViewController, MaestroDelegate{
+    var instruments : [MaestroInstrument]! = []
     @IBOutlet var recordButton: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        (self.view as MaestroView).setDelegate(self)
     }
+    
 
+    @IBAction func addInstrumentButton(sender: AnyObject) {
+        addInstrument(MaestroInstrument(color: getRandomColor().CGColor))
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func getRandomColor() -> UIColor{
+        
+        var randomRed:CGFloat = CGFloat(drand48())
+        
+        var randomGreen:CGFloat = CGFloat(drand48())
+        
+        var randomBlue:CGFloat = CGFloat(drand48())
+        
+        return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
+        
+    }
     func addInstrument(instrument : MaestroInstrument) {
-        instruments?.append(instrument)
+        instruments.append(instrument)
         self.view.setNeedsDisplay()
+        println("test")
+    }
+    
+    func getMaestroInstruments() -> [MaestroInstrument]? {
+        println("test2")
+        return instruments
     }
 
     /*

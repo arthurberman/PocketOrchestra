@@ -11,7 +11,7 @@ import Foundation
 protocol MaestroDelegate {
     func getMaestroInstruments () -> [MaestroInstrument]?
 }
-class MaestroView: UIView {
+class MaestroView: UIScrollView {
 
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -20,11 +20,14 @@ class MaestroView: UIView {
         // Drawing code
         let context = UIGraphicsGetCurrentContext()
         if let instruments = self.maestroDelegate?.getMaestroInstruments() {
-            println(self.maestroDelegate?.getMaestroInstruments())
+            let count : Int = instruments.count
+            let width : Float = Float(rect.width) / Float(count)
+            println(instruments)
             
-            for instrument : MaestroInstrument in instruments {
-                
-                instrument.draw(context, rect: rect)
+            for (index, instrument) in enumerate(instruments) {
+                let xpos = Float(index) * width
+                let rectSpace = CGRectMake(CGFloat(xpos), 0, CGFloat(width), rect.height)
+                instrument.draw(context, rect: rectSpace)
             }
         }
     }
