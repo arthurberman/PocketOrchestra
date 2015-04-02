@@ -13,11 +13,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rgT-sf-klU">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="Af3-uu-FQw"/>
                                 </items>
@@ -27,7 +27,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="si9-Ob-KQ7">
-                                <rect key="frame" x="24" y="68" width="542" height="436"/>
+                                <rect key="frame" x="41" y="131" width="943" height="505"/>
                                 <connections>
                                     <segue destination="hX0-EZ-MXR" kind="embed" id="pb8-ha-XNN"/>
                                 </connections>
@@ -35,6 +35,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="tabBarView" destination="omU-8W-qJv" id="IKl-ox-2aQ"/>
                     </connections>
@@ -52,16 +54,16 @@
                         <viewControllerLayoutGuide type="bottom" id="JHK-q1-0Ad"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="QmE-78-qx8" customClass="MaestroView" customModule="Pocket" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="542" height="436"/>
+                        <rect key="frame" x="0.0" y="0.0" width="943" height="505"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z5M-hn-6Xc" customClass="RoundButton" customModule="Pocket" customModuleProvider="target">
-                                <rect key="frame" x="217" y="166" width="108" height="104"/>
+                                <rect key="frame" x="417" y="173" width="108" height="104"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0Y-qH-6I7">
-                                <rect key="frame" x="248" y="366" width="46" height="30"/>
+                                <rect key="frame" x="448" y="373" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -79,24 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1oa-5f-m4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="953" y="243"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="lQS-ue-ALA">
-            <objects>
-                <viewController id="Ole-dM-ffF" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rup-Th-1pb"/>
-                        <viewControllerLayoutGuide type="bottom" id="kvM-VJ-EzV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VNq-QY-xp6">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tn8-vb-78D" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
+            <point key="canvasLocation" x="1154.5" y="212.5"/>
         </scene>
     </scenes>
 </document>
