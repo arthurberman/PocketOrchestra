@@ -19,6 +19,9 @@
 		3B9BBC301ACB01340081A443 /* MaestroInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */; };
 		3B9BBC321ACB28C30081A443 /* MaestroInstrumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */; };
 		3B9BBC341ACB29D00081A443 /* MaestroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC331ACB29D00081A443 /* MaestroView.swift */; };
+		3B9BBC391ACDD4450081A443 /* scrubline.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B9BBC351ACDD4450081A443 /* scrubline.png */; };
+		3B9BBC3B1ACDD4450081A443 /* SequencerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC371ACDD4450081A443 /* SequencerViewController.swift */; };
+		3B9BBC3C1ACDD4450081A443 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B9BBC381ACDD4450081A443 /* line.png */; };
 		7736CEE81ACD8F6F008563DB /* MHCustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7736CEE51ACD8F6F008563DB /* MHCustomTabBarController.m */; };
 		7736CEE91ACD8F6F008563DB /* MHTabBarSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7736CEE71ACD8F6F008563DB /* MHTabBarSegue.m */; };
 /* End PBXBuildFile section */
@@ -50,6 +53,9 @@
 		3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroInstrument.swift; sourceTree = "<group>"; };
 		3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroInstrumentView.swift; sourceTree = "<group>"; };
 		3B9BBC331ACB29D00081A443 /* MaestroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroView.swift; sourceTree = "<group>"; };
+		3B9BBC351ACDD4450081A443 /* scrubline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scrubline.png; path = ../../../../Downloads/sequenceui/sequenceui/scrubline.png; sourceTree = "<group>"; };
+		3B9BBC371ACDD4450081A443 /* SequencerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SequencerViewController.swift; path = ../../../../Downloads/sequenceui/sequenceui/SequencerViewController.swift; sourceTree = "<group>"; };
+		3B9BBC381ACDD4450081A443 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = line.png; path = ../../../../Downloads/sequenceui/sequenceui/line.png; sourceTree = "<group>"; };
 		7736CEE41ACD8F6F008563DB /* MHCustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHCustomTabBarController.h; sourceTree = "<group>"; };
 		7736CEE51ACD8F6F008563DB /* MHCustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHCustomTabBarController.m; sourceTree = "<group>"; };
 		7736CEE61ACD8F6F008563DB /* MHTabBarSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHTabBarSegue.h; sourceTree = "<group>"; };
@@ -97,6 +103,9 @@
 		3B25B8061AC732BD00C1A669 /* Pocket */ = {
 			isa = PBXGroup;
 			children = (
+				3B9BBC381ACDD4450081A443 /* line.png */,
+				3B9BBC351ACDD4450081A443 /* scrubline.png */,
+				3B9BBC371ACDD4450081A443 /* SequencerViewController.swift */,
 				7736CEE31ACD8F6F008563DB /* MHCustomTabBarController */,
 				3B25B8091AC732BD00C1A669 /* AppDelegate.swift */,
 				3B25B80B1AC732BD00C1A669 /* ViewController.swift */,
@@ -233,8 +242,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B25B80F1AC732BD00C1A669 /* Main.storyboard in Resources */,
+				3B9BBC3C1ACDD4450081A443 /* line.png in Resources */,
 				3B25B8141AC732BD00C1A669 /* LaunchScreen.xib in Resources */,
 				3B25B8111AC732BD00C1A669 /* Images.xcassets in Resources */,
+				3B9BBC391ACDD4450081A443 /* scrubline.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B9BBC301ACB01340081A443 /* MaestroInstrument.swift in Sources */,
+				3B9BBC3B1ACDD4450081A443 /* SequencerViewController.swift in Sources */,
 				3B9BBC321ACB28C30081A443 /* MaestroInstrumentView.swift in Sources */,
 				3B9BBC341ACB29D00081A443 /* MaestroView.swift in Sources */,
 				7736CEE81ACD8F6F008563DB /* MHCustomTabBarController.m in Sources */,
