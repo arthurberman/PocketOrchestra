@@ -19,6 +19,8 @@
 		3B9BBC301ACB01340081A443 /* MaestroInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */; };
 		3B9BBC321ACB28C30081A443 /* MaestroInstrumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */; };
 		3B9BBC341ACB29D00081A443 /* MaestroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC331ACB29D00081A443 /* MaestroView.swift */; };
+		7736CEE81ACD8F6F008563DB /* MHCustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7736CEE51ACD8F6F008563DB /* MHCustomTabBarController.m */; };
+		7736CEE91ACD8F6F008563DB /* MHTabBarSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7736CEE71ACD8F6F008563DB /* MHTabBarSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,11 @@
 		3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroInstrument.swift; sourceTree = "<group>"; };
 		3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroInstrumentView.swift; sourceTree = "<group>"; };
 		3B9BBC331ACB29D00081A443 /* MaestroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroView.swift; sourceTree = "<group>"; };
+		7736CEE41ACD8F6F008563DB /* MHCustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHCustomTabBarController.h; sourceTree = "<group>"; };
+		7736CEE51ACD8F6F008563DB /* MHCustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHCustomTabBarController.m; sourceTree = "<group>"; };
+		7736CEE61ACD8F6F008563DB /* MHTabBarSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHTabBarSegue.h; sourceTree = "<group>"; };
+		7736CEE71ACD8F6F008563DB /* MHTabBarSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHTabBarSegue.m; sourceTree = "<group>"; };
+		7736CEEA1ACDA4FE008563DB /* Pocket-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pocket-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +96,7 @@
 		3B25B8061AC732BD00C1A669 /* Pocket */ = {
 			isa = PBXGroup;
 			children = (
+				7736CEE31ACD8F6F008563DB /* MHCustomTabBarController */,
 				3B25B8091AC732BD00C1A669 /* AppDelegate.swift */,
 				3B25B80B1AC732BD00C1A669 /* ViewController.swift */,
 				3B25B8291AC79D6600C1A669 /* CustomTabControllerViewController.swift */,
@@ -109,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				3B25B8081AC732BD00C1A669 /* Info.plist */,
+				7736CEEA1ACDA4FE008563DB /* Pocket-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -128,6 +137,17 @@
 				3B25B81E1AC732BD00C1A669 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7736CEE31ACD8F6F008563DB /* MHCustomTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				7736CEE41ACD8F6F008563DB /* MHCustomTabBarController.h */,
+				7736CEE51ACD8F6F008563DB /* MHCustomTabBarController.m */,
+				7736CEE61ACD8F6F008563DB /* MHTabBarSegue.h */,
+				7736CEE71ACD8F6F008563DB /* MHTabBarSegue.m */,
+			);
+			path = MHCustomTabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +253,10 @@
 				3B9BBC301ACB01340081A443 /* MaestroInstrument.swift in Sources */,
 				3B9BBC321ACB28C30081A443 /* MaestroInstrumentView.swift in Sources */,
 				3B9BBC341ACB29D00081A443 /* MaestroView.swift in Sources */,
+				7736CEE81ACD8F6F008563DB /* MHCustomTabBarController.m in Sources */,
 				3B25B82A1AC79D6600C1A669 /* CustomTabControllerViewController.swift in Sources */,
 				3B25B82E1AC8DDC200C1A669 /* RoundButton.swift in Sources */,
+				7736CEE91ACD8F6F008563DB /* MHTabBarSegue.m in Sources */,
 				3B25B80C1AC732BD00C1A669 /* ViewController.swift in Sources */,
 				3B25B80A1AC732BD00C1A669 /* AppDelegate.swift in Sources */,
 				3B25B82C1AC8DCAF00C1A669 /* Maestro.swift in Sources */,
