@@ -5,13 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>B5464505-DBB1-456E-A1DB-39E8F92FC3A9</string>
+	<string>33F01ECE-D22D-4259-8636-3D014EC85549</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Pocket</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>C782F1FD8A3556C6FF0DAF7E659C4B15497D5582</key>
-		<string>https://github.com/Zigsfi/PocketOrchestra.git</string>
+		<string>https://github.com/Zigsfi/PocketOrchestra</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Pocket.xcodeproj</string>
@@ -21,7 +21,7 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Zigsfi/PocketOrchestra.git</string>
+	<string>https://github.com/Zigsfi/PocketOrchestra</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>C782F1FD8A3556C6FF0DAF7E659C4B15497D5582</string>
 			<key>IDESourceControlWCCName</key>
-			<string>PocketOrchestra</string>
+			<string>Pocket</string>
 		</dict>
 	</array>
 </dict>
