@@ -45,7 +45,6 @@ NSString *const MHCustomTabBarControllerViewControllerAlreadyVisibleNotification
 
 -(void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
     if (self.childViewControllers.count < 1) {
         [self performSegueWithIdentifier:@"viewController1" sender:[self.buttons objectAtIndex:0]];
     }

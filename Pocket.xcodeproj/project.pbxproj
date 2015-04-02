@@ -55,6 +55,7 @@
 		7736CEE61ACD8F6F008563DB /* MHTabBarSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHTabBarSegue.h; sourceTree = "<group>"; };
 		7736CEE71ACD8F6F008563DB /* MHTabBarSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHTabBarSegue.m; sourceTree = "<group>"; };
 		7736CEEA1ACDA4FE008563DB /* Pocket-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pocket-Bridging-Header.h"; sourceTree = "<group>"; };
+		776C27641ACDC7380087A2E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +101,12 @@
 				3B25B8091AC732BD00C1A669 /* AppDelegate.swift */,
 				3B25B80B1AC732BD00C1A669 /* ViewController.swift */,
 				3B25B8291AC79D6600C1A669 /* CustomTabControllerViewController.swift */,
-				3B25B80D1AC732BD00C1A669 /* Main.storyboard */,
 				3B25B82D1AC8DDC200C1A669 /* RoundButton.swift */,
 				3B9BBC331ACB29D00081A443 /* MaestroView.swift */,
 				3B25B82B1AC8DCAF00C1A669 /* Maestro.swift */,
 				3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */,
 				3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */,
+				3B25B80D1AC732BD00C1A669 /* Main.storyboard */,
 				3B25B8101AC732BD00C1A669 /* Images.xcassets */,
 				3B25B8121AC732BD00C1A669 /* LaunchScreen.xib */,
 				3B25B8071AC732BD00C1A669 /* Supporting Files */,
@@ -287,6 +288,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3B25B80E1AC732BD00C1A669 /* Base */,
+				776C27641ACDC7380087A2E5 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

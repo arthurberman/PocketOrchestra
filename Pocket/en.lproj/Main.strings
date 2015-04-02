@@ -1,0 +1,30 @@
+
+/* Class = "IBUILabel"; text = "BASS"; ObjectID = "15t-tV-fvj"; */
+"15t-tV-fvj.text" = "BASS";
+
+/* Class = "IBUIButton"; normalTitle = "Percussion"; ObjectID = "1we-24-xrw"; */
+"1we-24-xrw.normalTitle" = "Percussion";
+
+/* Class = "IBUILabel"; text = "SWEET TUNES"; ObjectID = "Qai-Lc-hED"; */
+"Qai-Lc-hED.text" = "SWEET TUNES";
+
+/* Class = "IBUILabel"; text = "PERCUSSION"; ObjectID = "SkW-2M-4oh"; */
+"SkW-2M-4oh.text" = "PERCUSSION";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "T0Y-qH-6I7"; */
+"T0Y-qH-6I7.normalTitle" = "Button";
+
+/* Class = "IBUIButton"; normalTitle = "Bass"; ObjectID = "Znw-yF-wBy"; */
+"Znw-yF-wBy.normalTitle" = "Bass";
+
+/* Class = "IBUILabel"; text = "CHORDZ"; ObjectID = "o12-d0-9Qp"; */
+"o12-d0-9Qp.text" = "CHORDZ";
+
+/* Class = "IBUIButton"; normalTitle = "Maestro"; ObjectID = "rKI-8u-8io"; */
+"rKI-8u-8io.normalTitle" = "Maestro";
+
+/* Class = "IBUIButton"; normalTitle = "Chords"; ObjectID = "xDX-Zp-ani"; */
+"xDX-Zp-ani.normalTitle" = "Chords";
+
+/* Class = "IBUIButton"; normalTitle = "Melody"; ObjectID = "zbs-DV-Cxu"; */
+"zbs-DV-Cxu.normalTitle" = "Melody";
