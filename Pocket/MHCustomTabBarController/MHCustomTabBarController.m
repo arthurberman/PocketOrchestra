@@ -41,6 +41,7 @@ NSString *const MHCustomTabBarControllerViewControllerAlreadyVisibleNotification
     [super viewDidLoad];
     
     self.viewControllersByIdentifier = [NSMutableDictionary dictionary];
+    
 }
 
 -(void) viewWillAppear:(BOOL)animated {

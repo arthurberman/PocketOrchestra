@@ -15,6 +15,7 @@ class Maestro: UIViewController, MaestroDelegate{
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         (self.view as MaestroView).setDelegate(self)
+        println("MAEE")
     }
     
 

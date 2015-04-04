@@ -28,7 +28,8 @@
 		3B5583CD1AD06BEA009B0AAC /* HydralysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5583CC1AD06BEA009B0AAC /* HydralysViewController.swift */; };
 		3B5583D01AD06C07009B0AAC /* PdBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5583CF1AD06C07009B0AAC /* PdBridge.m */; };
 		3B5583D21AD06C3D009B0AAC /* ValveHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5583D11AD06C3D009B0AAC /* ValveHead.swift */; };
-		3B57F8F61ACE141100A09EE0 /* DownValve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B57F8F11ACE141100A09EE0 /* DownValve.swift */; };
+		3B5583D41AD07122009B0AAC /* MaestroPureDataBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5583D31AD07122009B0AAC /* MaestroPureDataBridge.swift */; };
+		3B5583D61AD07633009B0AAC /* DownValve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5583D51AD07633009B0AAC /* DownValve.swift */; };
 		3B9BBC301ACB01340081A443 /* MaestroInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */; };
 		3B9BBC321ACB28C30081A443 /* MaestroInstrumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */; };
 		3B9BBC341ACB29D00081A443 /* MaestroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC331ACB29D00081A443 /* MaestroView.swift */; };
@@ -79,7 +80,8 @@
 		3B5583CE1AD06C07009B0AAC /* PdBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdBridge.h; sourceTree = "<group>"; };
 		3B5583CF1AD06C07009B0AAC /* PdBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdBridge.m; sourceTree = "<group>"; };
 		3B5583D11AD06C3D009B0AAC /* ValveHead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValveHead.swift; sourceTree = "<group>"; };
-		3B57F8F11ACE141100A09EE0 /* DownValve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownValve.swift; path = ../../padpod/DownValve.swift; sourceTree = "<group>"; };
+		3B5583D31AD07122009B0AAC /* MaestroPureDataBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroPureDataBridge.swift; sourceTree = "<group>"; };
+		3B5583D51AD07633009B0AAC /* DownValve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownValve.swift; sourceTree = "<group>"; };
 		3B57F8FA1ACE142300A09EE0 /* padpod-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "padpod-Bridging-Header.h"; path = "../../padpod/padpod/padpod-Bridging-Header.h"; sourceTree = "<group>"; };
 		3B57F8FB1ACE164400A09EE0 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroInstrument.swift; sourceTree = "<group>"; };
@@ -153,8 +155,8 @@
 				3B9BBC331ACB29D00081A443 /* MaestroView.swift */,
 				3B25B82B1AC8DCAF00C1A669 /* Maestro.swift */,
 				3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */,
+				3B5583D51AD07633009B0AAC /* DownValve.swift */,
 				3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */,
-				3B57F8F11ACE141100A09EE0 /* DownValve.swift */,
 				3B57F8FA1ACE142300A09EE0 /* padpod-Bridging-Header.h */,
 				3B5583CC1AD06BEA009B0AAC /* HydralysViewController.swift */,
 				3B5583CE1AD06C07009B0AAC /* PdBridge.h */,
@@ -162,6 +164,7 @@
 				3B5583CF1AD06C07009B0AAC /* PdBridge.m */,
 				3B57F8FB1ACE164400A09EE0 /* Header.h */,
 				3B25B80D1AC732BD00C1A669 /* Main.storyboard */,
+				3B5583D31AD07122009B0AAC /* MaestroPureDataBridge.swift */,
 				3B25B8101AC732BD00C1A669 /* Images.xcassets */,
 				3B25B8121AC732BD00C1A669 /* LaunchScreen.xib */,
 				3B25B8071AC732BD00C1A669 /* Supporting Files */,
@@ -384,12 +387,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5583D61AD07633009B0AAC /* DownValve.swift in Sources */,
 				3B9BBC301ACB01340081A443 /* MaestroInstrument.swift in Sources */,
 				3B5583D21AD06C3D009B0AAC /* ValveHead.swift in Sources */,
 				3B9BBC3B1ACDD4450081A443 /* SequencerViewController.swift in Sources */,
 				3B9BBC321ACB28C30081A443 /* MaestroInstrumentView.swift in Sources */,
+				3B5583D41AD07122009B0AAC /* MaestroPureDataBridge.swift in Sources */,
 				3B9BBC341ACB29D00081A443 /* MaestroView.swift in Sources */,
-				3B57F8F61ACE141100A09EE0 /* DownValve.swift in Sources */,
 				7736CEE81ACD8F6F008563DB /* MHCustomTabBarController.m in Sources */,
 				3B25B82A1AC79D6600C1A669 /* CustomTabControllerViewController.swift in Sources */,
 				3B25B82E1AC8DDC200C1A669 /* RoundButton.swift in Sources */,

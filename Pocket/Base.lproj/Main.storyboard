@@ -91,6 +91,9 @@
                                 <state key="normal" title="B">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="bNote:" destination="AeQ-Pp-GcI" eventType="touchUpInside" id="u3H-Pf-252"/>
+                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7Qk-Kc-PD7">
                                 <rect key="frame" x="453" y="465" width="118" height="31"/>
@@ -112,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rkx-Ry-cRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1506" y="1030"/>
+            <point key="canvasLocation" x="-1711" y="1114"/>
         </scene>
         <!--Custom Tab Bar Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -180,15 +183,15 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.34672900883838387" green="0.34672900883838387" blue="0.34672900883838387" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ds-F8-JSG">
-                                <rect key="frame" x="0.0" y="113" width="1024" height="655"/>
-                            </containerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iR7-r3-cJD">
                                 <rect key="frame" x="16" y="718" width="56" height="30"/>
                                 <state key="normal" title="Mute All">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ds-F8-JSG">
+                                <rect key="frame" x="0.0" y="113" width="1024" height="655"/>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.34672900880000002" green="0.34672900880000002" blue="0.34672900880000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>

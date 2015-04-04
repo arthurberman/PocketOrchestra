@@ -20,8 +20,8 @@ class HydralysViewController: UIViewController, UIScrollViewDelegate, UIPickerVi
     var current_scale = "Major"
     override func viewDidLoad() {
         super.viewDidLoad()
-        bridge.initialize()
-        bridge.play()
+     //   bridge.initialize()
+      //  bridge.play()
         
         
         // we can add an arbitrary number of sliders by changing the upper limit on the range
@@ -135,8 +135,11 @@ class HydralysViewController: UIViewController, UIScrollViewDelegate, UIPickerVi
     }
     
     @IBAction func aNote(sender: AnyObject) {
-        PdBase.sendNoteOn(1, pitch: 58, velocity: 60)
+        PdBase.sendNoteOn(0, pitch: 57, velocity: 60)
         println("hi");
+    }
+    @IBAction func bNote(sender: AnyObject) {
+        PdBase.sendNoteOn(0, pitch: 59, velocity: 60)
     }
     @IBAction func tremoloDepth(sender: UISlider){
         self.bridge.sendFloat(sender.value, toReceive: "tremolodepth")

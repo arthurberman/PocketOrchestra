@@ -27,7 +27,7 @@
     if([self.controller configurePlaybackWithSampleRate:44100 numberChannels:2 inputEnabled:YES mixingEnabled:YES] != PdAudioOK) {
         NSLog(@"Something went wrong with PD");
     }
-    [PdBase openFile:@"synth.pd" path: [[NSBundle mainBundle] resourcePath]];
+    //[PdBase openFile:@"synth.pd" path: [[NSBundle mainBundle] resourcePath]];
     [self.controller setActive:YES];
     
     self.dispatcher = [PdDispatcher new];
@@ -36,7 +36,7 @@
 }
 -(void) play { // start playing sound from PD
     
-    [PdBase openFile:@"synth2.pd" path: [[NSBundle mainBundle] resourcePath]];
+    [PdBase openFile:@"synth.pd" path: [[NSBundle mainBundle] resourcePath]];
     NSLog(@"play");
 }
 
