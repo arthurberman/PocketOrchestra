@@ -16,6 +16,19 @@
 		3B25B82A1AC79D6600C1A669 /* CustomTabControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25B8291AC79D6600C1A669 /* CustomTabControllerViewController.swift */; };
 		3B25B82C1AC8DCAF00C1A669 /* Maestro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25B82B1AC8DCAF00C1A669 /* Maestro.swift */; };
 		3B25B82E1AC8DDC200C1A669 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25B82D1AC8DDC200C1A669 /* RoundButton.swift */; };
+		3B5583C01ACE3024009B0AAC /* generator~.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B5583BA1ACE3024009B0AAC /* generator~.pd */; };
+		3B5583C11ACE3024009B0AAC /* notoname2.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B5583BB1ACE3024009B0AAC /* notoname2.pd */; };
+		3B5583C21ACE3024009B0AAC /* synth2.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B5583BC1ACE3024009B0AAC /* synth2.pd */; };
+		3B5583C31ACE3024009B0AAC /* gswitch~.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B5583BD1ACE3024009B0AAC /* gswitch~.pd */; };
+		3B5583C41ACE3024009B0AAC /* transistor~.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B5583BE1ACE3024009B0AAC /* transistor~.pd */; };
+		3B5583C51ACE3024009B0AAC /* tremolo~.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B5583BF1ACE3024009B0AAC /* tremolo~.pd */; };
+		3B5583C71ACE3299009B0AAC /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5583C61ACE3299009B0AAC /* CoreAudio.framework */; };
+		3B5583C91ACE32B3009B0AAC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5583C81ACE32B3009B0AAC /* AVFoundation.framework */; };
+		3B5583CB1ACE362D009B0AAC /* synth.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B5583CA1ACE362D009B0AAC /* synth.pd */; };
+		3B57F8F61ACE141100A09EE0 /* DownValve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B57F8F11ACE141100A09EE0 /* DownValve.swift */; };
+		3B57F8F71ACE141100A09EE0 /* ValveHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B57F8F21ACE141100A09EE0 /* ValveHead.swift */; };
+		3B57F8F81ACE141100A09EE0 /* HydralysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B57F8F31ACE141100A09EE0 /* HydralysViewController.swift */; };
+		3B57F8F91ACE141100A09EE0 /* PdBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B57F8F51ACE141100A09EE0 /* PdBridge.m */; };
 		3B9BBC301ACB01340081A443 /* MaestroInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */; };
 		3B9BBC321ACB28C30081A443 /* MaestroInstrumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */; };
 		3B9BBC341ACB29D00081A443 /* MaestroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC331ACB29D00081A443 /* MaestroView.swift */; };
@@ -24,6 +37,7 @@
 		3B9BBC3C1ACDD4450081A443 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B9BBC381ACDD4450081A443 /* line.png */; };
 		7736CEE81ACD8F6F008563DB /* MHCustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7736CEE51ACD8F6F008563DB /* MHCustomTabBarController.m */; };
 		7736CEE91ACD8F6F008563DB /* MHTabBarSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7736CEE71ACD8F6F008563DB /* MHTabBarSegue.m */; };
+		E546C985097F5FC30569996E /* libPods-Pocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F70F64B7185668548E6742 /* libPods-Pocket.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C9435B42A06E55A77957FD4 /* Pods-Pocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket/Pods-Pocket.debug.xcconfig"; sourceTree = "<group>"; };
+		34F70F64B7185668548E6742 /* libPods-Pocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B25B8041AC732BD00C1A669 /* Pocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B25B8081AC732BD00C1A669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B25B8091AC732BD00C1A669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,12 +66,29 @@
 		3B25B8291AC79D6600C1A669 /* CustomTabControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabControllerViewController.swift; sourceTree = "<group>"; };
 		3B25B82B1AC8DCAF00C1A669 /* Maestro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maestro.swift; sourceTree = "<group>"; };
 		3B25B82D1AC8DDC200C1A669 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		3B5583BA1ACE3024009B0AAC /* generator~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "generator~.pd"; path = "../../comp150isw-spring2015-team2/generator~.pd"; sourceTree = "<group>"; };
+		3B5583BB1ACE3024009B0AAC /* notoname2.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = notoname2.pd; path = "../../comp150isw-spring2015-team2/notoname2.pd"; sourceTree = "<group>"; };
+		3B5583BC1ACE3024009B0AAC /* synth2.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = synth2.pd; path = "../../comp150isw-spring2015-team2/synth2.pd"; sourceTree = "<group>"; };
+		3B5583BD1ACE3024009B0AAC /* gswitch~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "gswitch~.pd"; path = "../../comp150isw-spring2015-team2/gswitch~.pd"; sourceTree = "<group>"; };
+		3B5583BE1ACE3024009B0AAC /* transistor~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "transistor~.pd"; path = "../../comp150isw-spring2015-team2/transistor~.pd"; sourceTree = "<group>"; };
+		3B5583BF1ACE3024009B0AAC /* tremolo~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "tremolo~.pd"; path = "../../comp150isw-spring2015-team2/tremolo~.pd"; sourceTree = "<group>"; };
+		3B5583C61ACE3299009B0AAC /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		3B5583C81ACE32B3009B0AAC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3B5583CA1ACE362D009B0AAC /* synth.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = synth.pd; path = ../../../../Documents/synth.pd; sourceTree = "<group>"; };
+		3B57F8F11ACE141100A09EE0 /* DownValve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownValve.swift; path = ../../padpod/DownValve.swift; sourceTree = "<group>"; };
+		3B57F8F21ACE141100A09EE0 /* ValveHead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValveHead.swift; path = ../../padpod/padpod/ValveHead.swift; sourceTree = "<group>"; };
+		3B57F8F31ACE141100A09EE0 /* HydralysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HydralysViewController.swift; path = ../../padpod/padpod/HydralysViewController.swift; sourceTree = "<group>"; };
+		3B57F8F41ACE141100A09EE0 /* PdBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PdBridge.h; path = ../../padpod/padpod/PdBridge.h; sourceTree = "<group>"; };
+		3B57F8F51ACE141100A09EE0 /* PdBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PdBridge.m; path = ../../padpod/padpod/PdBridge.m; sourceTree = "<group>"; };
+		3B57F8FA1ACE142300A09EE0 /* padpod-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "padpod-Bridging-Header.h"; path = "../../padpod/padpod/padpod-Bridging-Header.h"; sourceTree = "<group>"; };
+		3B57F8FB1ACE164400A09EE0 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroInstrument.swift; sourceTree = "<group>"; };
 		3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroInstrumentView.swift; sourceTree = "<group>"; };
 		3B9BBC331ACB29D00081A443 /* MaestroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroView.swift; sourceTree = "<group>"; };
 		3B9BBC351ACDD4450081A443 /* scrubline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scrubline.png; path = ../../../../Downloads/sequenceui/sequenceui/scrubline.png; sourceTree = "<group>"; };
 		3B9BBC371ACDD4450081A443 /* SequencerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SequencerViewController.swift; path = ../../../../Downloads/sequenceui/sequenceui/SequencerViewController.swift; sourceTree = "<group>"; };
 		3B9BBC381ACDD4450081A443 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = line.png; path = ../../../../Downloads/sequenceui/sequenceui/line.png; sourceTree = "<group>"; };
+		4C80C2786416C39496163C80 /* Pods-Pocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pocket.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pocket/Pods-Pocket.release.xcconfig"; sourceTree = "<group>"; };
 		7736CEE41ACD8F6F008563DB /* MHCustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHCustomTabBarController.h; sourceTree = "<group>"; };
 		7736CEE51ACD8F6F008563DB /* MHCustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHCustomTabBarController.m; sourceTree = "<group>"; };
 		7736CEE61ACD8F6F008563DB /* MHTabBarSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHTabBarSegue.h; sourceTree = "<group>"; };
@@ -69,6 +102,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5583C91ACE32B3009B0AAC /* AVFoundation.framework in Frameworks */,
+				3B5583C71ACE3299009B0AAC /* CoreAudio.framework in Frameworks */,
+				E546C985097F5FC30569996E /* libPods-Pocket.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +124,8 @@
 				3B25B8061AC732BD00C1A669 /* Pocket */,
 				3B25B81C1AC732BD00C1A669 /* PocketTests */,
 				3B25B8051AC732BD00C1A669 /* Products */,
+				E90BC40CBA3B48B25A6F5CB6 /* Pods */,
+				5B7628C02EA208C51D0D826B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +141,7 @@
 		3B25B8061AC732BD00C1A669 /* Pocket */ = {
 			isa = PBXGroup;
 			children = (
+				3B57F8E61ACE13B000A09EE0 /* Resources */,
 				3B9BBC381ACDD4450081A443 /* line.png */,
 				3B9BBC351ACDD4450081A443 /* scrubline.png */,
 				3B9BBC371ACDD4450081A443 /* SequencerViewController.swift */,
@@ -115,6 +154,13 @@
 				3B25B82B1AC8DCAF00C1A669 /* Maestro.swift */,
 				3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */,
 				3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */,
+				3B57F8F11ACE141100A09EE0 /* DownValve.swift */,
+				3B57F8F21ACE141100A09EE0 /* ValveHead.swift */,
+				3B57F8F31ACE141100A09EE0 /* HydralysViewController.swift */,
+				3B57F8FA1ACE142300A09EE0 /* padpod-Bridging-Header.h */,
+				3B57F8FB1ACE164400A09EE0 /* Header.h */,
+				3B57F8F41ACE141100A09EE0 /* PdBridge.h */,
+				3B57F8F51ACE141100A09EE0 /* PdBridge.m */,
 				3B25B80D1AC732BD00C1A669 /* Main.storyboard */,
 				3B25B8101AC732BD00C1A669 /* Images.xcassets */,
 				3B25B8121AC732BD00C1A669 /* LaunchScreen.xib */,
@@ -149,6 +195,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3B57F8E61ACE13B000A09EE0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B5583CA1ACE362D009B0AAC /* synth.pd */,
+				3B5583BA1ACE3024009B0AAC /* generator~.pd */,
+				3B5583BB1ACE3024009B0AAC /* notoname2.pd */,
+				3B5583BC1ACE3024009B0AAC /* synth2.pd */,
+				3B5583BD1ACE3024009B0AAC /* gswitch~.pd */,
+				3B5583BE1ACE3024009B0AAC /* transistor~.pd */,
+				3B5583BF1ACE3024009B0AAC /* tremolo~.pd */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5B7628C02EA208C51D0D826B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B5583C81ACE32B3009B0AAC /* AVFoundation.framework */,
+				3B5583C61ACE3299009B0AAC /* CoreAudio.framework */,
+				34F70F64B7185668548E6742 /* libPods-Pocket.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7736CEE31ACD8F6F008563DB /* MHCustomTabBarController */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +230,15 @@
 			path = MHCustomTabBarController;
 			sourceTree = "<group>";
 		};
+		E90BC40CBA3B48B25A6F5CB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C9435B42A06E55A77957FD4 /* Pods-Pocket.debug.xcconfig */,
+				4C80C2786416C39496163C80 /* Pods-Pocket.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B25B8231AC732BD00C1A669 /* Build configuration list for PBXNativeTarget "Pocket" */;
 			buildPhases = (
+				B3FDB953FF4FE9190FAD8374 /* Check Pods Manifest.lock */,
 				3B25B8001AC732BD00C1A669 /* Sources */,
 				3B25B8011AC732BD00C1A669 /* Frameworks */,
 				3B25B8021AC732BD00C1A669 /* Resources */,
+				C7B03567E7551648EA49C454 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,9 +322,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5583C11ACE3024009B0AAC /* notoname2.pd in Resources */,
 				3B25B80F1AC732BD00C1A669 /* Main.storyboard in Resources */,
 				3B9BBC3C1ACDD4450081A443 /* line.png in Resources */,
+				3B5583C21ACE3024009B0AAC /* synth2.pd in Resources */,
+				3B5583C31ACE3024009B0AAC /* gswitch~.pd in Resources */,
+				3B5583C01ACE3024009B0AAC /* generator~.pd in Resources */,
+				3B5583C51ACE3024009B0AAC /* tremolo~.pd in Resources */,
 				3B25B8141AC732BD00C1A669 /* LaunchScreen.xib in Resources */,
+				3B5583CB1ACE362D009B0AAC /* synth.pd in Resources */,
+				3B5583C41ACE3024009B0AAC /* transistor~.pd in Resources */,
 				3B25B8111AC732BD00C1A669 /* Images.xcassets in Resources */,
 				3B9BBC391ACDD4450081A443 /* scrubline.png in Resources */,
 			);
@@ -258,6 +346,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B3FDB953FF4FE9190FAD8374 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C7B03567E7551648EA49C454 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pocket/Pods-Pocket-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B25B8001AC732BD00C1A669 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -267,10 +388,14 @@
 				3B9BBC3B1ACDD4450081A443 /* SequencerViewController.swift in Sources */,
 				3B9BBC321ACB28C30081A443 /* MaestroInstrumentView.swift in Sources */,
 				3B9BBC341ACB29D00081A443 /* MaestroView.swift in Sources */,
+				3B57F8F61ACE141100A09EE0 /* DownValve.swift in Sources */,
 				7736CEE81ACD8F6F008563DB /* MHCustomTabBarController.m in Sources */,
+				3B57F8F71ACE141100A09EE0 /* ValveHead.swift in Sources */,
+				3B57F8F91ACE141100A09EE0 /* PdBridge.m in Sources */,
 				3B25B82A1AC79D6600C1A669 /* CustomTabControllerViewController.swift in Sources */,
 				3B25B82E1AC8DDC200C1A669 /* RoundButton.swift in Sources */,
 				7736CEE91ACD8F6F008563DB /* MHTabBarSegue.m in Sources */,
+				3B57F8F81ACE141100A09EE0 /* HydralysViewController.swift in Sources */,
 				3B25B80C1AC732BD00C1A669 /* ViewController.swift in Sources */,
 				3B25B80A1AC732BD00C1A669 /* AppDelegate.swift in Sources */,
 				3B25B82C1AC8DCAF00C1A669 /* Maestro.swift in Sources */,
@@ -397,18 +522,21 @@
 		};
 		3B25B8241AC732BD00C1A669 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C9435B42A06E55A77957FD4 /* Pods-Pocket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pocket/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = Pocket/Header.h;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		3B25B8251AC732BD00C1A669 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C80C2786416C39496163C80 /* Pods-Pocket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pocket/Info.plist;

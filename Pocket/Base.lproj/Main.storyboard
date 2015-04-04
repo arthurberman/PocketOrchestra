@@ -5,27 +5,110 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Hydralys View Controller-->
         <scene sceneID="Jkk-5t-4aW">
             <objects>
-                <viewController id="AeQ-Pp-GcI" sceneMemberID="viewController">
+                <viewController id="AeQ-Pp-GcI" customClass="HydralysViewController" customModule="Pocket" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ojo-Ls-YTk"/>
                         <viewControllerLayoutGuide type="bottom" id="BHa-mj-g4D"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YOi-PQ-OnW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hydralys UI" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ3-Ts-EQ5">
-                                <rect key="frame" x="264" y="256" width="89" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P4Q-kj-O3m">
+                                <rect key="frame" x="4" y="-9" width="1016" height="396"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BA1-Mh-aXL">
+                                        <rect key="frame" x="513" y="83" width="30" height="30"/>
+                                        <state key="normal" title="C">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wni-BE-3cx">
+                                <rect key="frame" x="56" y="415" width="51" height="31"/>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="a6V-Pb-ZwH">
+                                <rect key="frame" x="289" y="395" width="118" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="c3p-dt-Dqa">
+                                <rect key="frame" x="289" y="456" width="118" height="31"/>
+                                <connections>
+                                    <action selector="bpFreqSlider:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="iDW-hf-viy"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="CoY-TY-TID">
+                                <rect key="frame" x="289" y="488" width="118" height="31"/>
+                                <connections>
+                                    <action selector="phaseSlider:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="lm1-El-B6J"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="g1i-B4-DIT">
+                                <rect key="frame" x="289" y="517" width="118" height="31"/>
+                                <connections>
+                                    <action selector="phaseSlider:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="Wd6-Br-smH"/>
+                                    <action selector="tremoloSlider:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="mR8-Wm-sl2"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hz9-rQ-1nF">
+                                <rect key="frame" x="289" y="552" width="118" height="31"/>
+                                <connections>
+                                    <action selector="phaseSlider:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="gjM-Sy-bSm"/>
+                                    <action selector="tremoloDepth:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="L7B-3d-huM"/>
+                                    <action selector="tremoloSlider:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="7m4-di-Lu9"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xfl-6c-ZYL">
+                                <rect key="frame" x="289" y="424" width="118" height="31"/>
+                                <connections>
+                                    <action selector="masterVolumeSlider:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="jLW-M7-VGV"/>
+                                </connections>
+                            </slider>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="40D-Ys-txG">
+                                <rect key="frame" x="466" y="415" width="123" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="keyChange:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="1DZ-6u-xdK"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87r-sJ-HJs">
+                                <rect key="frame" x="632" y="413" width="30" height="30"/>
+                                <state key="normal" title="A">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="aNote:" destination="AeQ-Pp-GcI" eventType="touchUpInside" id="LVF-jo-eG1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HI1-7h-diA">
+                                <rect key="frame" x="683" y="413" width="30" height="30"/>
+                                <state key="normal" title="B">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7Qk-Kc-PD7">
+                                <rect key="frame" x="453" y="465" width="118" height="31"/>
+                                <connections>
+                                    <action selector="phaseSlider:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="Hns-3h-4Uj"/>
+                                    <action selector="tremoloDepth:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="Cyy-gp-umD"/>
+                                    <action selector="tremoloSlider:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="Ipf-zo-Qwr"/>
+                                </connections>
+                            </slider>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="masterVolume" destination="a6V-Pb-ZwH" id="cUZ-nR-yTc"/>
+                        <outlet property="tremoloSwitch" destination="Wni-BE-3cx" id="57u-Wc-npm"/>
+                        <outlet property="valveScroller" destination="P4Q-kj-O3m" id="Gbj-se-WTM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rkx-Ry-cRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,7 +117,6 @@
         <!--Custom Tab Bar Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="MHCustomTabBarController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -95,26 +177,20 @@
                                             <segue destination="bda-Pj-aTM" kind="custom" identifier="viewController3" customClass="MHTabBarSegue" id="RWp-E6-bR4"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ZN-W0-0b8">
-                                        <rect key="frame" x="248" y="16" width="50" height="30"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
-                                        <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
-                                        <state key="normal" title="Chords">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="AeQ-Pp-GcI" kind="custom" identifier="viewController2" customClass="MHTabBarSegue" id="Yej-jG-hWJ"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.34672900883838387" green="0.34672900883838387" blue="0.34672900883838387" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ds-F8-JSG">
                                 <rect key="frame" x="0.0" y="113" width="1024" height="655"/>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iR7-r3-cJD">
+                                <rect key="frame" x="16" y="718" width="56" height="30"/>
+                                <state key="normal" title="Mute All">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.34672900880000002" green="0.34672900880000002" blue="0.34672900880000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
@@ -122,6 +198,7 @@
                         <outlet property="container" destination="9ds-F8-JSG" id="p6k-89-LQ7"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-857" y="156"/>
         </scene>
@@ -200,7 +277,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Yej-jG-hWJ"/>
         <segue reference="TRc-8d-BS3"/>
     </inferredMetricsTieBreakers>
 </document>
