@@ -25,10 +25,10 @@
 		3B5583C71ACE3299009B0AAC /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5583C61ACE3299009B0AAC /* CoreAudio.framework */; };
 		3B5583C91ACE32B3009B0AAC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5583C81ACE32B3009B0AAC /* AVFoundation.framework */; };
 		3B5583CB1ACE362D009B0AAC /* synth.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B5583CA1ACE362D009B0AAC /* synth.pd */; };
+		3B5583CD1AD06BEA009B0AAC /* HydralysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5583CC1AD06BEA009B0AAC /* HydralysViewController.swift */; };
+		3B5583D01AD06C07009B0AAC /* PdBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5583CF1AD06C07009B0AAC /* PdBridge.m */; };
+		3B5583D21AD06C3D009B0AAC /* ValveHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5583D11AD06C3D009B0AAC /* ValveHead.swift */; };
 		3B57F8F61ACE141100A09EE0 /* DownValve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B57F8F11ACE141100A09EE0 /* DownValve.swift */; };
-		3B57F8F71ACE141100A09EE0 /* ValveHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B57F8F21ACE141100A09EE0 /* ValveHead.swift */; };
-		3B57F8F81ACE141100A09EE0 /* HydralysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B57F8F31ACE141100A09EE0 /* HydralysViewController.swift */; };
-		3B57F8F91ACE141100A09EE0 /* PdBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B57F8F51ACE141100A09EE0 /* PdBridge.m */; };
 		3B9BBC301ACB01340081A443 /* MaestroInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */; };
 		3B9BBC321ACB28C30081A443 /* MaestroInstrumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */; };
 		3B9BBC341ACB29D00081A443 /* MaestroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC331ACB29D00081A443 /* MaestroView.swift */; };
@@ -75,11 +75,11 @@
 		3B5583C61ACE3299009B0AAC /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		3B5583C81ACE32B3009B0AAC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3B5583CA1ACE362D009B0AAC /* synth.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = synth.pd; path = ../../../../Documents/synth.pd; sourceTree = "<group>"; };
+		3B5583CC1AD06BEA009B0AAC /* HydralysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HydralysViewController.swift; sourceTree = "<group>"; };
+		3B5583CE1AD06C07009B0AAC /* PdBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdBridge.h; sourceTree = "<group>"; };
+		3B5583CF1AD06C07009B0AAC /* PdBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdBridge.m; sourceTree = "<group>"; };
+		3B5583D11AD06C3D009B0AAC /* ValveHead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValveHead.swift; sourceTree = "<group>"; };
 		3B57F8F11ACE141100A09EE0 /* DownValve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownValve.swift; path = ../../padpod/DownValve.swift; sourceTree = "<group>"; };
-		3B57F8F21ACE141100A09EE0 /* ValveHead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValveHead.swift; path = ../../padpod/padpod/ValveHead.swift; sourceTree = "<group>"; };
-		3B57F8F31ACE141100A09EE0 /* HydralysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HydralysViewController.swift; path = ../../padpod/padpod/HydralysViewController.swift; sourceTree = "<group>"; };
-		3B57F8F41ACE141100A09EE0 /* PdBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PdBridge.h; path = ../../padpod/padpod/PdBridge.h; sourceTree = "<group>"; };
-		3B57F8F51ACE141100A09EE0 /* PdBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PdBridge.m; path = ../../padpod/padpod/PdBridge.m; sourceTree = "<group>"; };
 		3B57F8FA1ACE142300A09EE0 /* padpod-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "padpod-Bridging-Header.h"; path = "../../padpod/padpod/padpod-Bridging-Header.h"; sourceTree = "<group>"; };
 		3B57F8FB1ACE164400A09EE0 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroInstrument.swift; sourceTree = "<group>"; };
@@ -155,12 +155,12 @@
 				3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */,
 				3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */,
 				3B57F8F11ACE141100A09EE0 /* DownValve.swift */,
-				3B57F8F21ACE141100A09EE0 /* ValveHead.swift */,
-				3B57F8F31ACE141100A09EE0 /* HydralysViewController.swift */,
 				3B57F8FA1ACE142300A09EE0 /* padpod-Bridging-Header.h */,
+				3B5583CC1AD06BEA009B0AAC /* HydralysViewController.swift */,
+				3B5583CE1AD06C07009B0AAC /* PdBridge.h */,
+				3B5583D11AD06C3D009B0AAC /* ValveHead.swift */,
+				3B5583CF1AD06C07009B0AAC /* PdBridge.m */,
 				3B57F8FB1ACE164400A09EE0 /* Header.h */,
-				3B57F8F41ACE141100A09EE0 /* PdBridge.h */,
-				3B57F8F51ACE141100A09EE0 /* PdBridge.m */,
 				3B25B80D1AC732BD00C1A669 /* Main.storyboard */,
 				3B25B8101AC732BD00C1A669 /* Images.xcassets */,
 				3B25B8121AC732BD00C1A669 /* LaunchScreen.xib */,
@@ -385,19 +385,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B9BBC301ACB01340081A443 /* MaestroInstrument.swift in Sources */,
+				3B5583D21AD06C3D009B0AAC /* ValveHead.swift in Sources */,
 				3B9BBC3B1ACDD4450081A443 /* SequencerViewController.swift in Sources */,
 				3B9BBC321ACB28C30081A443 /* MaestroInstrumentView.swift in Sources */,
 				3B9BBC341ACB29D00081A443 /* MaestroView.swift in Sources */,
 				3B57F8F61ACE141100A09EE0 /* DownValve.swift in Sources */,
 				7736CEE81ACD8F6F008563DB /* MHCustomTabBarController.m in Sources */,
-				3B57F8F71ACE141100A09EE0 /* ValveHead.swift in Sources */,
-				3B57F8F91ACE141100A09EE0 /* PdBridge.m in Sources */,
 				3B25B82A1AC79D6600C1A669 /* CustomTabControllerViewController.swift in Sources */,
 				3B25B82E1AC8DDC200C1A669 /* RoundButton.swift in Sources */,
 				7736CEE91ACD8F6F008563DB /* MHTabBarSegue.m in Sources */,
-				3B57F8F81ACE141100A09EE0 /* HydralysViewController.swift in Sources */,
 				3B25B80C1AC732BD00C1A669 /* ViewController.swift in Sources */,
+				3B5583CD1AD06BEA009B0AAC /* HydralysViewController.swift in Sources */,
 				3B25B80A1AC732BD00C1A669 /* AppDelegate.swift in Sources */,
+				3B5583D01AD06C07009B0AAC /* PdBridge.m in Sources */,
 				3B25B82C1AC8DCAF00C1A669 /* Maestro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
