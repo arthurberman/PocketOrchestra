@@ -135,11 +135,11 @@ class HydralysViewController: UIViewController, UIScrollViewDelegate, UIPickerVi
     }
     
     @IBAction func aNote(sender: AnyObject) {
-        PdBase.sendNoteOn(0, pitch: 57, velocity: 60)
+        MaestroPuredataBridge.sendNoteOn(0, pitch: 57, velocity: 60)
         println("hi");
     }
     @IBAction func bNote(sender: AnyObject) {
-        PdBase.sendNoteOn(0, pitch: 59, velocity: 60)
+        MaestroPuredataBridge.sendNoteOn(0, pitch: 59, velocity: 60)
     }
     @IBAction func tremoloDepth(sender: UISlider){
         self.bridge.sendFloat(sender.value, toReceive: "tremolodepth")

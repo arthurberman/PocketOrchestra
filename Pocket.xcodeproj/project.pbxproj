@@ -30,6 +30,9 @@
 		3B5583D21AD06C3D009B0AAC /* ValveHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5583D11AD06C3D009B0AAC /* ValveHead.swift */; };
 		3B5583D41AD07122009B0AAC /* MaestroPureDataBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5583D31AD07122009B0AAC /* MaestroPureDataBridge.swift */; };
 		3B5583D61AD07633009B0AAC /* DownValve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5583D51AD07633009B0AAC /* DownValve.swift */; };
+		3B5583D81AD07711009B0AAC /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5583D71AD07711009B0AAC /* CoreAudioKit.framework */; };
+		3B5583DC1AD07746009B0AAC /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5583DB1AD07746009B0AAC /* CoreMIDI.framework */; };
+		3B5583E11AD1C38A009B0AAC /* BluetoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5583E01AD1C38A009B0AAC /* BluetoothViewController.m */; };
 		3B9BBC301ACB01340081A443 /* MaestroInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */; };
 		3B9BBC321ACB28C30081A443 /* MaestroInstrumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */; };
 		3B9BBC341ACB29D00081A443 /* MaestroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC331ACB29D00081A443 /* MaestroView.swift */; };
@@ -82,6 +85,10 @@
 		3B5583D11AD06C3D009B0AAC /* ValveHead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValveHead.swift; sourceTree = "<group>"; };
 		3B5583D31AD07122009B0AAC /* MaestroPureDataBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroPureDataBridge.swift; sourceTree = "<group>"; };
 		3B5583D51AD07633009B0AAC /* DownValve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownValve.swift; sourceTree = "<group>"; };
+		3B5583D71AD07711009B0AAC /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		3B5583DB1AD07746009B0AAC /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		3B5583DF1AD1C38A009B0AAC /* BluetoothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothViewController.h; sourceTree = "<group>"; };
+		3B5583E01AD1C38A009B0AAC /* BluetoothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothViewController.m; sourceTree = "<group>"; };
 		3B57F8FA1ACE142300A09EE0 /* padpod-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "padpod-Bridging-Header.h"; path = "../../padpod/padpod/padpod-Bridging-Header.h"; sourceTree = "<group>"; };
 		3B57F8FB1ACE164400A09EE0 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroInstrument.swift; sourceTree = "<group>"; };
@@ -104,6 +111,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5583DC1AD07746009B0AAC /* CoreMIDI.framework in Frameworks */,
+				3B5583D81AD07711009B0AAC /* CoreAudioKit.framework in Frameworks */,
 				3B5583C91ACE32B3009B0AAC /* AVFoundation.framework in Frameworks */,
 				3B5583C71ACE3299009B0AAC /* CoreAudio.framework in Frameworks */,
 				E546C985097F5FC30569996E /* libPods-Pocket.a in Frameworks */,
@@ -149,6 +158,9 @@
 				3B9BBC371ACDD4450081A443 /* SequencerViewController.swift */,
 				7736CEE31ACD8F6F008563DB /* MHCustomTabBarController */,
 				3B25B8091AC732BD00C1A669 /* AppDelegate.swift */,
+				3B5583DF1AD1C38A009B0AAC /* BluetoothViewController.h */,
+				3B5583E01AD1C38A009B0AAC /* BluetoothViewController.m */,
+				3B5583D31AD07122009B0AAC /* MaestroPureDataBridge.swift */,
 				3B25B80B1AC732BD00C1A669 /* ViewController.swift */,
 				3B25B8291AC79D6600C1A669 /* CustomTabControllerViewController.swift */,
 				3B25B82D1AC8DDC200C1A669 /* RoundButton.swift */,
@@ -164,7 +176,6 @@
 				3B5583CF1AD06C07009B0AAC /* PdBridge.m */,
 				3B57F8FB1ACE164400A09EE0 /* Header.h */,
 				3B25B80D1AC732BD00C1A669 /* Main.storyboard */,
-				3B5583D31AD07122009B0AAC /* MaestroPureDataBridge.swift */,
 				3B25B8101AC732BD00C1A669 /* Images.xcassets */,
 				3B25B8121AC732BD00C1A669 /* LaunchScreen.xib */,
 				3B25B8071AC732BD00C1A669 /* Supporting Files */,
@@ -215,6 +226,8 @@
 		5B7628C02EA208C51D0D826B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B5583DB1AD07746009B0AAC /* CoreMIDI.framework */,
+				3B5583D71AD07711009B0AAC /* CoreAudioKit.framework */,
 				3B5583C81ACE32B3009B0AAC /* AVFoundation.framework */,
 				3B5583C61ACE3299009B0AAC /* CoreAudio.framework */,
 				34F70F64B7185668548E6742 /* libPods-Pocket.a */,
@@ -395,6 +408,7 @@
 				3B5583D41AD07122009B0AAC /* MaestroPureDataBridge.swift in Sources */,
 				3B9BBC341ACB29D00081A443 /* MaestroView.swift in Sources */,
 				7736CEE81ACD8F6F008563DB /* MHCustomTabBarController.m in Sources */,
+				3B5583E11AD1C38A009B0AAC /* BluetoothViewController.m in Sources */,
 				3B25B82A1AC79D6600C1A669 /* CustomTabControllerViewController.swift in Sources */,
 				3B25B82E1AC8DDC200C1A669 /* RoundButton.swift in Sources */,
 				7736CEE91ACD8F6F008563DB /* MHTabBarSegue.m in Sources */,
@@ -529,12 +543,13 @@
 			baseConfigurationReference = 2C9435B42A06E55A77957FD4 /* Pods-Pocket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = Pocket/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = Pocket/Header.h;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -543,11 +558,12 @@
 			baseConfigurationReference = 4C80C2786416C39496163C80 /* Pods-Pocket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = Pocket/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

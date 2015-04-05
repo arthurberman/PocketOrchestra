@@ -9,7 +9,10 @@
 import Foundation
 let controller = PdAudioController()
 var dispatcher = PdDispatcher()
-class MaestroPuredataBridge {
+var connected = false
+var delegate : BluetoothViewController?
+@objc
+public class MaestroPuredataBridge {
     class func setupPD() {
         controller.configurePlaybackWithSampleRate(44100, numberChannels: 2, inputEnabled: true, mixingEnabled: true)
         
@@ -17,7 +20,16 @@ class MaestroPuredataBridge {
         PdBase.setDelegate(dispatcher)
         PdBase.openFile("synth.pd", path: NSBundle.mainBundle().resourcePath)
     }
+    class func setDelegate(d : BluetoothViewController!) {
+        delegate = d
+        connected = true
+    }
     class func sendNoteOn(channel : Int32, pitch : Int32, velocity : Int32) {
-        PdBase.sendNoteOn(channel, pitch: pitch, velocity: velocity)
+        if(connected) {
+            delegate!.sendNote(pitch, velocity: velocity)
+            
+        } else {
+            PdBase.sendNoteOn(channel, pitch: pitch, velocity: velocity)
+        }
     }
 }

@@ -61,6 +61,14 @@
                                     <action selector="tremoloSlider:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="7m4-di-Lu9"/>
                                 </connections>
                             </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7Qk-Kc-PD7">
+                                <rect key="frame" x="453" y="465" width="118" height="31"/>
+                                <connections>
+                                    <action selector="phaseSlider:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="Hns-3h-4Uj"/>
+                                    <action selector="tremoloDepth:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="Cyy-gp-umD"/>
+                                    <action selector="tremoloSlider:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="Ipf-zo-Qwr"/>
+                                </connections>
+                            </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xfl-6c-ZYL">
                                 <rect key="frame" x="289" y="424" width="118" height="31"/>
                                 <connections>
@@ -78,7 +86,7 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87r-sJ-HJs">
-                                <rect key="frame" x="632" y="413" width="30" height="30"/>
+                                <rect key="frame" x="11" y="94" width="30" height="30"/>
                                 <state key="normal" title="A">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -87,7 +95,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HI1-7h-diA">
-                                <rect key="frame" x="683" y="413" width="30" height="30"/>
+                                <rect key="frame" x="62" y="94" width="30" height="30"/>
                                 <state key="normal" title="B">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -95,14 +103,6 @@
                                     <action selector="bNote:" destination="AeQ-Pp-GcI" eventType="touchUpInside" id="u3H-Pf-252"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7Qk-Kc-PD7">
-                                <rect key="frame" x="453" y="465" width="118" height="31"/>
-                                <connections>
-                                    <action selector="phaseSlider:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="Hns-3h-4Uj"/>
-                                    <action selector="tremoloDepth:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="Cyy-gp-umD"/>
-                                    <action selector="tremoloSlider:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="Ipf-zo-Qwr"/>
-                                </connections>
-                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -129,23 +129,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iR7-r3-cJD">
+                                <rect key="frame" x="16" y="718" width="56" height="30"/>
+                                <state key="normal" title="Mute All">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ds-F8-JSG">
+                                <rect key="frame" x="0.0" y="113" width="1024" height="655"/>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="We9-PN-lRN">
+                                <rect key="frame" x="16" y="140" width="182" height="55"/>
+                                <connections>
+                                    <segue destination="wGn-gb-wTC" kind="embed" id="e0Q-xW-0mH"/>
+                                </connections>
+                            </containerView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="omU-8W-qJv">
                                 <rect key="frame" x="0.0" y="44" width="1024" height="61"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tq-ez-rpz">
-                                        <rect key="frame" x="917" y="16" width="56" height="30"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
-                                        <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
-                                        <state key="normal" title="Maestro">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="hX0-EZ-MXR" kind="custom" identifier="viewController5" customClass="MHTabBarSegue" id="khQ-yX-Nb4"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPL-rp-T0M">
-                                        <rect key="frame" x="694" y="16" width="76" height="30"/>
+                                        <rect key="frame" x="214" y="16" width="76" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
@@ -169,7 +172,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfC-ci-6GE">
-                                        <rect key="frame" x="495" y="16" width="34" height="30"/>
+                                        <rect key="frame" x="142" y="16" width="34" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
@@ -180,18 +183,21 @@
                                             <segue destination="bda-Pj-aTM" kind="custom" identifier="viewController3" customClass="MHTabBarSegue" id="RWp-E6-bR4"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tq-ez-rpz">
+                                        <rect key="frame" x="339" y="16" width="56" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
+                                        <state key="normal" title="Maestro">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="hX0-EZ-MXR" kind="custom" identifier="viewController5" customClass="MHTabBarSegue" id="khQ-yX-Nb4"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.34672900883838387" green="0.34672900883838387" blue="0.34672900883838387" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iR7-r3-cJD">
-                                <rect key="frame" x="16" y="718" width="56" height="30"/>
-                                <state key="normal" title="Mute All">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ds-F8-JSG">
-                                <rect key="frame" x="0.0" y="113" width="1024" height="655"/>
-                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.34672900880000002" green="0.34672900880000002" blue="0.34672900880000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -277,6 +283,107 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uuf-rs-izf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-857" y="1030"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1E3-Bt-Xhu">
+            <objects>
+                <viewController id="WiD-3G-7PL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j65-8d-VpB"/>
+                        <viewControllerLayoutGuide type="bottom" id="fIm-JS-bb3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dCx-K2-lnJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="50J-aq-D7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rwp-M3-TQb">
+            <objects>
+                <viewController id="XIo-Fa-TeI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8qv-MC-ZxA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oaw-AT-a7J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rJc-N0-t8x">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yqi-VM-tlo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="r6Y-Le-yUI">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="jP4-O2-VaN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xmv-DL-PJK"/>
+                        <viewControllerLayoutGuide type="bottom" id="sN3-FS-nCQ"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fiW-zR-oCF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aUa-xF-mm1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-163" y="-926"/>
+        </scene>
+        <!--Bluetooth View Controller-->
+        <scene sceneID="e8T-Bu-DnZ">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="wGn-gb-wTC" customClass="BluetoothViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OHo-61-PvW"/>
+                        <viewControllerLayoutGuide type="bottom" id="4VP-Qz-5QN"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bUc-8t-7js">
+                        <rect key="frame" x="0.0" y="0.0" width="182" height="55"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFs-Ak-uLp">
+                                <rect key="frame" x="8" y="25" width="33" height="30"/>
+                                <state key="normal" title="Host">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="configureCentral:" destination="wGn-gb-wTC" eventType="touchUpInside" id="5DX-b7-ikH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTu-Li-9QQ">
+                                <rect key="frame" x="57" y="25" width="30" height="30"/>
+                                <state key="normal" title="Join">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="configureLocalPeripheral:" destination="wGn-gb-wTC" eventType="touchUpInside" id="LSc-x6-J9L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGG-go-7Ye">
+                                <rect key="frame" x="100" y="25" width="55" height="30"/>
+                                <state key="normal" title="Receive">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="activateReceipt:" destination="wGn-gb-wTC" eventType="touchUpInside" id="rdu-rM-8Fe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Dy-Ha-YkG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-139" y="-285.5"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

@@ -11,5 +11,9 @@
 
 #import "PdBase.h"
 #import "PdBridge.h"
-
+#import "CoreAudioKit/CABTMIDICentralViewController.h"
+@import CoreMIDI;
+#import "CoreAudioKit/CABTMIDILocalPeripheralViewController.h"
+#import "MIKMIDI.h"
+#import "BluetoothViewController.h"
 #endif
