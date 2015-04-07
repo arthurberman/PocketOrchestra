@@ -135,8 +135,7 @@ class HydralysViewController: UIViewController, UIScrollViewDelegate, UIPickerVi
     }
     
     @IBAction func aNote(sender: AnyObject) {
-        MaestroPuredataBridge.sendNoteOn(0, pitch: 57, velocity: 60)
-        println("hi");
+        MaestroPuredataBridge.sendNoteOn(1, pitch: 57, velocity: 60)
     }
     @IBAction func bNote(sender: AnyObject) {
         MaestroPuredataBridge.sendNoteOn(0, pitch: 59, velocity: 60)

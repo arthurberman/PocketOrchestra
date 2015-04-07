@@ -16,9 +16,13 @@ class Maestro: UIViewController, MaestroDelegate{
         // Do any additional setup after loading the view.
         (self.view as MaestroView).setDelegate(self)
         println("MAEE")
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("addInstrumentSender"), name: "addInstrument", object: nil)
     }
     
 
+    func addInstrumentSender() {
+        addInstrument(MaestroInstrument(color: getRandomColor().CGColor))
+    }
     @IBAction func addInstrumentButton(sender: AnyObject) {
         addInstrument(MaestroInstrument(color: getRandomColor().CGColor))
     }

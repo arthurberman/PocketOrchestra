@@ -14,20 +14,9 @@
                         <viewControllerLayoutGuide type="bottom" id="BHa-mj-g4D"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YOi-PQ-OnW">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P4Q-kj-O3m">
-                                <rect key="frame" x="4" y="-9" width="1016" height="396"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BA1-Mh-aXL">
-                                        <rect key="frame" x="513" y="83" width="30" height="30"/>
-                                        <state key="normal" title="C">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </scrollView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wni-BE-3cx">
                                 <rect key="frame" x="56" y="415" width="51" height="31"/>
                             </switch>
@@ -85,15 +74,6 @@
                                     <action selector="keyChange:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="1DZ-6u-xdK"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87r-sJ-HJs">
-                                <rect key="frame" x="11" y="94" width="30" height="30"/>
-                                <state key="normal" title="A">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="aNote:" destination="AeQ-Pp-GcI" eventType="touchUpInside" id="LVF-jo-eG1"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HI1-7h-diA">
                                 <rect key="frame" x="62" y="94" width="30" height="30"/>
                                 <state key="normal" title="B">
@@ -103,10 +83,38 @@
                                     <action selector="bNote:" destination="AeQ-Pp-GcI" eventType="touchUpInside" id="u3H-Pf-252"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87r-sJ-HJs">
+                                <rect key="frame" x="106" y="106" width="30" height="30"/>
+                                <state key="normal" title="A">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="147" y="57" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="aNote:" destination="AeQ-Pp-GcI" eventType="touchUpInside" id="LVF-jo-eG1"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P4Q-kj-O3m">
+                                <rect key="frame" x="4" y="-9" width="1016" height="396"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BA1-Mh-aXL">
+                                        <rect key="frame" x="513" y="83" width="30" height="30"/>
+                                        <state key="normal" title="C">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="800" height="396"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="-2" y="0.0" width="786" height="396"/>
+                                </variation>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="masterVolume" destination="a6V-Pb-ZwH" id="cUZ-nR-yTc"/>
                         <outlet property="tremoloSwitch" destination="Wni-BE-3cx" id="57u-Wc-npm"/>
@@ -115,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rkx-Ry-cRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1711" y="1114"/>
+            <point key="canvasLocation" x="-1711.5" y="1113"/>
         </scene>
         <!--Custom Tab Bar Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -126,7 +134,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iR7-r3-cJD">
@@ -135,15 +143,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ds-F8-JSG">
-                                <rect key="frame" x="0.0" y="113" width="1024" height="655"/>
-                            </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="We9-PN-lRN">
-                                <rect key="frame" x="16" y="140" width="182" height="55"/>
-                                <connections>
-                                    <segue destination="wGn-gb-wTC" kind="embed" id="e0Q-xW-0mH"/>
-                                </connections>
-                            </containerView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="omU-8W-qJv">
                                 <rect key="frame" x="0.0" y="44" width="1024" height="61"/>
                                 <subviews>
@@ -195,21 +194,43 @@
                                             <segue destination="hX0-EZ-MXR" kind="custom" identifier="viewController5" customClass="MHTabBarSegue" id="khQ-yX-Nb4"/>
                                         </connections>
                                     </button>
+                                    <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="We9-PN-lRN">
+                                        <rect key="frame" x="415" y="3" width="182" height="55"/>
+                                        <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="411" y="3" width="182" height="55"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="wGn-gb-wTC" kind="embed" id="e0Q-xW-0mH"/>
+                                        </connections>
+                                    </containerView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.34672900883838387" green="0.34672900883838387" blue="0.34672900883838387" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ds-F8-JSG">
+                                <rect key="frame" x="0.0" y="113" width="800" height="487"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="103" width="800" height="497"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="113" width="800" height="487"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="128" width="800" height="272"/>
+                                </variation>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.34672900880000002" green="0.34672900880000002" blue="0.34672900880000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="800" height="600"/>
                     <connections>
                         <outlet property="container" destination="9ds-F8-JSG" id="p6k-89-LQ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-857" y="156"/>
+            <point key="canvasLocation" x="-980" y="180"/>
         </scene>
         <!--Maestro-->
         <scene sceneID="Cpo-AF-OPR">
@@ -227,12 +248,24 @@
                                 <rect key="frame" x="417" y="173" width="108" height="104"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="346" y="248" width="108" height="104"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="346" y="148" width="108" height="104"/>
+                                </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0Y-qH-6I7">
                                 <rect key="frame" x="448" y="373" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="377" y="399" width="46" height="30"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="377" y="297" width="46" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="addInstrumentButton:" destination="hX0-EZ-MXR" eventType="touchUpInside" id="QOm-e4-7NS"/>
                                 </connections>
@@ -387,6 +420,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="TRc-8d-BS3"/>
+        <segue reference="RWp-E6-bR4"/>
     </inferredMetricsTieBreakers>
 </document>
