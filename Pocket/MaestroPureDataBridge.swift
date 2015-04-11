@@ -18,7 +18,7 @@ public class MaestroPuredataBridge {
         
         controller.active = true
         PdBase.setDelegate(dispatcher)
-        PdBase.openFile("synth.pd", path: NSBundle.mainBundle().resourcePath)
+        PdBase.openFile("synth2.pd", path: NSBundle.mainBundle().resourcePath)
     }
     class func setDelegate(d : BluetoothViewController!) {
         delegate = d

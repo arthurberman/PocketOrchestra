@@ -14,7 +14,7 @@ class Maestro: UIViewController, MaestroDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        (self.view as MaestroView).setDelegate(self)
+        (self.view as! MaestroView).setDelegate(self)
         println("MAEE")
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("addInstrumentSender"), name: "addInstrument", object: nil)
     }

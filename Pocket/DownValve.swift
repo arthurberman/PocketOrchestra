@@ -58,13 +58,13 @@ class DownValve : UIView, PdListener {
     }
     
     
-    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.dragging = false
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         super.touchesBegan(touches, withEvent: event)
-        let t  = touches.anyObject() as UITouch
+        let t  = touches.first as! UITouch
         if (CGRectContainsPoint(pullDown!.frame!, t.locationInView(self)) ){
             self.dragging = true
             self.oldPos = t.locationInView(self)
@@ -85,9 +85,9 @@ class DownValve : UIView, PdListener {
         
     }
     
-    override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
         if (dragging!) {
-            let t = touches.anyObject() as UITouch
+            let t = touches.first as! UITouch
             dragSlider(t.locationInView(self).y)
             /*pullDown!.frame!.origin.y = t.locationInView(self).y
             pullDown!.frame!.origin.y = max(pullDown!.frame!.origin.y, 0) // limit the slider to non negative values
