@@ -1,0 +1,9 @@
+#N canvas 545 297 450 300 10;
+#X obj 136 80 inlet;
+#X obj 136 281 outlet;
+#X text 47 47 list-len: calculate length of a list.;
+#X obj 136 159 list length;
+#X obj 136 135 list;
+#X connect 0 0 4 0;
+#X connect 3 0 1 0;
+#X connect 4 0 3 0;
