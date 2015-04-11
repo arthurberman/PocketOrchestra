@@ -421,6 +421,7 @@
 		3B1AAEC11AD9B46D007A7E64 /* volume~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B1AAD331AD9B46D007A7E64 /* volume~-help.pd */; };
 		3B1AAEC21AD9B46D007A7E64 /* volume~.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B1AAD341AD9B46D007A7E64 /* volume~.pd */; };
 		3B1AAEC41AD9B71C007A7E64 /* list-seek.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B1AAEC31AD9B71C007A7E64 /* list-seek.pd */; };
+		3B1AAEC61AD9B7C9007A7E64 /* list-idx.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B1AAEC51AD9B7C9007A7E64 /* list-idx.pd */; };
 		3B25B80A1AC732BD00C1A669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25B8091AC732BD00C1A669 /* AppDelegate.swift */; };
 		3B25B80C1AC732BD00C1A669 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25B80B1AC732BD00C1A669 /* ViewController.swift */; };
 		3B25B80F1AC732BD00C1A669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B25B80D1AC732BD00C1A669 /* Main.storyboard */; };
@@ -878,6 +879,7 @@
 		3B1AAD331AD9B46D007A7E64 /* volume~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "volume~-help.pd"; path = "../../../../Downloads/Pd-for-LibPd-master/source/pd-for-libpd/volume~-help.pd"; sourceTree = "<group>"; };
 		3B1AAD341AD9B46D007A7E64 /* volume~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "volume~.pd"; path = "../../../../Downloads/Pd-for-LibPd-master/source/pd-for-libpd/volume~.pd"; sourceTree = "<group>"; };
 		3B1AAEC31AD9B71C007A7E64 /* list-seek.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "list-seek.pd"; path = "Resources/list-seek.pd"; sourceTree = SOURCE_ROOT; };
+		3B1AAEC51AD9B7C9007A7E64 /* list-idx.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "list-idx.pd"; path = "Resources/list-idx.pd"; sourceTree = SOURCE_ROOT; };
 		3B25B8041AC732BD00C1A669 /* Pocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B25B8081AC732BD00C1A669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B25B8091AC732BD00C1A669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -1408,6 +1410,7 @@
 				3B1AAD191AD9B46D007A7E64 /* switch7~.pd */,
 				3B1AAD1A1AD9B46D007A7E64 /* switch8-help.pd */,
 				3B1AAD1B1AD9B46D007A7E64 /* switch8.pd */,
+				3B1AAEC51AD9B7C9007A7E64 /* list-idx.pd */,
 				3B1AAD1C1AD9B46D007A7E64 /* switch8~-help.pd */,
 				3B1AAD1D1AD9B46D007A7E64 /* switch8~.pd */,
 				3B1AAD1E1AD9B46D007A7E64 /* switchmaker-help.pd */,
@@ -1722,6 +1725,7 @@
 				3B1AAE921AD9B46D007A7E64 /* switch2~-help.pd in Resources */,
 				3B1AAE9B1AD9B46D007A7E64 /* switch4~.pd in Resources */,
 				3B1AADBC1AD9B46D007A7E64 /* gate4.pd in Resources */,
+				3B1AAEC61AD9B7C9007A7E64 /* list-idx.pd in Resources */,
 				3B1AAE891AD9B46D007A7E64 /* sinh~-help.pd in Resources */,
 				3B1AAD701AD9B46D007A7E64 /* circularlist.pd in Resources */,
 				3B1AAE801AD9B46D007A7E64 /* sech.pd in Resources */,
