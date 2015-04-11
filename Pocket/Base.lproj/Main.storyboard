@@ -196,6 +196,9 @@
                                     </button>
                                     <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="We9-PN-lRN">
                                         <rect key="frame" x="415" y="3" width="182" height="55"/>
+                                        <variation key="widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="826" y="3" width="182" height="55"/>
+                                        </variation>
                                         <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="411" y="3" width="182" height="55"/>
                                         </variation>
@@ -212,25 +215,24 @@
                                     <rect key="frame" x="0.0" y="103" width="800" height="497"/>
                                 </variation>
                                 <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="113" width="800" height="487"/>
+                                    <rect key="frame" x="0.0" y="113" width="1024" height="655"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="128" width="800" height="272"/>
+                                    <rect key="frame" x="0.0" y="128" width="800" height="472"/>
                                 </variation>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.34672900880000002" green="0.34672900880000002" blue="0.34672900880000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="800" height="600"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="container" destination="9ds-F8-JSG" id="p6k-89-LQ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-980" y="180"/>
+            <point key="canvasLocation" x="-980.25" y="180"/>
         </scene>
         <!--Maestro-->
         <scene sceneID="Cpo-AF-OPR">
@@ -244,24 +246,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z5M-hn-6Xc" customClass="RoundButton" customModule="Pocket" customModuleProvider="target">
-                                <rect key="frame" x="417" y="173" width="108" height="104"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <gestureRecognizers/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="346" y="248" width="108" height="104"/>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="346" y="148" width="108" height="104"/>
-                                </variation>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0Y-qH-6I7">
                                 <rect key="frame" x="448" y="373" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="377" y="399" width="46" height="30"/>
+                                    <rect key="frame" x="489" y="470" width="46" height="30"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="377" y="297" width="46" height="30"/>
@@ -270,18 +261,28 @@
                                     <action selector="addInstrumentButton:" destination="hX0-EZ-MXR" eventType="touchUpInside" id="QOm-e4-7NS"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z5M-hn-6Xc" customClass="RoundButton" customModule="Pocket" customModuleProvider="target">
+                                <rect key="frame" x="417" y="173" width="108" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="458" y="332" width="108" height="104"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="346" y="148" width="108" height="104"/>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <toolbarItems/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="recordButton" destination="QmE-78-qx8" id="hE9-qu-k1N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1oa-5f-m4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="118" y="176"/>
+            <point key="canvasLocation" x="-139.5" y="180"/>
         </scene>
         <!--Sequencer View Controller-->
         <scene sceneID="30t-Jw-w9m">
@@ -315,7 +316,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uuf-rs-izf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-857" y="1030"/>
+            <point key="canvasLocation" x="-980.25" y="1037"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1E3-Bt-Xhu">
@@ -416,7 +417,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Dy-Ha-YkG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-139" y="-285.5"/>
+            <point key="canvasLocation" x="-444" y="-280.5"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
