@@ -420,6 +420,7 @@
 		3B1AAEC01AD9B46D007A7E64 /* voice~.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B1AAD321AD9B46D007A7E64 /* voice~.pd */; };
 		3B1AAEC11AD9B46D007A7E64 /* volume~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B1AAD331AD9B46D007A7E64 /* volume~-help.pd */; };
 		3B1AAEC21AD9B46D007A7E64 /* volume~.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B1AAD341AD9B46D007A7E64 /* volume~.pd */; };
+		3B1AAEC41AD9B71C007A7E64 /* list-seek.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B1AAEC31AD9B71C007A7E64 /* list-seek.pd */; };
 		3B25B80A1AC732BD00C1A669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25B8091AC732BD00C1A669 /* AppDelegate.swift */; };
 		3B25B80C1AC732BD00C1A669 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25B80B1AC732BD00C1A669 /* ViewController.swift */; };
 		3B25B80F1AC732BD00C1A669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B25B80D1AC732BD00C1A669 /* Main.storyboard */; };
@@ -876,6 +877,7 @@
 		3B1AAD321AD9B46D007A7E64 /* voice~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "voice~.pd"; path = "../../../../Downloads/Pd-for-LibPd-master/source/pd-for-libpd/voice~.pd"; sourceTree = "<group>"; };
 		3B1AAD331AD9B46D007A7E64 /* volume~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "volume~-help.pd"; path = "../../../../Downloads/Pd-for-LibPd-master/source/pd-for-libpd/volume~-help.pd"; sourceTree = "<group>"; };
 		3B1AAD341AD9B46D007A7E64 /* volume~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "volume~.pd"; path = "../../../../Downloads/Pd-for-LibPd-master/source/pd-for-libpd/volume~.pd"; sourceTree = "<group>"; };
+		3B1AAEC31AD9B71C007A7E64 /* list-seek.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "list-seek.pd"; path = "Resources/list-seek.pd"; sourceTree = SOURCE_ROOT; };
 		3B25B8041AC732BD00C1A669 /* Pocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B25B8081AC732BD00C1A669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B25B8091AC732BD00C1A669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -1024,6 +1026,7 @@
 		3B57F8E61ACE13B000A09EE0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3B1AAEC31AD9B71C007A7E64 /* list-seek.pd */,
 				3B1AAB891AD9B448007A7E64 /* chordal.pd */,
 				3B1AAB8A1AD9B448007A7E64 /* chorus.pd */,
 				3B1AAB8B1AD9B448007A7E64 /* drums.pd */,
@@ -1749,6 +1752,7 @@
 				3B1AADBF1AD9B46D007A7E64 /* gate5-help.pd in Resources */,
 				3B1AAD721AD9B46D007A7E64 /* cleanup~.pd in Resources */,
 				3B1AADF41AD9B46D007A7E64 /* gate27.pd in Resources */,
+				3B1AAEC41AD9B71C007A7E64 /* list-seek.pd in Resources */,
 				3B1AAE131AD9B46D007A7E64 /* if.pd in Resources */,
 				3B1AAE221AD9B46D007A7E64 /* lfl!=.pd in Resources */,
 				3B1AAE0F1AD9B46D007A7E64 /* help_builder.pd in Resources */,
