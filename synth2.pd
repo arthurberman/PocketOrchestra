@@ -1,10 +1,15 @@
-#N canvas 462 27 735 851 10;
+#N canvas 0 35 735 851 10;
 #X obj 36 15 piano;
 #X obj 163 300 chordal;
 #X obj 285 301 lead;
 #X obj 372 304 drums;
 #X obj 161 229 notein;
 #X obj 163 259 pack f f;
+#X floatatom 97 292 5 0 0 0 - - -;
+#X floatatom 98 332 5 0 0 0 - - -;
+#X connect 0 0 1 0;
 #X connect 4 0 5 0;
+#X connect 4 0 6 0;
 #X connect 4 1 5 1;
+#X connect 4 1 7 0;
 #X connect 5 0 1 0;
