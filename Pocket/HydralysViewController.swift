@@ -35,9 +35,11 @@ class HydralysViewController: UIViewController, UIScrollViewDelegate, UIPickerVi
                         //self.bridge.sendFloat(Float(x), toReceive: "vol"+String(i)) // change the volume
                         //PdBase.sendNoteOn(0, pitch: Int32(i+60), velocity:  Int32(127 * x))
                     //self.bridge.sendBangTo("bang"+String(i)) // make sure the note is playing
+                        let veloc = (Int32 (Int(x * 127)))
                         if (x > 0.2){
-                            MaestroPuredataBridge.sendNoteOn(0, pitch: 60+i, velocity:  60)
+                            MaestroPuredataBridge.sendNoteOn(0, pitch: 60+i, velocity:  veloc)
                         } else {
+                            MaestroPuredataBridge.sendNoteOn(0, pitch: 60+i, velocity:  0)
                         }
                         
                         

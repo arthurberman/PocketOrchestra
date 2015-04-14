@@ -422,6 +422,8 @@
 		3B1AAEC21AD9B46D007A7E64 /* volume~.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B1AAD341AD9B46D007A7E64 /* volume~.pd */; };
 		3B1AAEC41AD9B71C007A7E64 /* list-seek.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B1AAEC31AD9B71C007A7E64 /* list-seek.pd */; };
 		3B1AAEC61AD9B7C9007A7E64 /* list-idx.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B1AAEC51AD9B7C9007A7E64 /* list-idx.pd */; };
+		3B1AAEC81AD9B898007A7E64 /* list-len.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B1AAEC71AD9B898007A7E64 /* list-len.pd */; };
+		3B1AAECA1AD9B8AF007A7E64 /* list-splat.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B1AAEC91AD9B8AF007A7E64 /* list-splat.pd */; };
 		3B25B80A1AC732BD00C1A669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25B8091AC732BD00C1A669 /* AppDelegate.swift */; };
 		3B25B80C1AC732BD00C1A669 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B25B80B1AC732BD00C1A669 /* ViewController.swift */; };
 		3B25B80F1AC732BD00C1A669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B25B80D1AC732BD00C1A669 /* Main.storyboard */; };
@@ -880,6 +882,8 @@
 		3B1AAD341AD9B46D007A7E64 /* volume~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "volume~.pd"; path = "../../../../Downloads/Pd-for-LibPd-master/source/pd-for-libpd/volume~.pd"; sourceTree = "<group>"; };
 		3B1AAEC31AD9B71C007A7E64 /* list-seek.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "list-seek.pd"; path = "Resources/list-seek.pd"; sourceTree = SOURCE_ROOT; };
 		3B1AAEC51AD9B7C9007A7E64 /* list-idx.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "list-idx.pd"; path = "Resources/list-idx.pd"; sourceTree = SOURCE_ROOT; };
+		3B1AAEC71AD9B898007A7E64 /* list-len.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "list-len.pd"; path = "Resources/list-len.pd"; sourceTree = SOURCE_ROOT; };
+		3B1AAEC91AD9B8AF007A7E64 /* list-splat.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "list-splat.pd"; path = "Resources/list-splat.pd"; sourceTree = SOURCE_ROOT; };
 		3B25B8041AC732BD00C1A669 /* Pocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B25B8081AC732BD00C1A669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B25B8091AC732BD00C1A669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -1372,8 +1376,10 @@
 				3B1AACF31AD9B46D007A7E64 /* sech~-help.pd */,
 				3B1AACF41AD9B46D007A7E64 /* sech~.pd */,
 				3B1AACF51AD9B46D007A7E64 /* sigbiquad_coeff~-help.pd */,
+				3B1AAEC71AD9B898007A7E64 /* list-len.pd */,
 				3B1AACF61AD9B46D007A7E64 /* sigbiquad_coeff~.pd */,
 				3B1AACF71AD9B46D007A7E64 /* sigbiquad~-help.pd */,
+				3B1AAEC91AD9B8AF007A7E64 /* list-splat.pd */,
 				3B1AACF81AD9B46D007A7E64 /* sigbiquad~.pd */,
 				3B1AACF91AD9B46D007A7E64 /* sine_table.pd */,
 				3B1AACFA1AD9B46D007A7E64 /* sinh.pd */,
@@ -1670,6 +1676,7 @@
 				3B1AAD6B1AD9B46D007A7E64 /* chorus~-help.pd in Resources */,
 				3B1AAE2B1AD9B46D007A7E64 /* lindexget-help.pd in Resources */,
 				3B1AAE3C1AD9B46D007A7E64 /* lprint.pd in Resources */,
+				3B1AAEC81AD9B898007A7E64 /* list-len.pd in Resources */,
 				3B1AAD8A1AD9B46D007A7E64 /* csc-help.pd in Resources */,
 				3B1AAD6F1AD9B46D007A7E64 /* circularlist-help.pd in Resources */,
 				3B1AABA21AD9B448007A7E64 /* notoname2.pd in Resources */,
@@ -1939,6 +1946,7 @@
 				3B1AADFD1AD9B46D007A7E64 /* gate32-help.pd in Resources */,
 				3B1AADC51AD9B46D007A7E64 /* gate6~-help.pd in Resources */,
 				3B9BBC391ACDD4450081A443 /* scrubline.png in Resources */,
+				3B1AAECA1AD9B8AF007A7E64 /* list-splat.pd in Resources */,
 				3B1AAEAF1AD9B46D007A7E64 /* switchmaker~.pd in Resources */,
 				3B1AADE31AD9B46D007A7E64 /* gate19-help.pd in Resources */,
 				3B1AADC21AD9B46D007A7E64 /* gate5~.pd in Resources */,
