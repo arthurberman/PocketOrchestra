@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vFD-9r-FVu">
-                                <rect key="frame" x="0.0" y="0.0" width="1016" height="396"/>
+                                <rect key="frame" x="7" y="-5" width="1016" height="396"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53f-nx-49e">
                                         <rect key="frame" x="513" y="83" width="30" height="30"/>
@@ -186,36 +186,37 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="omU-8W-qJv">
                                 <rect key="frame" x="0.0" y="44" width="1024" height="61"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPL-rp-T0M">
-                                        <rect key="frame" x="214" y="16" width="76" height="30"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
-                                        <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
-                                        <state key="normal" title="Percussion">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="bda-Pj-aTM" kind="custom" identifier="viewController4" customClass="MHTabBarSegue" id="TRc-8d-BS3"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xiq-fy-agR">
-                                        <rect key="frame" x="30" y="16" width="51" height="30"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="17" y="16" width="75" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
-                                        <state key="normal" title="Melody">
+                                        <state key="normal" title="🎺 Melody">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <segue destination="AeQ-Pp-GcI" kind="custom" identifier="viewController1" customClass="MHTabBarSegue" id="0dY-0n-rJq"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfC-ci-6GE">
-                                        <rect key="frame" x="162" y="16" width="34" height="30"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwz-01-YbI">
+                                        <rect key="frame" x="118" y="16" width="79" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
-                                        <state key="normal" title="Bass">
+                                        <state key="normal" title="🎹 Chordal">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="osV-No-Gwm" kind="custom" identifier="viewController4" customClass="MHTabBarSegue" id="Hzz-9W-fvb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfC-ci-6GE">
+                                        <rect key="frame" x="213" y="16" width="59" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
+                                        <state key="normal" title="🎸 Bass">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -223,11 +224,11 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tq-ez-rpz">
-                                        <rect key="frame" x="339" y="16" width="56" height="30"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="659" y="16" width="81" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
-                                        <state key="normal" title="Maestro">
+                                        <state key="normal" title="🎼 Maestro">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -246,16 +247,16 @@
                                             <segue destination="wGn-gb-wTC" kind="embed" id="e0Q-xW-0mH"/>
                                         </connections>
                                     </containerView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwz-01-YbI">
-                                        <rect key="frame" x="96" y="16" width="54" height="30"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPL-rp-T0M">
+                                        <rect key="frame" x="290" y="16" width="100" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
-                                        <state key="normal" title="Chordal">
+                                        <state key="normal" title="🍼 Percussion">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="osV-No-Gwm" kind="custom" identifier="viewController4" customClass="MHTabBarSegue" id="Hzz-9W-fvb"/>
+                                            <segue destination="bda-Pj-aTM" kind="custom" identifier="viewController4" customClass="MHTabBarSegue" id="TRc-8d-BS3"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -438,6 +439,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFs-Ak-uLp">
                                 <rect key="frame" x="8" y="25" width="33" height="30"/>
                                 <state key="normal" title="Host">
+                                    <color key="titleColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -447,6 +449,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTu-Li-9QQ">
                                 <rect key="frame" x="57" y="25" width="30" height="30"/>
                                 <state key="normal" title="Join">
+                                    <color key="titleColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -456,14 +459,21 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGG-go-7Ye">
                                 <rect key="frame" x="100" y="25" width="55" height="30"/>
                                 <state key="normal" title="Receive">
+                                    <color key="titleColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="activateReceipt:" destination="wGn-gb-wTC" eventType="touchUpInside" id="rdu-rM-8Fe"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bluetooth" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0e-yp-hBU">
+                                <rect key="frame" x="35" y="0.0" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                 </viewController>
