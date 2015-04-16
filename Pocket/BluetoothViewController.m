@@ -81,7 +81,7 @@ int curnote = 0;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (void)sendNote:(int) note velocity:(int) velocity {
+- (void)sendNote:(int) channel pitch:(int) note velocity:(int) velocity {
     MIKMIDIDeviceManager *manager = [MIKMIDIDeviceManager sharedDeviceManager];
     NSArray *availableMIDIDevices = [manager availableDevices];
     for (MIKMIDIDevice *device in availableMIDIDevices) {
@@ -94,6 +94,7 @@ int curnote = 0;
                 MIKMutableMIDINoteOnCommand *command = [[MIKMutableMIDINoteOnCommand alloc] init];
                 command.note = note;
                 command.velocity = velocity;
+                command.channel = channel;
                 NSLog(@"note %lu", command.note);
                 NSArray *commands = [NSArray arrayWithObjects:command, nil];
                 [manager sendCommands:commands toEndpoint:destination error:&error];
@@ -125,7 +126,7 @@ int curnote = 0;
                                         for (MIKMIDINoteOnCommand *command in commands) {
                                             // Handle each command
                                             NSLog(@"%lu", (unsigned long)command.note);
-                                            [MaestroPuredataBridge sendNoteOn:i pitch:command.note velocity:command.velocity];
+                                            [MaestroPuredataBridge sendNoteOn:11 pitch:command.note + 12 velocity:command.velocity];
                                         }
                                     }];
                     i++;

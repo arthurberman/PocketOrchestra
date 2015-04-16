@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @interface BluetoothViewController : UIViewController
-- (void)sendNote:(int) note velocity:(int) velocity ;
+- (void)sendNote:(int) channel pitch:(int) note velocity:(int) velocity ;
 
 @end
 
