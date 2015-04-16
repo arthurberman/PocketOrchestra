@@ -126,7 +126,7 @@ int curnote = 0;
                                         for (MIKMIDINoteOnCommand *command in commands) {
                                             // Handle each command
                                             NSLog(@"%lu", (unsigned long)command.note);
-                                            [MaestroPuredataBridge sendNoteOn:11 pitch:command.note + 12 velocity:command.velocity];
+                                            [MaestroPuredataBridge sendNoteOn:command.channel pitch:command.note + 12 velocity:command.velocity];
                                         }
                                     }];
                     i++;

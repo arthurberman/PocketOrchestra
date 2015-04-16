@@ -26,7 +26,7 @@ public class MaestroPuredataBridge {
     }
     class func sendNoteOn(channel : Int32, pitch : Int32, velocity : Int32) {
         if(connected) {
-            delegate!.sendNote(11, pitch: pitch, velocity: velocity)
+            delegate!.sendNote(0, pitch: pitch, velocity: velocity)
             
         } else {
             PdBase.sendNoteOn(channel, pitch: pitch, velocity: velocity)
