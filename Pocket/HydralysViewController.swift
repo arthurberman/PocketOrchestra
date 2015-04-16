@@ -39,7 +39,6 @@ class HydralysViewController: UIViewController, UIScrollViewDelegate, UIPickerVi
                         if (x > 0.2){
                             MaestroPuredataBridge.sendNoteOn(Int32(i + 9), pitch: 60+i, velocity:  veloc)
                         } else {
-                            MaestroPuredataBridge.sendNoteOff( Int32(i + 9), pitch: 60+i)
                         }
                         
                         
