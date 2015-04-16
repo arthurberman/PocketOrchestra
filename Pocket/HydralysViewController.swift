@@ -37,9 +37,9 @@ class HydralysViewController: UIViewController, UIScrollViewDelegate, UIPickerVi
                     //self.bridge.sendBangTo("bang"+String(i)) // make sure the note is playing
                         let veloc = (Int32 (Int(x * 127)))
                         if (x > 0.2){
-                            MaestroPuredataBridge.sendNoteOn(Int32(i - 1), pitch: 60+i, velocity:  veloc)
+                            MaestroPuredataBridge.sendNoteOn(Int32(i + 9), pitch: 60+i, velocity:  veloc)
                         } else {
-                            MaestroPuredataBridge.sendNoteOff( Int32(i - 1), pitch: 60+i)
+                            MaestroPuredataBridge.sendNoteOff( Int32(i + 9), pitch: 60+i)
                         }
                         
                         
