@@ -19,6 +19,7 @@
 
 @implementation BluetoothViewController
 int curnote = 0;
+int curInstrument = 1;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -115,21 +116,24 @@ int curnote = 0;
         NSLog(@"name %@", device.name);
         for (MIKMIDIEntity *entity in device.entities) {
             NSLog(@"entities %@", entity.name);
-            int i = 0;
+            static int i = 1;
             for (MIKMIDISourceEndpoint *source in entity.sources){
                 NSError *error = nil;
                 NSLog(@"%@", source.name);
                 if (!([manager.connectedInputSources containsObject:source])){
+                    int myChannel = curInstrument;
                     [[NSNotificationCenter defaultCenter] postNotificationName:@"addInstrument" object:nil];
                     BOOL success = [manager connectInput:source error:&error eventHandler: //use a lambda expression to handle the incoming notes
                                     ^(MIKMIDISourceEndpoint *source, NSArray *commands) {
                                         for (MIKMIDINoteOnCommand *command in commands) {
                                             // Handle each command
                                             NSLog(@"%lu", (unsigned long)command.note);
-                                            [MaestroPuredataBridge sendNoteOn:11 + i pitch:command.note + 12 velocity:command.velocity];
+                                            NSLog(@"%i", myChannel);
+                                            [MaestroPuredataBridge sendNoteOn:11 + myChannel pitch:command.note + 12 velocity:command.velocity];
                                         }
                                     }];
                     i++;
+                    curInstrument ++;
                     if (!success) {
                         NSLog(@"Unable to connect to %@: %@", source, error);
                         // Handle the error
