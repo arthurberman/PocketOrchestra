@@ -8,15 +8,19 @@
 
 import UIKit
 
-class Maestro: UIViewController, MaestroDelegate{
+class Maestro: UIViewController, MaestroDelegate, MaestroInstrumentDelegate {
     var instruments : [MaestroInstrument]! = []
     @IBOutlet var recordButton: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         (self.view as! MaestroView).setDelegate(self)
-        println("MAEE")
+        MaestroPuredataBridge.setInstrumentDelegate(self)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("addInstrumentSender"), name: "addInstrument", object: nil)
+    }
+    
+    func volumeForChannel(channel : Int) -> Float{
+        return 1.0
     }
     
 

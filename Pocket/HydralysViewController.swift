@@ -20,6 +20,8 @@ class HydralysViewController: UIViewController, UIScrollViewDelegate, UIPickerVi
     var current_scale = "Major"
     override func viewDidLoad() {
         super.viewDidLoad()
+        var on = 0
+        
      //   bridge.initialize()
       //  bridge.play()
         
@@ -38,7 +40,13 @@ class HydralysViewController: UIViewController, UIScrollViewDelegate, UIPickerVi
                         let veloc = (Int32 (Int(x * 127)))
                         if (x > 0.2){
                             MaestroPuredataBridge.sendNoteOn(Int32(i + 9), pitch: 60+i, velocity:  veloc)
+                            on = on | 1 << i
                         } else {
+                            //MaestroPuredataBridge.sendNoteOn(Int32(i + 9), pitch: 60+i, velocity:  0)
+                            on = on &  (((1 << 11) - 1) ^ 1 << i)
+                            println(on)
+                        }
+                        if ( on == 0){
                             MaestroPuredataBridge.sendNoteOn(Int32(i + 9), pitch: 60+i, velocity:  0)
                         }
                         
