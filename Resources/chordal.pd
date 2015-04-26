@@ -29,6 +29,8 @@
 #X obj 489 429 ctlin 5;
 #X obj 531 473 ctlin 6;
 #X obj 476 451 * 10;
+#X obj 57 369 loadbang;
+#X msg 58 394 100;
 #X connect 0 0 4 0;
 #X connect 1 0 3 1;
 #X connect 2 0 3 2;
@@ -71,3 +73,5 @@
 #X connect 27 0 29 0;
 #X connect 28 0 25 3;
 #X connect 29 0 25 2;
+#X connect 30 0 31 0;
+#X connect 31 0 13 0;
