@@ -10,6 +10,7 @@
 #import "PdBase.h"
 #import "PdDispatcher.h"
 #import "PdAudioController.h"
+
 @interface PdBridge : UIImageView <PdReceiverDelegate>
 @property  PdAudioController *controller;
 @property PdDispatcher *dispatcher;
@@ -21,6 +22,6 @@
 -(void) sendNote:(int)val toPitch:(int)pit toVelocity:(int)vel;
 -(void) sendString:(NSString*)message withArguments:(NSArray*)list toReceiver:(NSString *)receiverName;
 -(void) getNoteNumber;
--(void)addNewListener:(NSObject<PdListener>*)listener withSource: (NSString*) source;
+-(void) addNewListener:(NSObject<PdListener>*)listener withSource: (NSString*) source;
 
 @end

@@ -108,6 +108,31 @@ int curInstrument = 1;
     
 }
 
+- (void)sendControlChange:(int)channel controller:(int)controller value:(int)value {
+    MIKMIDIDeviceManager *manager = [MIKMIDIDeviceManager sharedDeviceManager];
+    NSArray *availableMIDIDevices = [manager availableDevices];
+    for (MIKMIDIDevice *device in availableMIDIDevices) {
+        NSLog(@"name %@", device.name);
+        for (MIKMIDIEntity *entity in device.entities) {
+            NSLog(@"entities %@", entity.name);
+            //currently sends control values to every connected device. There should only ever be one, so this should work.
+            for (MIKMIDIDestinationEndpoint *destination in entity.destinations){
+                NSError *error = nil;
+                MIKMutableMIDIControlChangeCommand *command = [[MIKMutableMIDIControlChangeCommand alloc] init];
+                command.controllerNumber = controller;
+                command.controllerValue = value;
+                command.channel = channel;
+                NSArray *commands = [NSArray arrayWithObjects:command, nil];
+                [manager sendCommands:commands toEndpoint:destination error:&error];
+                NSLog(@"Destination");
+                NSLog(@"help");
+                
+            }
+        }
+    }
+    
+}
+
 - (IBAction)activateReceipt:(id)sender {
     
     MIKMIDIDeviceManager *manager = [MIKMIDIDeviceManager sharedDeviceManager];

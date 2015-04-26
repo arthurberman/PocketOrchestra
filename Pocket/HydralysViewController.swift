@@ -37,8 +37,9 @@ class HydralysViewController: UIViewController, UIScrollViewDelegate, UIPickerVi
                         //self.bridge.sendFloat(Float(x), toReceive: "vol"+String(i)) // change the volume
                         //PdBase.sendNoteOn(0, pitch: Int32(i+60), velocity:  Int32(127 * x))
                     //self.bridge.sendBangTo("bang"+String(i)) // make sure the note is playing
-                        let veloc = (Int32 (Int(x * 127)))
-                        if (x > 0.2){
+                        //let veloc = (Int32 (Int(x * 127)))
+                        let veloc = Int32(Int(round(x * 127)))
+                        if (x > 0.01){
                             MaestroPuredataBridge.sendNoteOn(Int32(i + 9), pitch: 60+i, velocity:  veloc)
                             on = on | 1 << i
                         } else {
@@ -73,14 +74,7 @@ class HydralysViewController: UIViewController, UIScrollViewDelegate, UIPickerVi
         valveScroller.contentSize.width = CGFloat(100 * sliders.count + 100)
         valveScroller.panGestureRecognizer.minimumNumberOfTouches = 3
         valveScroller.panGestureRecognizer.maximumNumberOfTouches = 3
-        
-        // Start off with scale in A Major, 100% volume
-        self.bridge.sendFloat(Float(57), toReceive: "rootnote")
-        self.bridge.sendString("Major", withArguments: [], toReceiver: "scalename")
-        self.bridge.sendFloat(1.0, toReceive: "mastervolume")
-        self.bridge.sendFloat(0.5, toReceive: "tremolodepth")
-        self.bridge.sendFloat(1.0, toReceive: "tremolorate")
-        
+
     }
     
     

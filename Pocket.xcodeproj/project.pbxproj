@@ -52,6 +52,443 @@
 		7736CEE81ACD8F6F008563DB /* MHCustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7736CEE51ACD8F6F008563DB /* MHCustomTabBarController.m */; };
 		7736CEE91ACD8F6F008563DB /* MHTabBarSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7736CEE71ACD8F6F008563DB /* MHTabBarSegue.m */; };
 		D854994E1AE02F2600A33985 /* ChordalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D854994D1AE02F2600A33985 /* ChordalViewController.swift */; };
+		D85D8FFD1AEC038D00238117 /* bass.pd in Resources */ = {isa = PBXBuildFile; fileRef = D85D8FFB1AEC038D00238117 /* bass.pd */; };
+		D85D8FFE1AEC038D00238117 /* bass~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D85D8FFC1AEC038D00238117 /* bass~.pd */; };
+		D85D90001AEC073D00238117 /* pocket.pd in Resources */ = {isa = PBXBuildFile; fileRef = D85D8FFF1AEC073D00238117 /* pocket.pd */; };
+		D85D90021AEC1E0100238117 /* PercussionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85D90011AEC1E0100238117 /* PercussionViewController.swift */; };
+		D87481C01AEC7C1E006FD8BB /* analog_age.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481A11AEC7C1E006FD8BB /* analog_age.sf2 */; };
+		D87481C11AEC7C1E006FD8BB /* banjo_1.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481A21AEC7C1E006FD8BB /* banjo_1.sf2 */; };
+		D87481C21AEC7C1E006FD8BB /* beautiful_pad.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481A31AEC7C1E006FD8BB /* beautiful_pad.sf2 */; };
+		D87481C31AEC7C1E006FD8BB /* bolivianflute.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481A41AEC7C1E006FD8BB /* bolivianflute.sf2 */; };
+		D87481C41AEC7C1E006FD8BB /* Campbells_strings.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481A51AEC7C1E006FD8BB /* Campbells_strings.sf2 */; };
+		D87481C51AEC7C1E006FD8BB /* Campbells_Verby_Vocal.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481A61AEC7C1E006FD8BB /* Campbells_Verby_Vocal.sf2 */; };
+		D87481C61AEC7C1E006FD8BB /* church_organ.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481A71AEC7C1E006FD8BB /* church_organ.sf2 */; };
+		D87481C71AEC7C1E006FD8BB /* DCs_Mellotron_Flute.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481A81AEC7C1E006FD8BB /* DCs_Mellotron_Flute.sf2 */; };
+		D87481C81AEC7C1E006FD8BB /* ElPiano1.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481A91AEC7C1E006FD8BB /* ElPiano1.sf2 */; };
+		D87481C91AEC7C1E006FD8BB /* enigma_flute.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481AA1AEC7C1E006FD8BB /* enigma_flute.sf2 */; };
+		D87481CA1AEC7C1E006FD8BB /* flugelhorn.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481AB1AEC7C1E006FD8BB /* flugelhorn.sf2 */; };
+		D87481CB1AEC7C1E006FD8BB /* IbanezHollowbody.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481AC1AEC7C1E006FD8BB /* IbanezHollowbody.sf2 */; };
+		D87481CC1AEC7C1E006FD8BB /* janos_lead.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481AD1AEC7C1E006FD8BB /* janos_lead.sf2 */; };
+		D87481CD1AEC7C1E006FD8BB /* jonnypad1.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481AE1AEC7C1E006FD8BB /* jonnypad1.sf2 */; };
+		D87481CE1AEC7C1E006FD8BB /* jonnypad3.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481AF1AEC7C1E006FD8BB /* jonnypad3.sf2 */; };
+		D87481CF1AEC7C1E006FD8BB /* jonnypad4.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481B01AEC7C1E006FD8BB /* jonnypad4.sf2 */; };
+		D87481D01AEC7C1E006FD8BB /* jonnypad5.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481B11AEC7C1E006FD8BB /* jonnypad5.sf2 */; };
+		D87481D11AEC7C1E006FD8BB /* jonnypad6.SF2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481B21AEC7C1E006FD8BB /* jonnypad6.SF2 */; };
+		D87481D21AEC7C1E006FD8BB /* jonnypad7.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481B31AEC7C1E006FD8BB /* jonnypad7.sf2 */; };
+		D87481D31AEC7C1E006FD8BB /* jonnypad8.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481B41AEC7C1E006FD8BB /* jonnypad8.sf2 */; };
+		D87481D41AEC7C1E006FD8BB /* LesPaul.SF2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481B51AEC7C1E006FD8BB /* LesPaul.SF2 */; };
+		D87481D51AEC7C1E006FD8BB /* muted_trombone.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481B61AEC7C1E006FD8BB /* muted_trombone.sf2 */; };
+		D87481D61AEC7C1E006FD8BB /* piano_1.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481B71AEC7C1E006FD8BB /* piano_1.sf2 */; };
+		D87481D71AEC7C1E006FD8BB /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D87481B81AEC7C1E006FD8BB /* README.txt */; };
+		D87481D81AEC7C1E006FD8BB /* saz.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481B91AEC7C1E006FD8BB /* saz.sf2 */; };
+		D87481D91AEC7C1E006FD8BB /* SC88Drumset.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481BA1AEC7C1E006FD8BB /* SC88Drumset.sf2 */; };
+		D87481DA1AEC7C1E006FD8BB /* soundfonts-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481BB1AEC7C1E006FD8BB /* soundfonts-help.pd */; };
+		D87481DB1AEC7C1E006FD8BB /* StomperSet.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D87481BC1AEC7C1E006FD8BB /* StomperSet.sf2 */; };
+		D87481DC1AEC7C1E006FD8BB /* import_sf.py in Resources */ = {isa = PBXBuildFile; fileRef = D87481BE1AEC7C1E006FD8BB /* import_sf.py */; };
+		D87481DD1AEC7C1E006FD8BB /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D87481BF1AEC7C1E006FD8BB /* README.txt */; };
+		D87483721AEC8F2F006FD8BB /* !=~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481DF1AEC8F2D006FD8BB /* !=~.pd */; };
+		D87483731AEC8F2F006FD8BB /* &&~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481E01AEC8F2D006FD8BB /* &&~.pd */; };
+		D87483741AEC8F2F006FD8BB /* <=~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481E11AEC8F2D006FD8BB /* <=~.pd */; };
+		D87483751AEC8F2F006FD8BB /* <~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481E21AEC8F2D006FD8BB /* <~.pd */; };
+		D87483761AEC8F2F006FD8BB /* ==~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481E31AEC8F2D006FD8BB /* ==~.pd */; };
+		D87483771AEC8F2F006FD8BB /* >=~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481E41AEC8F2D006FD8BB /* >=~.pd */; };
+		D87483781AEC8F2F006FD8BB /* >~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481E51AEC8F2D006FD8BB /* >~.pd */; };
+		D87483791AEC8F2F006FD8BB /* abstractions-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481E61AEC8F2D006FD8BB /* abstractions-help.pd */; };
+		D874837A1AEC8F2F006FD8BB /* abstractions-standalone-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481E71AEC8F2D006FD8BB /* abstractions-standalone-help.pd */; };
+		D874837B1AEC8F2F006FD8BB /* abstractions-standalone.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481E81AEC8F2D006FD8BB /* abstractions-standalone.pd */; };
+		D874837C1AEC8F2F006FD8BB /* abstractions.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481E91AEC8F2D006FD8BB /* abstractions.pd */; };
+		D874837D1AEC8F2F006FD8BB /* adsr~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481EA1AEC8F2D006FD8BB /* adsr~-help.pd */; };
+		D874837E1AEC8F2F006FD8BB /* adsr~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481EB1AEC8F2D006FD8BB /* adsr~.pd */; };
+		D874837F1AEC8F2F006FD8BB /* anything-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481EC1AEC8F2D006FD8BB /* anything-help.pd */; };
+		D87483801AEC8F2F006FD8BB /* anything.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481ED1AEC8F2D006FD8BB /* anything.pd */; };
+		D87483811AEC8F2F006FD8BB /* arg2method-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481EE1AEC8F2D006FD8BB /* arg2method-help.pd */; };
+		D87483821AEC8F2F006FD8BB /* arg2method.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481EF1AEC8F2D006FD8BB /* arg2method.pd */; };
+		D87483831AEC8F2F006FD8BB /* argv-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481F01AEC8F2D006FD8BB /* argv-help.pd */; };
+		D87483841AEC8F2F006FD8BB /* argv-test.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481F11AEC8F2D006FD8BB /* argv-test.pd */; };
+		D87483851AEC8F2F006FD8BB /* autobiquad2~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481F21AEC8F2D006FD8BB /* autobiquad2~-help.pd */; };
+		D87483861AEC8F2F006FD8BB /* autobiquad2~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481F31AEC8F2D006FD8BB /* autobiquad2~.pd */; };
+		D87483871AEC8F2F006FD8BB /* autobiquad~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481F41AEC8F2D006FD8BB /* autobiquad~-help.pd */; };
+		D87483881AEC8F2F006FD8BB /* autobiquad~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481F51AEC8F2D006FD8BB /* autobiquad~.pd */; };
+		D87483891AEC8F2F006FD8BB /* autosampler-voice~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481F61AEC8F2D006FD8BB /* autosampler-voice~.pd */; };
+		D874838A1AEC8F2F006FD8BB /* autosampler~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481F71AEC8F2D006FD8BB /* autosampler~-help.pd */; };
+		D874838B1AEC8F2F006FD8BB /* autosampler~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481F81AEC8F2D006FD8BB /* autosampler~.pd */; };
+		D874838C1AEC8F2F006FD8BB /* autospectrum~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481F91AEC8F2D006FD8BB /* autospectrum~-help.pd */; };
+		D874838D1AEC8F2F006FD8BB /* autospectrum~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481FA1AEC8F2D006FD8BB /* autospectrum~.pd */; };
+		D874838E1AEC8F2F006FD8BB /* biquad_coefficients-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481FB1AEC8F2D006FD8BB /* biquad_coefficients-help.pd */; };
+		D874838F1AEC8F2F006FD8BB /* biquad_coefficients.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481FC1AEC8F2D006FD8BB /* biquad_coefficients.pd */; };
+		D87483901AEC8F2F006FD8BB /* biquad_response-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481FD1AEC8F2D006FD8BB /* biquad_response-help.pd */; };
+		D87483911AEC8F2F006FD8BB /* biquad_response.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481FE1AEC8F2D006FD8BB /* biquad_response.pd */; };
+		D87483921AEC8F2F006FD8BB /* cadd-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87481FF1AEC8F2D006FD8BB /* cadd-help.pd */; };
+		D87483931AEC8F2F006FD8BB /* cadd.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482001AEC8F2D006FD8BB /* cadd.pd */; };
+		D87483941AEC8F2F006FD8BB /* cadd~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482011AEC8F2D006FD8BB /* cadd~-help.pd */; };
+		D87483951AEC8F2F006FD8BB /* cadd~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482021AEC8F2D006FD8BB /* cadd~.pd */; };
+		D87483961AEC8F2F006FD8BB /* cconj-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482031AEC8F2D006FD8BB /* cconj-help.pd */; };
+		D87483971AEC8F2F006FD8BB /* cconj.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482041AEC8F2D006FD8BB /* cconj.pd */; };
+		D87483981AEC8F2F006FD8BB /* cconj~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482051AEC8F2D006FD8BB /* cconj~-help.pd */; };
+		D87483991AEC8F2F006FD8BB /* cconj~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482061AEC8F2D006FD8BB /* cconj~.pd */; };
+		D874839A1AEC8F2F006FD8BB /* cdiv-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482071AEC8F2D006FD8BB /* cdiv-help.pd */; };
+		D874839B1AEC8F2F006FD8BB /* cdiv.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482081AEC8F2D006FD8BB /* cdiv.pd */; };
+		D874839C1AEC8F2F006FD8BB /* cdiv~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482091AEC8F2D006FD8BB /* cdiv~-help.pd */; };
+		D874839D1AEC8F2F006FD8BB /* cdiv~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874820A1AEC8F2D006FD8BB /* cdiv~.pd */; };
+		D874839E1AEC8F2F006FD8BB /* ceil.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874820B1AEC8F2D006FD8BB /* ceil.pd */; };
+		D874839F1AEC8F2F006FD8BB /* cexp-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874820C1AEC8F2D006FD8BB /* cexp-help.pd */; };
+		D87483A01AEC8F2F006FD8BB /* cexp.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874820D1AEC8F2D006FD8BB /* cexp.pd */; };
+		D87483A11AEC8F2F006FD8BB /* cexp~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874820E1AEC8F2D006FD8BB /* cexp~-help.pd */; };
+		D87483A21AEC8F2F006FD8BB /* cexp~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874820F1AEC8F2D006FD8BB /* cexp~.pd */; };
+		D87483A31AEC8F2F006FD8BB /* channels~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482101AEC8F2D006FD8BB /* channels~-help.pd */; };
+		D87483A41AEC8F2F006FD8BB /* channels~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482111AEC8F2D006FD8BB /* channels~.pd */; };
+		D87483A51AEC8F2F006FD8BB /* chorus~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482121AEC8F2D006FD8BB /* chorus~-help.pd */; };
+		D87483A61AEC8F2F006FD8BB /* chorus~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482131AEC8F2D006FD8BB /* chorus~.pd */; };
+		D87483A71AEC8F2F006FD8BB /* chorus~~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482141AEC8F2D006FD8BB /* chorus~~-help.pd */; };
+		D87483A81AEC8F2F006FD8BB /* chorus~~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482151AEC8F2D006FD8BB /* chorus~~.pd */; };
+		D87483A91AEC8F2F006FD8BB /* circularlist-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482161AEC8F2D006FD8BB /* circularlist-help.pd */; };
+		D87483AA1AEC8F2F006FD8BB /* circularlist.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482171AEC8F2D006FD8BB /* circularlist.pd */; };
+		D87483AB1AEC8F2F006FD8BB /* cleanup~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482181AEC8F2D006FD8BB /* cleanup~-help.pd */; };
+		D87483AC1AEC8F2F006FD8BB /* cleanup~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482191AEC8F2D006FD8BB /* cleanup~.pd */; };
+		D87483AD1AEC8F2F006FD8BB /* cmag-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874821A1AEC8F2E006FD8BB /* cmag-help.pd */; };
+		D87483AE1AEC8F2F006FD8BB /* cmag.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874821B1AEC8F2E006FD8BB /* cmag.pd */; };
+		D87483AF1AEC8F2F006FD8BB /* cmag~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874821C1AEC8F2E006FD8BB /* cmag~.pd */; };
+		D87483B01AEC8F2F006FD8BB /* cmult-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874821D1AEC8F2E006FD8BB /* cmult-help.pd */; };
+		D87483B11AEC8F2F006FD8BB /* cmult.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874821E1AEC8F2E006FD8BB /* cmult.pd */; };
+		D87483B21AEC8F2F006FD8BB /* cmult~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874821F1AEC8F2E006FD8BB /* cmult~-help.pd */; };
+		D87483B31AEC8F2F006FD8BB /* cmult~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482201AEC8F2E006FD8BB /* cmult~.pd */; };
+		D87483B41AEC8F2F006FD8BB /* complex-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482211AEC8F2E006FD8BB /* complex-help.pd */; };
+		D87483B51AEC8F2F006FD8BB /* complex-mod~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482221AEC8F2E006FD8BB /* complex-mod~-help.pd */; };
+		D87483B61AEC8F2F006FD8BB /* complex-mod~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482231AEC8F2E006FD8BB /* complex-mod~.pd */; };
+		D87483B71AEC8F2F006FD8BB /* complex.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482241AEC8F2E006FD8BB /* complex.pd */; };
+		D87483B81AEC8F2F006FD8BB /* cosh.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482251AEC8F2E006FD8BB /* cosh.pd */; };
+		D87483B91AEC8F2F006FD8BB /* cosh~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482261AEC8F2E006FD8BB /* cosh~-help.pd */; };
+		D87483BA1AEC8F2F006FD8BB /* cosh~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482271AEC8F2E006FD8BB /* cosh~.pd */; };
+		D87483BB1AEC8F2F006FD8BB /* cot-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482281AEC8F2E006FD8BB /* cot-help.pd */; };
+		D87483BC1AEC8F2F006FD8BB /* cot.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482291AEC8F2E006FD8BB /* cot.pd */; };
+		D87483BD1AEC8F2F006FD8BB /* coth.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874822A1AEC8F2E006FD8BB /* coth.pd */; };
+		D87483BE1AEC8F2F006FD8BB /* coth~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874822B1AEC8F2E006FD8BB /* coth~-help.pd */; };
+		D87483BF1AEC8F2F006FD8BB /* coth~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874822C1AEC8F2E006FD8BB /* coth~.pd */; };
+		D87483C01AEC8F2F006FD8BB /* cot~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874822D1AEC8F2E006FD8BB /* cot~-help.pd */; };
+		D87483C11AEC8F2F006FD8BB /* cot~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874822E1AEC8F2E006FD8BB /* cot~.pd */; };
+		D87483C21AEC8F2F006FD8BB /* counter2-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874822F1AEC8F2E006FD8BB /* counter2-help.pd */; };
+		D87483C31AEC8F2F006FD8BB /* counter2.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482301AEC8F2E006FD8BB /* counter2.pd */; };
+		D87483C41AEC8F2F006FD8BB /* csc-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482311AEC8F2E006FD8BB /* csc-help.pd */; };
+		D87483C51AEC8F2F006FD8BB /* csc.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482321AEC8F2E006FD8BB /* csc.pd */; };
+		D87483C61AEC8F2F006FD8BB /* csch.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482331AEC8F2E006FD8BB /* csch.pd */; };
+		D87483C71AEC8F2F006FD8BB /* csch~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482341AEC8F2E006FD8BB /* csch~-help.pd */; };
+		D87483C81AEC8F2F006FD8BB /* csch~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482351AEC8F2E006FD8BB /* csch~.pd */; };
+		D87483C91AEC8F2F006FD8BB /* csc~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482361AEC8F2E006FD8BB /* csc~-help.pd */; };
+		D87483CA1AEC8F2F006FD8BB /* csc~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482371AEC8F2E006FD8BB /* csc~.pd */; };
+		D87483CB1AEC8F2F006FD8BB /* csub-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482381AEC8F2E006FD8BB /* csub-help.pd */; };
+		D87483CC1AEC8F2F006FD8BB /* csub.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482391AEC8F2E006FD8BB /* csub.pd */; };
+		D87483CD1AEC8F2F006FD8BB /* csub~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874823A1AEC8F2E006FD8BB /* csub~-help.pd */; };
+		D87483CE1AEC8F2F006FD8BB /* csub~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874823B1AEC8F2E006FD8BB /* csub~.pd */; };
+		D87483CF1AEC8F2F006FD8BB /* csymbol-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874823C1AEC8F2E006FD8BB /* csymbol-help.pd */; };
+		D87483D01AEC8F2F006FD8BB /* csymbol.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874823D1AEC8F2E006FD8BB /* csymbol.pd */; };
+		D87483D11AEC8F2F006FD8BB /* dictionary-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874823E1AEC8F2E006FD8BB /* dictionary-help.pd */; };
+		D87483D21AEC8F2F006FD8BB /* dictionary-small-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874823F1AEC8F2E006FD8BB /* dictionary-small-help.pd */; };
+		D87483D31AEC8F2F006FD8BB /* dictionary-small.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482401AEC8F2E006FD8BB /* dictionary-small.pd */; };
+		D87483D41AEC8F2F006FD8BB /* dictionary-standalone-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482411AEC8F2E006FD8BB /* dictionary-standalone-help.pd */; };
+		D87483D51AEC8F2F006FD8BB /* dictionary-standalone.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482421AEC8F2E006FD8BB /* dictionary-standalone.pd */; };
+		D87483D61AEC8F2F006FD8BB /* dictionary.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482431AEC8F2E006FD8BB /* dictionary.pd */; };
+		D87483D71AEC8F2F006FD8BB /* dpoly-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482441AEC8F2E006FD8BB /* dpoly-help.pd */; };
+		D87483D81AEC8F2F006FD8BB /* dpoly.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482451AEC8F2E006FD8BB /* dpoly.pd */; };
+		D87483D91AEC8F2F006FD8BB /* dprint-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482461AEC8F2E006FD8BB /* dprint-help.pd */; };
+		D87483DA1AEC8F2F006FD8BB /* dprint.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482471AEC8F2E006FD8BB /* dprint.pd */; };
+		D87483DB1AEC8F2F006FD8BB /* dr-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482481AEC8F2E006FD8BB /* dr-help.pd */; };
+		D87483DC1AEC8F2F006FD8BB /* dr.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482491AEC8F2E006FD8BB /* dr.pd */; };
+		D87483DD1AEC8F2F006FD8BB /* dynamicpd-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874824A1AEC8F2E006FD8BB /* dynamicpd-help.pd */; };
+		D87483DE1AEC8F2F006FD8BB /* dynamicpd.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874824B1AEC8F2E006FD8BB /* dynamicpd.pd */; };
+		D87483DF1AEC8F2F006FD8BB /* evaluate-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874824C1AEC8F2E006FD8BB /* evaluate-help.pd */; };
+		D87483E01AEC8F2F006FD8BB /* evaluate.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874824D1AEC8F2E006FD8BB /* evaluate.pd */; };
+		D87483E11AEC8F2F006FD8BB /* evaluate2.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874824E1AEC8F2E006FD8BB /* evaluate2.pd */; };
+		D87483E21AEC8F2F006FD8BB /* evaluate3.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874824F1AEC8F2E006FD8BB /* evaluate3.pd */; };
+		D87483E31AEC8F2F006FD8BB /* expscale-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482501AEC8F2E006FD8BB /* expscale-help.pd */; };
+		D87483E41AEC8F2F006FD8BB /* expscale.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482511AEC8F2E006FD8BB /* expscale.pd */; };
+		D87483E51AEC8F2F006FD8BB /* f!=-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482521AEC8F2E006FD8BB /* f!=-help.pd */; };
+		D87483E61AEC8F2F006FD8BB /* f!=.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482531AEC8F2E006FD8BB /* f!=.pd */; };
+		D87483E71AEC8F2F006FD8BB /* filt-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482541AEC8F2E006FD8BB /* filt-help.pd */; };
+		D87483E81AEC8F2F006FD8BB /* filt.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482551AEC8F2E006FD8BB /* filt.pd */; };
+		D87483E91AEC8F2F006FD8BB /* for++-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482561AEC8F2E006FD8BB /* for++-help.pd */; };
+		D87483EA1AEC8F2F006FD8BB /* for++.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482571AEC8F2E006FD8BB /* for++.pd */; };
+		D87483EB1AEC8F2F006FD8BB /* gain~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482581AEC8F2E006FD8BB /* gain~-help.pd */; };
+		D87483EC1AEC8F2F006FD8BB /* gain~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482591AEC8F2E006FD8BB /* gain~.pd */; };
+		D87483ED1AEC8F2F006FD8BB /* gate10-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874825A1AEC8F2E006FD8BB /* gate10-help.pd */; };
+		D87483EE1AEC8F2F006FD8BB /* gate10.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874825B1AEC8F2E006FD8BB /* gate10.pd */; };
+		D87483EF1AEC8F2F006FD8BB /* gate11-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874825C1AEC8F2E006FD8BB /* gate11-help.pd */; };
+		D87483F01AEC8F2F006FD8BB /* gate11.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874825D1AEC8F2E006FD8BB /* gate11.pd */; };
+		D87483F11AEC8F2F006FD8BB /* gate12-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874825E1AEC8F2E006FD8BB /* gate12-help.pd */; };
+		D87483F21AEC8F2F006FD8BB /* gate12.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874825F1AEC8F2E006FD8BB /* gate12.pd */; };
+		D87483F31AEC8F2F006FD8BB /* gate13-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482601AEC8F2E006FD8BB /* gate13-help.pd */; };
+		D87483F41AEC8F2F006FD8BB /* gate13.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482611AEC8F2E006FD8BB /* gate13.pd */; };
+		D87483F51AEC8F2F006FD8BB /* gate14-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482621AEC8F2E006FD8BB /* gate14-help.pd */; };
+		D87483F61AEC8F2F006FD8BB /* gate14.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482631AEC8F2E006FD8BB /* gate14.pd */; };
+		D87483F71AEC8F2F006FD8BB /* gate15-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482641AEC8F2E006FD8BB /* gate15-help.pd */; };
+		D87483F81AEC8F2F006FD8BB /* gate15.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482651AEC8F2E006FD8BB /* gate15.pd */; };
+		D87483F91AEC8F2F006FD8BB /* gate16-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482661AEC8F2E006FD8BB /* gate16-help.pd */; };
+		D87483FA1AEC8F2F006FD8BB /* gate16.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482671AEC8F2E006FD8BB /* gate16.pd */; };
+		D87483FB1AEC8F2F006FD8BB /* gate17-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482681AEC8F2E006FD8BB /* gate17-help.pd */; };
+		D87483FC1AEC8F2F006FD8BB /* gate17.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482691AEC8F2E006FD8BB /* gate17.pd */; };
+		D87483FD1AEC8F2F006FD8BB /* gate18-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874826A1AEC8F2E006FD8BB /* gate18-help.pd */; };
+		D87483FE1AEC8F2F006FD8BB /* gate18.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874826B1AEC8F2E006FD8BB /* gate18.pd */; };
+		D87483FF1AEC8F2F006FD8BB /* gate19-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874826C1AEC8F2E006FD8BB /* gate19-help.pd */; };
+		D87484001AEC8F2F006FD8BB /* gate19.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874826D1AEC8F2E006FD8BB /* gate19.pd */; };
+		D87484011AEC8F2F006FD8BB /* gate2-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874826E1AEC8F2E006FD8BB /* gate2-help.pd */; };
+		D87484021AEC8F2F006FD8BB /* gate2.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874826F1AEC8F2E006FD8BB /* gate2.pd */; };
+		D87484031AEC8F2F006FD8BB /* gate20-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482701AEC8F2E006FD8BB /* gate20-help.pd */; };
+		D87484041AEC8F2F006FD8BB /* gate20.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482711AEC8F2E006FD8BB /* gate20.pd */; };
+		D87484051AEC8F2F006FD8BB /* gate21-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482721AEC8F2E006FD8BB /* gate21-help.pd */; };
+		D87484061AEC8F2F006FD8BB /* gate21.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482731AEC8F2E006FD8BB /* gate21.pd */; };
+		D87484071AEC8F2F006FD8BB /* gate22-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482741AEC8F2E006FD8BB /* gate22-help.pd */; };
+		D87484081AEC8F2F006FD8BB /* gate22.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482751AEC8F2E006FD8BB /* gate22.pd */; };
+		D87484091AEC8F2F006FD8BB /* gate23-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482761AEC8F2E006FD8BB /* gate23-help.pd */; };
+		D874840A1AEC8F2F006FD8BB /* gate23.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482771AEC8F2E006FD8BB /* gate23.pd */; };
+		D874840B1AEC8F2F006FD8BB /* gate24-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482781AEC8F2E006FD8BB /* gate24-help.pd */; };
+		D874840C1AEC8F2F006FD8BB /* gate24.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482791AEC8F2E006FD8BB /* gate24.pd */; };
+		D874840D1AEC8F2F006FD8BB /* gate25-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874827A1AEC8F2E006FD8BB /* gate25-help.pd */; };
+		D874840E1AEC8F2F006FD8BB /* gate25.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874827B1AEC8F2E006FD8BB /* gate25.pd */; };
+		D874840F1AEC8F2F006FD8BB /* gate26-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874827C1AEC8F2E006FD8BB /* gate26-help.pd */; };
+		D87484101AEC8F2F006FD8BB /* gate26.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874827D1AEC8F2E006FD8BB /* gate26.pd */; };
+		D87484111AEC8F2F006FD8BB /* gate27-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874827E1AEC8F2E006FD8BB /* gate27-help.pd */; };
+		D87484121AEC8F2F006FD8BB /* gate27.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874827F1AEC8F2E006FD8BB /* gate27.pd */; };
+		D87484131AEC8F2F006FD8BB /* gate28-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482801AEC8F2E006FD8BB /* gate28-help.pd */; };
+		D87484141AEC8F2F006FD8BB /* gate28.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482811AEC8F2E006FD8BB /* gate28.pd */; };
+		D87484151AEC8F2F006FD8BB /* gate29-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482821AEC8F2E006FD8BB /* gate29-help.pd */; };
+		D87484161AEC8F2F006FD8BB /* gate29.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482831AEC8F2E006FD8BB /* gate29.pd */; };
+		D87484171AEC8F2F006FD8BB /* gate2~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482841AEC8F2E006FD8BB /* gate2~-help.pd */; };
+		D87484181AEC8F2F006FD8BB /* gate2~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482851AEC8F2E006FD8BB /* gate2~.pd */; };
+		D87484191AEC8F2F006FD8BB /* gate3-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482861AEC8F2E006FD8BB /* gate3-help.pd */; };
+		D874841A1AEC8F2F006FD8BB /* gate3.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482871AEC8F2E006FD8BB /* gate3.pd */; };
+		D874841B1AEC8F2F006FD8BB /* gate30-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482881AEC8F2E006FD8BB /* gate30-help.pd */; };
+		D874841C1AEC8F2F006FD8BB /* gate30.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482891AEC8F2E006FD8BB /* gate30.pd */; };
+		D874841D1AEC8F2F006FD8BB /* gate31-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874828A1AEC8F2E006FD8BB /* gate31-help.pd */; };
+		D874841E1AEC8F2F006FD8BB /* gate31.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874828B1AEC8F2E006FD8BB /* gate31.pd */; };
+		D874841F1AEC8F2F006FD8BB /* gate32-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874828C1AEC8F2E006FD8BB /* gate32-help.pd */; };
+		D87484201AEC8F2F006FD8BB /* gate32.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874828D1AEC8F2E006FD8BB /* gate32.pd */; };
+		D87484211AEC8F2F006FD8BB /* gate3~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874828E1AEC8F2E006FD8BB /* gate3~-help.pd */; };
+		D87484221AEC8F2F006FD8BB /* gate3~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874828F1AEC8F2E006FD8BB /* gate3~.pd */; };
+		D87484231AEC8F2F006FD8BB /* gate4-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482901AEC8F2E006FD8BB /* gate4-help.pd */; };
+		D87484241AEC8F2F006FD8BB /* gate4.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482911AEC8F2E006FD8BB /* gate4.pd */; };
+		D87484251AEC8F2F006FD8BB /* gate4~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482921AEC8F2E006FD8BB /* gate4~-help.pd */; };
+		D87484261AEC8F2F006FD8BB /* gate4~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482931AEC8F2E006FD8BB /* gate4~.pd */; };
+		D87484271AEC8F2F006FD8BB /* gate5-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482941AEC8F2E006FD8BB /* gate5-help.pd */; };
+		D87484281AEC8F2F006FD8BB /* gate5.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482951AEC8F2E006FD8BB /* gate5.pd */; };
+		D87484291AEC8F2F006FD8BB /* gate5~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482961AEC8F2E006FD8BB /* gate5~-help.pd */; };
+		D874842A1AEC8F2F006FD8BB /* gate5~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482971AEC8F2E006FD8BB /* gate5~.pd */; };
+		D874842B1AEC8F2F006FD8BB /* gate6-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482981AEC8F2E006FD8BB /* gate6-help.pd */; };
+		D874842C1AEC8F2F006FD8BB /* gate6.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482991AEC8F2E006FD8BB /* gate6.pd */; };
+		D874842D1AEC8F2F006FD8BB /* gate6~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874829A1AEC8F2E006FD8BB /* gate6~-help.pd */; };
+		D874842E1AEC8F2F006FD8BB /* gate6~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874829B1AEC8F2E006FD8BB /* gate6~.pd */; };
+		D874842F1AEC8F2F006FD8BB /* gate7-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874829C1AEC8F2E006FD8BB /* gate7-help.pd */; };
+		D87484301AEC8F2F006FD8BB /* gate7.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874829D1AEC8F2E006FD8BB /* gate7.pd */; };
+		D87484311AEC8F2F006FD8BB /* gate7~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874829E1AEC8F2E006FD8BB /* gate7~-help.pd */; };
+		D87484321AEC8F2F006FD8BB /* gate7~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874829F1AEC8F2E006FD8BB /* gate7~.pd */; };
+		D87484331AEC8F2F006FD8BB /* gate8-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482A01AEC8F2E006FD8BB /* gate8-help.pd */; };
+		D87484341AEC8F2F006FD8BB /* gate8.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482A11AEC8F2E006FD8BB /* gate8.pd */; };
+		D87484351AEC8F2F006FD8BB /* gate8~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482A21AEC8F2E006FD8BB /* gate8~-help.pd */; };
+		D87484361AEC8F2F006FD8BB /* gate8~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482A31AEC8F2E006FD8BB /* gate8~.pd */; };
+		D87484371AEC8F2F006FD8BB /* gate9-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482A41AEC8F2E006FD8BB /* gate9-help.pd */; };
+		D87484381AEC8F2F006FD8BB /* gate9.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482A51AEC8F2E006FD8BB /* gate9.pd */; };
+		D87484391AEC8F2F006FD8BB /* gatemaker-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482A61AEC8F2E006FD8BB /* gatemaker-help.pd */; };
+		D874843A1AEC8F2F006FD8BB /* gatemaker.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482A71AEC8F2E006FD8BB /* gatemaker.pd */; };
+		D874843B1AEC8F2F006FD8BB /* gatemaker~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482A81AEC8F2E006FD8BB /* gatemaker~-help.pd */; };
+		D874843C1AEC8F2F006FD8BB /* gatemaker~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482A91AEC8F2E006FD8BB /* gatemaker~.pd */; };
+		D874843D1AEC8F2F006FD8BB /* ggate-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482AA1AEC8F2E006FD8BB /* ggate-help.pd */; };
+		D874843E1AEC8F2F006FD8BB /* ggate.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482AB1AEC8F2E006FD8BB /* ggate.pd */; };
+		D874843F1AEC8F2F006FD8BB /* ggate~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482AC1AEC8F2E006FD8BB /* ggate~.pd */; };
+		D87484401AEC8F2F006FD8BB /* gswitch-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482AD1AEC8F2E006FD8BB /* gswitch-help.pd */; };
+		D87484411AEC8F2F006FD8BB /* gswitch.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482AE1AEC8F2E006FD8BB /* gswitch.pd */; };
+		D87484421AEC8F2F006FD8BB /* gswitch~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482AF1AEC8F2E006FD8BB /* gswitch~.pd */; };
+		D87484431AEC8F2F006FD8BB /* guiadsr-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482B01AEC8F2E006FD8BB /* guiadsr-help.pd */; };
+		D87484441AEC8F2F006FD8BB /* guiadsr.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482B11AEC8F2E006FD8BB /* guiadsr.pd */; };
+		D87484451AEC8F2F006FD8BB /* guifilter~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482B21AEC8F2E006FD8BB /* guifilter~-help.pd */; };
+		D87484461AEC8F2F006FD8BB /* guifilter~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482B31AEC8F2E006FD8BB /* guifilter~.pd */; };
+		D87484471AEC8F2F006FD8BB /* hann_table-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482B41AEC8F2E006FD8BB /* hann_table-help.pd */; };
+		D87484481AEC8F2F006FD8BB /* hann_table.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482B51AEC8F2E006FD8BB /* hann_table.pd */; };
+		D87484491AEC8F2F006FD8BB /* help_builder-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482B61AEC8F2E006FD8BB /* help_builder-help.pd */; };
+		D874844A1AEC8F2F006FD8BB /* help_builder.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482B71AEC8F2E006FD8BB /* help_builder.pd */; };
+		D874844B1AEC8F2F006FD8BB /* hilbert~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482B81AEC8F2E006FD8BB /* hilbert~-help.pd */; };
+		D874844C1AEC8F2F006FD8BB /* hilbert~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482B91AEC8F2E006FD8BB /* hilbert~.pd */; };
+		D874844D1AEC8F2F006FD8BB /* if-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482BA1AEC8F2E006FD8BB /* if-help.pd */; };
+		D874844E1AEC8F2F006FD8BB /* if.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482BB1AEC8F2E006FD8BB /* if.pd */; };
+		D874844F1AEC8F2F006FD8BB /* iterator-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482BC1AEC8F2E006FD8BB /* iterator-help.pd */; };
+		D87484501AEC8F2F006FD8BB /* iterator.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482BD1AEC8F2E006FD8BB /* iterator.pd */; };
+		D87484511AEC8F2F006FD8BB /* keyboard_shortcuts.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482BE1AEC8F2E006FD8BB /* keyboard_shortcuts.pd */; };
+		D87484521AEC8F2F006FD8BB /* ladd-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482BF1AEC8F2E006FD8BB /* ladd-help.pd */; };
+		D87484531AEC8F2F006FD8BB /* ladd.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482C01AEC8F2E006FD8BB /* ladd.pd */; };
+		D87484541AEC8F2F006FD8BB /* ladd2-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482C11AEC8F2E006FD8BB /* ladd2-help.pd */; };
+		D87484551AEC8F2F006FD8BB /* ladd2.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482C21AEC8F2E006FD8BB /* ladd2.pd */; };
+		D87484561AEC8F2F006FD8BB /* ladd3-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482C31AEC8F2E006FD8BB /* ladd3-help.pd */; };
+		D87484571AEC8F2F006FD8BB /* ladd3.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482C41AEC8F2E006FD8BB /* ladd3.pd */; };
+		D87484581AEC8F2F006FD8BB /* lapp-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482C51AEC8F2E006FD8BB /* lapp-help.pd */; };
+		D87484591AEC8F2F006FD8BB /* lapp.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482C61AEC8F2E006FD8BB /* lapp.pd */; };
+		D874845A1AEC8F2F006FD8BB /* lbuilder-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482C71AEC8F2E006FD8BB /* lbuilder-help.pd */; };
+		D874845B1AEC8F2F006FD8BB /* lbuilder.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482C81AEC8F2E006FD8BB /* lbuilder.pd */; };
+		D874845C1AEC8F2F006FD8BB /* lcount.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482C91AEC8F2E006FD8BB /* lcount.pd */; };
+		D874845D1AEC8F2F006FD8BB /* lfl!=.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482CA1AEC8F2E006FD8BB /* lfl!=.pd */; };
+		D874845E1AEC8F2F006FD8BB /* lfl<.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482CB1AEC8F2E006FD8BB /* lfl<.pd */; };
+		D874845F1AEC8F2F006FD8BB /* lfl<=.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482CC1AEC8F2E006FD8BB /* lfl<=.pd */; };
+		D87484601AEC8F2F006FD8BB /* lfl==.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482CD1AEC8F2E006FD8BB /* lfl==.pd */; };
+		D87484611AEC8F2F006FD8BB /* lfl>-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482CE1AEC8F2E006FD8BB /* lfl>-help.pd */; };
+		D87484621AEC8F2F006FD8BB /* lfl>.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482CF1AEC8F2E006FD8BB /* lfl>.pd */; };
+		D87484631AEC8F2F006FD8BB /* lfl>=.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482D01AEC8F2E006FD8BB /* lfl>=.pd */; };
+		D87484641AEC8F2F006FD8BB /* lfor-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482D11AEC8F2E006FD8BB /* lfor-help.pd */; };
+		D87484651AEC8F2F006FD8BB /* lfor.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482D21AEC8F2E006FD8BB /* lfor.pd */; };
+		D87484661AEC8F2F006FD8BB /* lindexget-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482D31AEC8F2E006FD8BB /* lindexget-help.pd */; };
+		D87484671AEC8F2F006FD8BB /* lindexget.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482D41AEC8F2E006FD8BB /* lindexget.pd */; };
+		D87484681AEC8F2F006FD8BB /* lindexset-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482D51AEC8F2E006FD8BB /* lindexset-help.pd */; };
+		D87484691AEC8F2F006FD8BB /* lindexset.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482D61AEC8F2E006FD8BB /* lindexset.pd */; };
+		D874846A1AEC8F2F006FD8BB /* liter-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482D71AEC8F2E006FD8BB /* liter-help.pd */; };
+		D874846B1AEC8F2F006FD8BB /* liter.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482D81AEC8F2E006FD8BB /* liter.pd */; };
+		D874846C1AEC8F2F006FD8BB /* ljoin-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482D91AEC8F2E006FD8BB /* ljoin-help.pd */; };
+		D874846D1AEC8F2F006FD8BB /* ljoin.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482DA1AEC8F2E006FD8BB /* ljoin.pd */; };
+		D874846E1AEC8F2F006FD8BB /* loadfloat-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482DB1AEC8F2E006FD8BB /* loadfloat-help.pd */; };
+		D874846F1AEC8F2F006FD8BB /* loadfloat.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482DC1AEC8F2E006FD8BB /* loadfloat.pd */; };
+		D87484701AEC8F2F006FD8BB /* loadmess-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482DD1AEC8F2E006FD8BB /* loadmess-help.pd */; };
+		D87484711AEC8F2F006FD8BB /* loadmess.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482DE1AEC8F2E006FD8BB /* loadmess.pd */; };
+		D87484721AEC8F2F006FD8BB /* lpre-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482DF1AEC8F2E006FD8BB /* lpre-help.pd */; };
+		D87484731AEC8F2F006FD8BB /* lpre.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482E01AEC8F2E006FD8BB /* lpre.pd */; };
+		D87484741AEC8F2F006FD8BB /* lprepend-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482E11AEC8F2E006FD8BB /* lprepend-help.pd */; };
+		D87484751AEC8F2F006FD8BB /* lprepend.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482E21AEC8F2E006FD8BB /* lprepend.pd */; };
+		D87484761AEC8F2F006FD8BB /* lprint-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482E31AEC8F2E006FD8BB /* lprint-help.pd */; };
+		D87484771AEC8F2F006FD8BB /* lprint.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482E41AEC8F2E006FD8BB /* lprint.pd */; };
+		D87484781AEC8F2F006FD8BB /* lqueue-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482E51AEC8F2E006FD8BB /* lqueue-help.pd */; };
+		D87484791AEC8F2F006FD8BB /* lqueue.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482E61AEC8F2E006FD8BB /* lqueue.pd */; };
+		D874847A1AEC8F2F006FD8BB /* lreverse-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482E71AEC8F2E006FD8BB /* lreverse-help.pd */; };
+		D874847B1AEC8F2F006FD8BB /* lreverse.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482E81AEC8F2E006FD8BB /* lreverse.pd */; };
+		D874847C1AEC8F2F006FD8BB /* lset-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482E91AEC8F2E006FD8BB /* lset-help.pd */; };
+		D874847D1AEC8F2F006FD8BB /* lset.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482EA1AEC8F2E006FD8BB /* lset.pd */; };
+		D874847E1AEC8F2F006FD8BB /* lsplit-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482EB1AEC8F2E006FD8BB /* lsplit-help.pd */; };
+		D874847F1AEC8F2F006FD8BB /* lsplit.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482EC1AEC8F2E006FD8BB /* lsplit.pd */; };
+		D87484801AEC8F2F006FD8BB /* lstack-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482ED1AEC8F2E006FD8BB /* lstack-help.pd */; };
+		D87484811AEC8F2F006FD8BB /* lstack.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482EE1AEC8F2E006FD8BB /* lstack.pd */; };
+		D87484821AEC8F2F006FD8BB /* lswap-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482EF1AEC8F2E006FD8BB /* lswap-help.pd */; };
+		D87484831AEC8F2F006FD8BB /* lswap.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482F01AEC8F2E006FD8BB /* lswap.pd */; };
+		D87484841AEC8F2F006FD8BB /* mp3play~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482F11AEC8F2E006FD8BB /* mp3play~-help.pd */; };
+		D87484851AEC8F2F006FD8BB /* multidelay~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482F21AEC8F2E006FD8BB /* multidelay~-help.pd */; };
+		D87484861AEC8F2F006FD8BB /* multidelay~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482F31AEC8F2E006FD8BB /* multidelay~.pd */; };
+		D87484871AEC8F2F006FD8BB /* multidelay~~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482F41AEC8F2E006FD8BB /* multidelay~~-help.pd */; };
+		D87484881AEC8F2F006FD8BB /* multidelay~~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482F51AEC8F2E006FD8BB /* multidelay~~.pd */; };
+		D87484891AEC8F2F006FD8BB /* multitremolo~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482F61AEC8F2E006FD8BB /* multitremolo~-help.pd */; };
+		D874848A1AEC8F2F006FD8BB /* multitremolo~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482F71AEC8F2E006FD8BB /* multitremolo~.pd */; };
+		D874848B1AEC8F2F006FD8BB /* multitremolo~~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482F81AEC8F2E006FD8BB /* multitremolo~~-help.pd */; };
+		D874848C1AEC8F2F006FD8BB /* multitremolo~~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482F91AEC8F2E006FD8BB /* multitremolo~~.pd */; };
+		D874848D1AEC8F2F006FD8BB /* name_manager-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482FA1AEC8F2E006FD8BB /* name_manager-help.pd */; };
+		D874848E1AEC8F2F006FD8BB /* name_manager.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482FB1AEC8F2E006FD8BB /* name_manager.pd */; };
+		D874848F1AEC8F2F006FD8BB /* normalize2~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482FC1AEC8F2E006FD8BB /* normalize2~-help.pd */; };
+		D87484901AEC8F2F006FD8BB /* normalize2~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482FD1AEC8F2E006FD8BB /* normalize2~.pd */; };
+		D87484911AEC8F2F006FD8BB /* normalize~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482FE1AEC8F2E006FD8BB /* normalize~-help.pd */; };
+		D87484921AEC8F2F006FD8BB /* normalize~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87482FF1AEC8F2E006FD8BB /* normalize~.pd */; };
+		D87484931AEC8F2F006FD8BB /* noteflush.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483001AEC8F2E006FD8BB /* noteflush.pd */; };
+		D87484941AEC8F2F006FD8BB /* number-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483011AEC8F2E006FD8BB /* number-help.pd */; };
+		D87484951AEC8F2F006FD8BB /* number.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483021AEC8F2E006FD8BB /* number.pd */; };
+		D87484961AEC8F2F006FD8BB /* number2note.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483031AEC8F2E006FD8BB /* number2note.pd */; };
+		D87484971AEC8F2F006FD8BB /* number~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483041AEC8F2E006FD8BB /* number~.pd */; };
+		D87484981AEC8F2F006FD8BB /* panner~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483051AEC8F2E006FD8BB /* panner~-help.pd */; };
+		D87484991AEC8F2F006FD8BB /* panner~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483061AEC8F2E006FD8BB /* panner~.pd */; };
+		D874849A1AEC8F2F006FD8BB /* panner~~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483071AEC8F2E006FD8BB /* panner~~-help.pd */; };
+		D874849B1AEC8F2F006FD8BB /* panner~~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483081AEC8F2E006FD8BB /* panner~~.pd */; };
+		D874849C1AEC8F2F006FD8BB /* pd_for_libpd.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483091AEC8F2E006FD8BB /* pd_for_libpd.pd */; };
+		D874849D1AEC8F2F006FD8BB /* pi.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874830A1AEC8F2E006FD8BB /* pi.pd */; };
+		D874849E1AEC8F2F006FD8BB /* piano.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874830B1AEC8F2E006FD8BB /* piano.pd */; };
+		D874849F1AEC8F2F006FD8BB /* pitchbend~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874830C1AEC8F2E006FD8BB /* pitchbend~-help.pd */; };
+		D87484A01AEC8F2F006FD8BB /* pitchbend~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874830D1AEC8F2F006FD8BB /* pitchbend~.pd */; };
+		D87484A11AEC8F2F006FD8BB /* pitchshifter~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874830E1AEC8F2F006FD8BB /* pitchshifter~-help.pd */; };
+		D87484A21AEC8F2F006FD8BB /* pitchshifter~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874830F1AEC8F2F006FD8BB /* pitchshifter~.pd */; };
+		D87484A31AEC8F2F006FD8BB /* playground.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483101AEC8F2F006FD8BB /* playground.pd */; };
+		D87484A41AEC8F2F006FD8BB /* polyphonic_subtractive_synth.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483111AEC8F2F006FD8BB /* polyphonic_subtractive_synth.pd */; };
+		D87484A51AEC8F2F006FD8BB /* print2.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483121AEC8F2F006FD8BB /* print2.pd */; };
+		D87484A61AEC8F2F006FD8BB /* rect~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483131AEC8F2F006FD8BB /* rect~-help.pd */; };
+		D87484A71AEC8F2F006FD8BB /* rect~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483141AEC8F2F006FD8BB /* rect~.pd */; };
+		D87484A81AEC8F2F006FD8BB /* remove_dc_offset~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483151AEC8F2F006FD8BB /* remove_dc_offset~-help.pd */; };
+		D87484A91AEC8F2F006FD8BB /* remove_dc_offset~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483161AEC8F2F006FD8BB /* remove_dc_offset~.pd */; };
+		D87484AA1AEC8F2F006FD8BB /* rev1-final.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483171AEC8F2F006FD8BB /* rev1-final.pd */; };
+		D87484AB1AEC8F2F006FD8BB /* rev1-stage.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483181AEC8F2F006FD8BB /* rev1-stage.pd */; };
+		D87484AC1AEC8F2F006FD8BB /* rev1~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483191AEC8F2F006FD8BB /* rev1~-help.pd */; };
+		D87484AD1AEC8F2F006FD8BB /* rev1~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874831A1AEC8F2F006FD8BB /* rev1~.pd */; };
+		D87484AE1AEC8F2F006FD8BB /* rev2~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874831B1AEC8F2F006FD8BB /* rev2~-help.pd */; };
+		D87484AF1AEC8F2F006FD8BB /* rev2~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874831C1AEC8F2F006FD8BB /* rev2~.pd */; };
+		D87484B01AEC8F2F006FD8BB /* rev3~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874831D1AEC8F2F006FD8BB /* rev3~-help.pd */; };
+		D87484B11AEC8F2F006FD8BB /* rev3~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874831E1AEC8F2F006FD8BB /* rev3~.pd */; };
+		D87484B21AEC8F2F006FD8BB /* ringmod.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874831F1AEC8F2F006FD8BB /* ringmod.pd */; };
+		D87484B31AEC8F2F006FD8BB /* ringmod~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483201AEC8F2F006FD8BB /* ringmod~.pd */; };
+		D87484B41AEC8F2F006FD8BB /* round-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483211AEC8F2F006FD8BB /* round-help.pd */; };
+		D87484B51AEC8F2F006FD8BB /* round.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483221AEC8F2F006FD8BB /* round.pd */; };
+		D87484B61AEC8F2F006FD8BB /* sawtooth_table.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483231AEC8F2F006FD8BB /* sawtooth_table.pd */; };
+		D87484B71AEC8F2F006FD8BB /* sbuilder.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483241AEC8F2F006FD8BB /* sbuilder.pd */; };
+		D87484B81AEC8F2F006FD8BB /* scales-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483251AEC8F2F006FD8BB /* scales-help.pd */; };
+		D87484B91AEC8F2F006FD8BB /* scales.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483261AEC8F2F006FD8BB /* scales.pd */; };
+		D87484BA1AEC8F2F006FD8BB /* sec-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483271AEC8F2F006FD8BB /* sec-help.pd */; };
+		D87484BB1AEC8F2F006FD8BB /* sec.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483281AEC8F2F006FD8BB /* sec.pd */; };
+		D87484BC1AEC8F2F006FD8BB /* sech.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483291AEC8F2F006FD8BB /* sech.pd */; };
+		D87484BD1AEC8F2F006FD8BB /* sech~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874832A1AEC8F2F006FD8BB /* sech~-help.pd */; };
+		D87484BE1AEC8F2F006FD8BB /* sech~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874832B1AEC8F2F006FD8BB /* sech~.pd */; };
+		D87484BF1AEC8F2F006FD8BB /* sec~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874832C1AEC8F2F006FD8BB /* sec~-help.pd */; };
+		D87484C01AEC8F2F006FD8BB /* sec~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874832D1AEC8F2F006FD8BB /* sec~.pd */; };
+		D87484C11AEC8F2F006FD8BB /* sigbiquad_coeff~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874832E1AEC8F2F006FD8BB /* sigbiquad_coeff~-help.pd */; };
+		D87484C21AEC8F2F006FD8BB /* sigbiquad_coeff~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874832F1AEC8F2F006FD8BB /* sigbiquad_coeff~.pd */; };
+		D87484C31AEC8F2F006FD8BB /* sigbiquad~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483301AEC8F2F006FD8BB /* sigbiquad~-help.pd */; };
+		D87484C41AEC8F2F006FD8BB /* sigbiquad~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483311AEC8F2F006FD8BB /* sigbiquad~.pd */; };
+		D87484C51AEC8F2F006FD8BB /* sine_table.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483321AEC8F2F006FD8BB /* sine_table.pd */; };
+		D87484C61AEC8F2F006FD8BB /* sinh.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483331AEC8F2F006FD8BB /* sinh.pd */; };
+		D87484C71AEC8F2F006FD8BB /* sinh~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483341AEC8F2F006FD8BB /* sinh~-help.pd */; };
+		D87484C81AEC8F2F006FD8BB /* sinh~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483351AEC8F2F006FD8BB /* sinh~.pd */; };
+		D87484C91AEC8F2F006FD8BB /* smoothline~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483361AEC8F2F006FD8BB /* smoothline~.pd */; };
+		D87484CA1AEC8F2F006FD8BB /* soundfonts-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483371AEC8F2F006FD8BB /* soundfonts-help.pd */; };
+		D87484CB1AEC8F2F006FD8BB /* square_table.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483381AEC8F2F006FD8BB /* square_table.pd */; };
+		D87484CC1AEC8F2F006FD8BB /* stack-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483391AEC8F2F006FD8BB /* stack-help.pd */; };
+		D87484CD1AEC8F2F006FD8BB /* stack.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874833A1AEC8F2F006FD8BB /* stack.pd */; };
+		D87484CE1AEC8F2F006FD8BB /* subtractive_synth.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874833B1AEC8F2F006FD8BB /* subtractive_synth.pd */; };
+		D87484CF1AEC8F2F006FD8BB /* subtractive_synth_interface.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874833C1AEC8F2F006FD8BB /* subtractive_synth_interface.pd */; };
+		D87484D01AEC8F2F006FD8BB /* switch2-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874833D1AEC8F2F006FD8BB /* switch2-help.pd */; };
+		D87484D11AEC8F2F006FD8BB /* switch2.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874833E1AEC8F2F006FD8BB /* switch2.pd */; };
+		D87484D21AEC8F2F006FD8BB /* switch2~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874833F1AEC8F2F006FD8BB /* switch2~-help.pd */; };
+		D87484D31AEC8F2F006FD8BB /* switch2~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483401AEC8F2F006FD8BB /* switch2~.pd */; };
+		D87484D41AEC8F2F006FD8BB /* switch3-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483411AEC8F2F006FD8BB /* switch3-help.pd */; };
+		D87484D51AEC8F2F006FD8BB /* switch3.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483421AEC8F2F006FD8BB /* switch3.pd */; };
+		D87484D61AEC8F2F006FD8BB /* switch3~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483431AEC8F2F006FD8BB /* switch3~-help.pd */; };
+		D87484D71AEC8F2F006FD8BB /* switch3~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483441AEC8F2F006FD8BB /* switch3~.pd */; };
+		D87484D81AEC8F2F006FD8BB /* switch4-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483451AEC8F2F006FD8BB /* switch4-help.pd */; };
+		D87484D91AEC8F2F006FD8BB /* switch4.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483461AEC8F2F006FD8BB /* switch4.pd */; };
+		D87484DA1AEC8F2F006FD8BB /* switch4~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483471AEC8F2F006FD8BB /* switch4~-help.pd */; };
+		D87484DB1AEC8F2F006FD8BB /* switch4~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483481AEC8F2F006FD8BB /* switch4~.pd */; };
+		D87484DC1AEC8F2F006FD8BB /* switch5-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483491AEC8F2F006FD8BB /* switch5-help.pd */; };
+		D87484DD1AEC8F2F006FD8BB /* switch5.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874834A1AEC8F2F006FD8BB /* switch5.pd */; };
+		D87484DE1AEC8F2F006FD8BB /* switch5~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874834B1AEC8F2F006FD8BB /* switch5~-help.pd */; };
+		D87484DF1AEC8F2F006FD8BB /* switch5~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874834C1AEC8F2F006FD8BB /* switch5~.pd */; };
+		D87484E01AEC8F2F006FD8BB /* switch6-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874834D1AEC8F2F006FD8BB /* switch6-help.pd */; };
+		D87484E11AEC8F2F006FD8BB /* switch6.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874834E1AEC8F2F006FD8BB /* switch6.pd */; };
+		D87484E21AEC8F2F006FD8BB /* switch6~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874834F1AEC8F2F006FD8BB /* switch6~-help.pd */; };
+		D87484E31AEC8F2F006FD8BB /* switch6~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483501AEC8F2F006FD8BB /* switch6~.pd */; };
+		D87484E41AEC8F2F006FD8BB /* switch7-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483511AEC8F2F006FD8BB /* switch7-help.pd */; };
+		D87484E51AEC8F2F006FD8BB /* switch7.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483521AEC8F2F006FD8BB /* switch7.pd */; };
+		D87484E61AEC8F2F006FD8BB /* switch7~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483531AEC8F2F006FD8BB /* switch7~-help.pd */; };
+		D87484E71AEC8F2F006FD8BB /* switch7~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483541AEC8F2F006FD8BB /* switch7~.pd */; };
+		D87484E81AEC8F2F006FD8BB /* switch8-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483551AEC8F2F006FD8BB /* switch8-help.pd */; };
+		D87484E91AEC8F2F006FD8BB /* switch8.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483561AEC8F2F006FD8BB /* switch8.pd */; };
+		D87484EA1AEC8F2F006FD8BB /* switch8~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483571AEC8F2F006FD8BB /* switch8~-help.pd */; };
+		D87484EB1AEC8F2F006FD8BB /* switch8~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483581AEC8F2F006FD8BB /* switch8~.pd */; };
+		D87484EC1AEC8F2F006FD8BB /* switchmaker-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483591AEC8F2F006FD8BB /* switchmaker-help.pd */; };
+		D87484ED1AEC8F2F006FD8BB /* switchmaker.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874835A1AEC8F2F006FD8BB /* switchmaker.pd */; };
+		D87484EE1AEC8F2F006FD8BB /* switchmaker~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874835B1AEC8F2F006FD8BB /* switchmaker~-help.pd */; };
+		D87484EF1AEC8F2F006FD8BB /* switchmaker~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874835C1AEC8F2F006FD8BB /* switchmaker~.pd */; };
+		D87484F01AEC8F2F006FD8BB /* synth16~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874835D1AEC8F2F006FD8BB /* synth16~.pd */; };
+		D87484F11AEC8F2F006FD8BB /* synth~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874835E1AEC8F2F006FD8BB /* synth~.pd */; };
+		D87484F21AEC8F2F006FD8BB /* tanh.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874835F1AEC8F2F006FD8BB /* tanh.pd */; };
+		D87484F31AEC8F2F006FD8BB /* tanh~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483601AEC8F2F006FD8BB /* tanh~-help.pd */; };
+		D87484F41AEC8F2F006FD8BB /* tanh~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483611AEC8F2F006FD8BB /* tanh~.pd */; };
+		D87484F51AEC8F2F006FD8BB /* tan~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483621AEC8F2F006FD8BB /* tan~-help.pd */; };
+		D87484F61AEC8F2F006FD8BB /* tan~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483631AEC8F2F006FD8BB /* tan~.pd */; };
+		D87484F71AEC8F2F006FD8BB /* tb_peakcomp~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483641AEC8F2F006FD8BB /* tb_peakcomp~-help.pd */; };
+		D87484F81AEC8F2F006FD8BB /* testtone~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483651AEC8F2F006FD8BB /* testtone~.pd */; };
+		D87484F91AEC8F2F006FD8BB /* tone~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483661AEC8F2F006FD8BB /* tone~.pd */; };
+		D87484FA1AEC8F2F006FD8BB /* transistor~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483671AEC8F2F006FD8BB /* transistor~-help.pd */; };
+		D87484FB1AEC8F2F006FD8BB /* transistor~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483681AEC8F2F006FD8BB /* transistor~.pd */; };
+		D87484FC1AEC8F2F006FD8BB /* triangle_table.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483691AEC8F2F006FD8BB /* triangle_table.pd */; };
+		D87484FD1AEC8F2F006FD8BB /* unique_set.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874836A1AEC8F2F006FD8BB /* unique_set.pd */; };
+		D87484FE1AEC8F2F006FD8BB /* uzi-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874836B1AEC8F2F006FD8BB /* uzi-help.pd */; };
+		D87484FF1AEC8F2F006FD8BB /* uzi.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874836C1AEC8F2F006FD8BB /* uzi.pd */; };
+		D87485001AEC8F2F006FD8BB /* view~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874836D1AEC8F2F006FD8BB /* view~.pd */; };
+		D87485011AEC8F2F006FD8BB /* voice~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874836E1AEC8F2F006FD8BB /* voice~.pd */; };
+		D87485021AEC8F2F006FD8BB /* volume~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874836F1AEC8F2F006FD8BB /* volume~-help.pd */; };
+		D87485031AEC8F2F006FD8BB /* volume~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483701AEC8F2F006FD8BB /* volume~.pd */; };
+		D87485041AEC8F2F006FD8BB /* ||~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483711AEC8F2F006FD8BB /* ||~.pd */; };
 		E546C985097F5FC30569996E /* libPods-Pocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F70F64B7185668548E6742 /* libPods-Pocket.a */; };
 /* End PBXBuildFile section */
 
@@ -112,7 +549,6 @@
 		3B5583DB1AD07746009B0AAC /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		3B5583DF1AD1C38A009B0AAC /* BluetoothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothViewController.h; sourceTree = "<group>"; };
 		3B5583E01AD1C38A009B0AAC /* BluetoothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothViewController.m; sourceTree = "<group>"; };
-		3B57F8FA1ACE142300A09EE0 /* padpod-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "padpod-Bridging-Header.h"; path = "../../padpod/padpod/padpod-Bridging-Header.h"; sourceTree = "<group>"; };
 		3B57F8FB1ACE164400A09EE0 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		3B5D7C201AE0118000BDD529 /* list-moses.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "list-moses.pd"; path = "Resources/list-moses.pd"; sourceTree = SOURCE_ROOT; };
 		3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroInstrument.swift; sourceTree = "<group>"; };
@@ -126,6 +562,444 @@
 		7736CEEA1ACDA4FE008563DB /* Pocket-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pocket-Bridging-Header.h"; sourceTree = "<group>"; };
 		776C27641ACDC7380087A2E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		D854994D1AE02F2600A33985 /* ChordalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChordalViewController.swift; path = ../ChordalViewController.swift; sourceTree = "<group>"; };
+		D85D8FFB1AEC038D00238117 /* bass.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bass.pd; sourceTree = "<group>"; };
+		D85D8FFC1AEC038D00238117 /* bass~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "bass~.pd"; sourceTree = "<group>"; };
+		D85D8FFF1AEC073D00238117 /* pocket.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pocket.pd; sourceTree = "<group>"; };
+		D85D90011AEC1E0100238117 /* PercussionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercussionViewController.swift; sourceTree = "<group>"; };
+		D85D90031AEC2BAE00238117 /* PdExternals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PdExternals.h; path = Pocket/use/PdExternals.h; sourceTree = "<group>"; };
+		D87481A11AEC7C1E006FD8BB /* analog_age.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = analog_age.sf2; sourceTree = "<group>"; };
+		D87481A21AEC7C1E006FD8BB /* banjo_1.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = banjo_1.sf2; sourceTree = "<group>"; };
+		D87481A31AEC7C1E006FD8BB /* beautiful_pad.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = beautiful_pad.sf2; sourceTree = "<group>"; };
+		D87481A41AEC7C1E006FD8BB /* bolivianflute.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bolivianflute.sf2; sourceTree = "<group>"; };
+		D87481A51AEC7C1E006FD8BB /* Campbells_strings.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Campbells_strings.sf2; sourceTree = "<group>"; };
+		D87481A61AEC7C1E006FD8BB /* Campbells_Verby_Vocal.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Campbells_Verby_Vocal.sf2; sourceTree = "<group>"; };
+		D87481A71AEC7C1E006FD8BB /* church_organ.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = church_organ.sf2; sourceTree = "<group>"; };
+		D87481A81AEC7C1E006FD8BB /* DCs_Mellotron_Flute.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = DCs_Mellotron_Flute.sf2; sourceTree = "<group>"; };
+		D87481A91AEC7C1E006FD8BB /* ElPiano1.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElPiano1.sf2; sourceTree = "<group>"; };
+		D87481AA1AEC7C1E006FD8BB /* enigma_flute.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = enigma_flute.sf2; sourceTree = "<group>"; };
+		D87481AB1AEC7C1E006FD8BB /* flugelhorn.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = flugelhorn.sf2; sourceTree = "<group>"; };
+		D87481AC1AEC7C1E006FD8BB /* IbanezHollowbody.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IbanezHollowbody.sf2; sourceTree = "<group>"; };
+		D87481AD1AEC7C1E006FD8BB /* janos_lead.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = janos_lead.sf2; sourceTree = "<group>"; };
+		D87481AE1AEC7C1E006FD8BB /* jonnypad1.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = jonnypad1.sf2; sourceTree = "<group>"; };
+		D87481AF1AEC7C1E006FD8BB /* jonnypad3.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = jonnypad3.sf2; sourceTree = "<group>"; };
+		D87481B01AEC7C1E006FD8BB /* jonnypad4.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = jonnypad4.sf2; sourceTree = "<group>"; };
+		D87481B11AEC7C1E006FD8BB /* jonnypad5.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = jonnypad5.sf2; sourceTree = "<group>"; };
+		D87481B21AEC7C1E006FD8BB /* jonnypad6.SF2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = jonnypad6.SF2; sourceTree = "<group>"; };
+		D87481B31AEC7C1E006FD8BB /* jonnypad7.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = jonnypad7.sf2; sourceTree = "<group>"; };
+		D87481B41AEC7C1E006FD8BB /* jonnypad8.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = jonnypad8.sf2; sourceTree = "<group>"; };
+		D87481B51AEC7C1E006FD8BB /* LesPaul.SF2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = LesPaul.SF2; sourceTree = "<group>"; };
+		D87481B61AEC7C1E006FD8BB /* muted_trombone.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = muted_trombone.sf2; sourceTree = "<group>"; };
+		D87481B71AEC7C1E006FD8BB /* piano_1.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = piano_1.sf2; sourceTree = "<group>"; };
+		D87481B81AEC7C1E006FD8BB /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		D87481B91AEC7C1E006FD8BB /* saz.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = saz.sf2; sourceTree = "<group>"; };
+		D87481BA1AEC7C1E006FD8BB /* SC88Drumset.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SC88Drumset.sf2; sourceTree = "<group>"; };
+		D87481BB1AEC7C1E006FD8BB /* soundfonts-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "soundfonts-help.pd"; sourceTree = "<group>"; };
+		D87481BC1AEC7C1E006FD8BB /* StomperSet.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = StomperSet.sf2; sourceTree = "<group>"; };
+		D87481BE1AEC7C1E006FD8BB /* import_sf.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = import_sf.py; sourceTree = "<group>"; };
+		D87481BF1AEC7C1E006FD8BB /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		D87481DF1AEC8F2D006FD8BB /* !=~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "!=~.pd"; sourceTree = "<group>"; };
+		D87481E01AEC8F2D006FD8BB /* &&~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "&&~.pd"; sourceTree = "<group>"; };
+		D87481E11AEC8F2D006FD8BB /* <=~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "<=~.pd"; sourceTree = "<group>"; };
+		D87481E21AEC8F2D006FD8BB /* <~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "<~.pd"; sourceTree = "<group>"; };
+		D87481E31AEC8F2D006FD8BB /* ==~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "==~.pd"; sourceTree = "<group>"; };
+		D87481E41AEC8F2D006FD8BB /* >=~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ">=~.pd"; sourceTree = "<group>"; };
+		D87481E51AEC8F2D006FD8BB /* >~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ">~.pd"; sourceTree = "<group>"; };
+		D87481E61AEC8F2D006FD8BB /* abstractions-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "abstractions-help.pd"; sourceTree = "<group>"; };
+		D87481E71AEC8F2D006FD8BB /* abstractions-standalone-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "abstractions-standalone-help.pd"; sourceTree = "<group>"; };
+		D87481E81AEC8F2D006FD8BB /* abstractions-standalone.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "abstractions-standalone.pd"; sourceTree = "<group>"; };
+		D87481E91AEC8F2D006FD8BB /* abstractions.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = abstractions.pd; sourceTree = "<group>"; };
+		D87481EA1AEC8F2D006FD8BB /* adsr~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "adsr~-help.pd"; sourceTree = "<group>"; };
+		D87481EB1AEC8F2D006FD8BB /* adsr~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "adsr~.pd"; sourceTree = "<group>"; };
+		D87481EC1AEC8F2D006FD8BB /* anything-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "anything-help.pd"; sourceTree = "<group>"; };
+		D87481ED1AEC8F2D006FD8BB /* anything.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = anything.pd; sourceTree = "<group>"; };
+		D87481EE1AEC8F2D006FD8BB /* arg2method-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "arg2method-help.pd"; sourceTree = "<group>"; };
+		D87481EF1AEC8F2D006FD8BB /* arg2method.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = arg2method.pd; sourceTree = "<group>"; };
+		D87481F01AEC8F2D006FD8BB /* argv-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "argv-help.pd"; sourceTree = "<group>"; };
+		D87481F11AEC8F2D006FD8BB /* argv-test.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "argv-test.pd"; sourceTree = "<group>"; };
+		D87481F21AEC8F2D006FD8BB /* autobiquad2~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "autobiquad2~-help.pd"; sourceTree = "<group>"; };
+		D87481F31AEC8F2D006FD8BB /* autobiquad2~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "autobiquad2~.pd"; sourceTree = "<group>"; };
+		D87481F41AEC8F2D006FD8BB /* autobiquad~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "autobiquad~-help.pd"; sourceTree = "<group>"; };
+		D87481F51AEC8F2D006FD8BB /* autobiquad~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "autobiquad~.pd"; sourceTree = "<group>"; };
+		D87481F61AEC8F2D006FD8BB /* autosampler-voice~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "autosampler-voice~.pd"; sourceTree = "<group>"; };
+		D87481F71AEC8F2D006FD8BB /* autosampler~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "autosampler~-help.pd"; sourceTree = "<group>"; };
+		D87481F81AEC8F2D006FD8BB /* autosampler~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "autosampler~.pd"; sourceTree = "<group>"; };
+		D87481F91AEC8F2D006FD8BB /* autospectrum~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "autospectrum~-help.pd"; sourceTree = "<group>"; };
+		D87481FA1AEC8F2D006FD8BB /* autospectrum~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "autospectrum~.pd"; sourceTree = "<group>"; };
+		D87481FB1AEC8F2D006FD8BB /* biquad_coefficients-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "biquad_coefficients-help.pd"; sourceTree = "<group>"; };
+		D87481FC1AEC8F2D006FD8BB /* biquad_coefficients.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = biquad_coefficients.pd; sourceTree = "<group>"; };
+		D87481FD1AEC8F2D006FD8BB /* biquad_response-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "biquad_response-help.pd"; sourceTree = "<group>"; };
+		D87481FE1AEC8F2D006FD8BB /* biquad_response.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = biquad_response.pd; sourceTree = "<group>"; };
+		D87481FF1AEC8F2D006FD8BB /* cadd-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cadd-help.pd"; sourceTree = "<group>"; };
+		D87482001AEC8F2D006FD8BB /* cadd.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cadd.pd; sourceTree = "<group>"; };
+		D87482011AEC8F2D006FD8BB /* cadd~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cadd~-help.pd"; sourceTree = "<group>"; };
+		D87482021AEC8F2D006FD8BB /* cadd~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cadd~.pd"; sourceTree = "<group>"; };
+		D87482031AEC8F2D006FD8BB /* cconj-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cconj-help.pd"; sourceTree = "<group>"; };
+		D87482041AEC8F2D006FD8BB /* cconj.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cconj.pd; sourceTree = "<group>"; };
+		D87482051AEC8F2D006FD8BB /* cconj~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cconj~-help.pd"; sourceTree = "<group>"; };
+		D87482061AEC8F2D006FD8BB /* cconj~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cconj~.pd"; sourceTree = "<group>"; };
+		D87482071AEC8F2D006FD8BB /* cdiv-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cdiv-help.pd"; sourceTree = "<group>"; };
+		D87482081AEC8F2D006FD8BB /* cdiv.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cdiv.pd; sourceTree = "<group>"; };
+		D87482091AEC8F2D006FD8BB /* cdiv~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cdiv~-help.pd"; sourceTree = "<group>"; };
+		D874820A1AEC8F2D006FD8BB /* cdiv~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cdiv~.pd"; sourceTree = "<group>"; };
+		D874820B1AEC8F2D006FD8BB /* ceil.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ceil.pd; sourceTree = "<group>"; };
+		D874820C1AEC8F2D006FD8BB /* cexp-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cexp-help.pd"; sourceTree = "<group>"; };
+		D874820D1AEC8F2D006FD8BB /* cexp.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cexp.pd; sourceTree = "<group>"; };
+		D874820E1AEC8F2D006FD8BB /* cexp~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cexp~-help.pd"; sourceTree = "<group>"; };
+		D874820F1AEC8F2D006FD8BB /* cexp~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cexp~.pd"; sourceTree = "<group>"; };
+		D87482101AEC8F2D006FD8BB /* channels~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "channels~-help.pd"; sourceTree = "<group>"; };
+		D87482111AEC8F2D006FD8BB /* channels~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "channels~.pd"; sourceTree = "<group>"; };
+		D87482121AEC8F2D006FD8BB /* chorus~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chorus~-help.pd"; sourceTree = "<group>"; };
+		D87482131AEC8F2D006FD8BB /* chorus~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chorus~.pd"; sourceTree = "<group>"; };
+		D87482141AEC8F2D006FD8BB /* chorus~~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chorus~~-help.pd"; sourceTree = "<group>"; };
+		D87482151AEC8F2D006FD8BB /* chorus~~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "chorus~~.pd"; sourceTree = "<group>"; };
+		D87482161AEC8F2D006FD8BB /* circularlist-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "circularlist-help.pd"; sourceTree = "<group>"; };
+		D87482171AEC8F2D006FD8BB /* circularlist.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = circularlist.pd; sourceTree = "<group>"; };
+		D87482181AEC8F2D006FD8BB /* cleanup~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cleanup~-help.pd"; sourceTree = "<group>"; };
+		D87482191AEC8F2D006FD8BB /* cleanup~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cleanup~.pd"; sourceTree = "<group>"; };
+		D874821A1AEC8F2E006FD8BB /* cmag-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cmag-help.pd"; sourceTree = "<group>"; };
+		D874821B1AEC8F2E006FD8BB /* cmag.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmag.pd; sourceTree = "<group>"; };
+		D874821C1AEC8F2E006FD8BB /* cmag~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cmag~.pd"; sourceTree = "<group>"; };
+		D874821D1AEC8F2E006FD8BB /* cmult-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cmult-help.pd"; sourceTree = "<group>"; };
+		D874821E1AEC8F2E006FD8BB /* cmult.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmult.pd; sourceTree = "<group>"; };
+		D874821F1AEC8F2E006FD8BB /* cmult~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cmult~-help.pd"; sourceTree = "<group>"; };
+		D87482201AEC8F2E006FD8BB /* cmult~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cmult~.pd"; sourceTree = "<group>"; };
+		D87482211AEC8F2E006FD8BB /* complex-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "complex-help.pd"; sourceTree = "<group>"; };
+		D87482221AEC8F2E006FD8BB /* complex-mod~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "complex-mod~-help.pd"; sourceTree = "<group>"; };
+		D87482231AEC8F2E006FD8BB /* complex-mod~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "complex-mod~.pd"; sourceTree = "<group>"; };
+		D87482241AEC8F2E006FD8BB /* complex.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = complex.pd; sourceTree = "<group>"; };
+		D87482251AEC8F2E006FD8BB /* cosh.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cosh.pd; sourceTree = "<group>"; };
+		D87482261AEC8F2E006FD8BB /* cosh~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cosh~-help.pd"; sourceTree = "<group>"; };
+		D87482271AEC8F2E006FD8BB /* cosh~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cosh~.pd"; sourceTree = "<group>"; };
+		D87482281AEC8F2E006FD8BB /* cot-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cot-help.pd"; sourceTree = "<group>"; };
+		D87482291AEC8F2E006FD8BB /* cot.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cot.pd; sourceTree = "<group>"; };
+		D874822A1AEC8F2E006FD8BB /* coth.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = coth.pd; sourceTree = "<group>"; };
+		D874822B1AEC8F2E006FD8BB /* coth~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "coth~-help.pd"; sourceTree = "<group>"; };
+		D874822C1AEC8F2E006FD8BB /* coth~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "coth~.pd"; sourceTree = "<group>"; };
+		D874822D1AEC8F2E006FD8BB /* cot~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cot~-help.pd"; sourceTree = "<group>"; };
+		D874822E1AEC8F2E006FD8BB /* cot~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cot~.pd"; sourceTree = "<group>"; };
+		D874822F1AEC8F2E006FD8BB /* counter2-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "counter2-help.pd"; sourceTree = "<group>"; };
+		D87482301AEC8F2E006FD8BB /* counter2.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = counter2.pd; sourceTree = "<group>"; };
+		D87482311AEC8F2E006FD8BB /* csc-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "csc-help.pd"; sourceTree = "<group>"; };
+		D87482321AEC8F2E006FD8BB /* csc.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = csc.pd; sourceTree = "<group>"; };
+		D87482331AEC8F2E006FD8BB /* csch.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = csch.pd; sourceTree = "<group>"; };
+		D87482341AEC8F2E006FD8BB /* csch~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "csch~-help.pd"; sourceTree = "<group>"; };
+		D87482351AEC8F2E006FD8BB /* csch~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "csch~.pd"; sourceTree = "<group>"; };
+		D87482361AEC8F2E006FD8BB /* csc~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "csc~-help.pd"; sourceTree = "<group>"; };
+		D87482371AEC8F2E006FD8BB /* csc~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "csc~.pd"; sourceTree = "<group>"; };
+		D87482381AEC8F2E006FD8BB /* csub-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "csub-help.pd"; sourceTree = "<group>"; };
+		D87482391AEC8F2E006FD8BB /* csub.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = csub.pd; sourceTree = "<group>"; };
+		D874823A1AEC8F2E006FD8BB /* csub~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "csub~-help.pd"; sourceTree = "<group>"; };
+		D874823B1AEC8F2E006FD8BB /* csub~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "csub~.pd"; sourceTree = "<group>"; };
+		D874823C1AEC8F2E006FD8BB /* csymbol-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "csymbol-help.pd"; sourceTree = "<group>"; };
+		D874823D1AEC8F2E006FD8BB /* csymbol.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = csymbol.pd; sourceTree = "<group>"; };
+		D874823E1AEC8F2E006FD8BB /* dictionary-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dictionary-help.pd"; sourceTree = "<group>"; };
+		D874823F1AEC8F2E006FD8BB /* dictionary-small-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dictionary-small-help.pd"; sourceTree = "<group>"; };
+		D87482401AEC8F2E006FD8BB /* dictionary-small.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dictionary-small.pd"; sourceTree = "<group>"; };
+		D87482411AEC8F2E006FD8BB /* dictionary-standalone-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dictionary-standalone-help.pd"; sourceTree = "<group>"; };
+		D87482421AEC8F2E006FD8BB /* dictionary-standalone.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dictionary-standalone.pd"; sourceTree = "<group>"; };
+		D87482431AEC8F2E006FD8BB /* dictionary.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.pd; sourceTree = "<group>"; };
+		D87482441AEC8F2E006FD8BB /* dpoly-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dpoly-help.pd"; sourceTree = "<group>"; };
+		D87482451AEC8F2E006FD8BB /* dpoly.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dpoly.pd; sourceTree = "<group>"; };
+		D87482461AEC8F2E006FD8BB /* dprint-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dprint-help.pd"; sourceTree = "<group>"; };
+		D87482471AEC8F2E006FD8BB /* dprint.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dprint.pd; sourceTree = "<group>"; };
+		D87482481AEC8F2E006FD8BB /* dr-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dr-help.pd"; sourceTree = "<group>"; };
+		D87482491AEC8F2E006FD8BB /* dr.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dr.pd; sourceTree = "<group>"; };
+		D874824A1AEC8F2E006FD8BB /* dynamicpd-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dynamicpd-help.pd"; sourceTree = "<group>"; };
+		D874824B1AEC8F2E006FD8BB /* dynamicpd.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dynamicpd.pd; sourceTree = "<group>"; };
+		D874824C1AEC8F2E006FD8BB /* evaluate-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "evaluate-help.pd"; sourceTree = "<group>"; };
+		D874824D1AEC8F2E006FD8BB /* evaluate.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = evaluate.pd; sourceTree = "<group>"; };
+		D874824E1AEC8F2E006FD8BB /* evaluate2.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = evaluate2.pd; sourceTree = "<group>"; };
+		D874824F1AEC8F2E006FD8BB /* evaluate3.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = evaluate3.pd; sourceTree = "<group>"; };
+		D87482501AEC8F2E006FD8BB /* expscale-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "expscale-help.pd"; sourceTree = "<group>"; };
+		D87482511AEC8F2E006FD8BB /* expscale.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = expscale.pd; sourceTree = "<group>"; };
+		D87482521AEC8F2E006FD8BB /* f!=-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "f!=-help.pd"; sourceTree = "<group>"; };
+		D87482531AEC8F2E006FD8BB /* f!=.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "f!=.pd"; sourceTree = "<group>"; };
+		D87482541AEC8F2E006FD8BB /* filt-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "filt-help.pd"; sourceTree = "<group>"; };
+		D87482551AEC8F2E006FD8BB /* filt.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = filt.pd; sourceTree = "<group>"; };
+		D87482561AEC8F2E006FD8BB /* for++-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "for++-help.pd"; sourceTree = "<group>"; };
+		D87482571AEC8F2E006FD8BB /* for++.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "for++.pd"; sourceTree = "<group>"; };
+		D87482581AEC8F2E006FD8BB /* gain~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gain~-help.pd"; sourceTree = "<group>"; };
+		D87482591AEC8F2E006FD8BB /* gain~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gain~.pd"; sourceTree = "<group>"; };
+		D874825A1AEC8F2E006FD8BB /* gate10-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate10-help.pd"; sourceTree = "<group>"; };
+		D874825B1AEC8F2E006FD8BB /* gate10.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate10.pd; sourceTree = "<group>"; };
+		D874825C1AEC8F2E006FD8BB /* gate11-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate11-help.pd"; sourceTree = "<group>"; };
+		D874825D1AEC8F2E006FD8BB /* gate11.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate11.pd; sourceTree = "<group>"; };
+		D874825E1AEC8F2E006FD8BB /* gate12-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate12-help.pd"; sourceTree = "<group>"; };
+		D874825F1AEC8F2E006FD8BB /* gate12.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate12.pd; sourceTree = "<group>"; };
+		D87482601AEC8F2E006FD8BB /* gate13-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate13-help.pd"; sourceTree = "<group>"; };
+		D87482611AEC8F2E006FD8BB /* gate13.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate13.pd; sourceTree = "<group>"; };
+		D87482621AEC8F2E006FD8BB /* gate14-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate14-help.pd"; sourceTree = "<group>"; };
+		D87482631AEC8F2E006FD8BB /* gate14.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate14.pd; sourceTree = "<group>"; };
+		D87482641AEC8F2E006FD8BB /* gate15-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate15-help.pd"; sourceTree = "<group>"; };
+		D87482651AEC8F2E006FD8BB /* gate15.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate15.pd; sourceTree = "<group>"; };
+		D87482661AEC8F2E006FD8BB /* gate16-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate16-help.pd"; sourceTree = "<group>"; };
+		D87482671AEC8F2E006FD8BB /* gate16.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate16.pd; sourceTree = "<group>"; };
+		D87482681AEC8F2E006FD8BB /* gate17-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate17-help.pd"; sourceTree = "<group>"; };
+		D87482691AEC8F2E006FD8BB /* gate17.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate17.pd; sourceTree = "<group>"; };
+		D874826A1AEC8F2E006FD8BB /* gate18-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate18-help.pd"; sourceTree = "<group>"; };
+		D874826B1AEC8F2E006FD8BB /* gate18.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate18.pd; sourceTree = "<group>"; };
+		D874826C1AEC8F2E006FD8BB /* gate19-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate19-help.pd"; sourceTree = "<group>"; };
+		D874826D1AEC8F2E006FD8BB /* gate19.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate19.pd; sourceTree = "<group>"; };
+		D874826E1AEC8F2E006FD8BB /* gate2-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate2-help.pd"; sourceTree = "<group>"; };
+		D874826F1AEC8F2E006FD8BB /* gate2.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate2.pd; sourceTree = "<group>"; };
+		D87482701AEC8F2E006FD8BB /* gate20-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate20-help.pd"; sourceTree = "<group>"; };
+		D87482711AEC8F2E006FD8BB /* gate20.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate20.pd; sourceTree = "<group>"; };
+		D87482721AEC8F2E006FD8BB /* gate21-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate21-help.pd"; sourceTree = "<group>"; };
+		D87482731AEC8F2E006FD8BB /* gate21.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate21.pd; sourceTree = "<group>"; };
+		D87482741AEC8F2E006FD8BB /* gate22-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate22-help.pd"; sourceTree = "<group>"; };
+		D87482751AEC8F2E006FD8BB /* gate22.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate22.pd; sourceTree = "<group>"; };
+		D87482761AEC8F2E006FD8BB /* gate23-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate23-help.pd"; sourceTree = "<group>"; };
+		D87482771AEC8F2E006FD8BB /* gate23.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate23.pd; sourceTree = "<group>"; };
+		D87482781AEC8F2E006FD8BB /* gate24-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate24-help.pd"; sourceTree = "<group>"; };
+		D87482791AEC8F2E006FD8BB /* gate24.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate24.pd; sourceTree = "<group>"; };
+		D874827A1AEC8F2E006FD8BB /* gate25-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate25-help.pd"; sourceTree = "<group>"; };
+		D874827B1AEC8F2E006FD8BB /* gate25.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate25.pd; sourceTree = "<group>"; };
+		D874827C1AEC8F2E006FD8BB /* gate26-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate26-help.pd"; sourceTree = "<group>"; };
+		D874827D1AEC8F2E006FD8BB /* gate26.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate26.pd; sourceTree = "<group>"; };
+		D874827E1AEC8F2E006FD8BB /* gate27-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate27-help.pd"; sourceTree = "<group>"; };
+		D874827F1AEC8F2E006FD8BB /* gate27.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate27.pd; sourceTree = "<group>"; };
+		D87482801AEC8F2E006FD8BB /* gate28-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate28-help.pd"; sourceTree = "<group>"; };
+		D87482811AEC8F2E006FD8BB /* gate28.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate28.pd; sourceTree = "<group>"; };
+		D87482821AEC8F2E006FD8BB /* gate29-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate29-help.pd"; sourceTree = "<group>"; };
+		D87482831AEC8F2E006FD8BB /* gate29.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate29.pd; sourceTree = "<group>"; };
+		D87482841AEC8F2E006FD8BB /* gate2~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate2~-help.pd"; sourceTree = "<group>"; };
+		D87482851AEC8F2E006FD8BB /* gate2~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate2~.pd"; sourceTree = "<group>"; };
+		D87482861AEC8F2E006FD8BB /* gate3-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate3-help.pd"; sourceTree = "<group>"; };
+		D87482871AEC8F2E006FD8BB /* gate3.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate3.pd; sourceTree = "<group>"; };
+		D87482881AEC8F2E006FD8BB /* gate30-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate30-help.pd"; sourceTree = "<group>"; };
+		D87482891AEC8F2E006FD8BB /* gate30.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate30.pd; sourceTree = "<group>"; };
+		D874828A1AEC8F2E006FD8BB /* gate31-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate31-help.pd"; sourceTree = "<group>"; };
+		D874828B1AEC8F2E006FD8BB /* gate31.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate31.pd; sourceTree = "<group>"; };
+		D874828C1AEC8F2E006FD8BB /* gate32-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate32-help.pd"; sourceTree = "<group>"; };
+		D874828D1AEC8F2E006FD8BB /* gate32.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate32.pd; sourceTree = "<group>"; };
+		D874828E1AEC8F2E006FD8BB /* gate3~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate3~-help.pd"; sourceTree = "<group>"; };
+		D874828F1AEC8F2E006FD8BB /* gate3~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate3~.pd"; sourceTree = "<group>"; };
+		D87482901AEC8F2E006FD8BB /* gate4-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate4-help.pd"; sourceTree = "<group>"; };
+		D87482911AEC8F2E006FD8BB /* gate4.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate4.pd; sourceTree = "<group>"; };
+		D87482921AEC8F2E006FD8BB /* gate4~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate4~-help.pd"; sourceTree = "<group>"; };
+		D87482931AEC8F2E006FD8BB /* gate4~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate4~.pd"; sourceTree = "<group>"; };
+		D87482941AEC8F2E006FD8BB /* gate5-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate5-help.pd"; sourceTree = "<group>"; };
+		D87482951AEC8F2E006FD8BB /* gate5.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate5.pd; sourceTree = "<group>"; };
+		D87482961AEC8F2E006FD8BB /* gate5~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate5~-help.pd"; sourceTree = "<group>"; };
+		D87482971AEC8F2E006FD8BB /* gate5~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate5~.pd"; sourceTree = "<group>"; };
+		D87482981AEC8F2E006FD8BB /* gate6-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate6-help.pd"; sourceTree = "<group>"; };
+		D87482991AEC8F2E006FD8BB /* gate6.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate6.pd; sourceTree = "<group>"; };
+		D874829A1AEC8F2E006FD8BB /* gate6~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate6~-help.pd"; sourceTree = "<group>"; };
+		D874829B1AEC8F2E006FD8BB /* gate6~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate6~.pd"; sourceTree = "<group>"; };
+		D874829C1AEC8F2E006FD8BB /* gate7-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate7-help.pd"; sourceTree = "<group>"; };
+		D874829D1AEC8F2E006FD8BB /* gate7.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate7.pd; sourceTree = "<group>"; };
+		D874829E1AEC8F2E006FD8BB /* gate7~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate7~-help.pd"; sourceTree = "<group>"; };
+		D874829F1AEC8F2E006FD8BB /* gate7~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate7~.pd"; sourceTree = "<group>"; };
+		D87482A01AEC8F2E006FD8BB /* gate8-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate8-help.pd"; sourceTree = "<group>"; };
+		D87482A11AEC8F2E006FD8BB /* gate8.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate8.pd; sourceTree = "<group>"; };
+		D87482A21AEC8F2E006FD8BB /* gate8~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate8~-help.pd"; sourceTree = "<group>"; };
+		D87482A31AEC8F2E006FD8BB /* gate8~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate8~.pd"; sourceTree = "<group>"; };
+		D87482A41AEC8F2E006FD8BB /* gate9-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gate9-help.pd"; sourceTree = "<group>"; };
+		D87482A51AEC8F2E006FD8BB /* gate9.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gate9.pd; sourceTree = "<group>"; };
+		D87482A61AEC8F2E006FD8BB /* gatemaker-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gatemaker-help.pd"; sourceTree = "<group>"; };
+		D87482A71AEC8F2E006FD8BB /* gatemaker.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gatemaker.pd; sourceTree = "<group>"; };
+		D87482A81AEC8F2E006FD8BB /* gatemaker~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gatemaker~-help.pd"; sourceTree = "<group>"; };
+		D87482A91AEC8F2E006FD8BB /* gatemaker~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gatemaker~.pd"; sourceTree = "<group>"; };
+		D87482AA1AEC8F2E006FD8BB /* ggate-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ggate-help.pd"; sourceTree = "<group>"; };
+		D87482AB1AEC8F2E006FD8BB /* ggate.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ggate.pd; sourceTree = "<group>"; };
+		D87482AC1AEC8F2E006FD8BB /* ggate~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ggate~.pd"; sourceTree = "<group>"; };
+		D87482AD1AEC8F2E006FD8BB /* gswitch-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gswitch-help.pd"; sourceTree = "<group>"; };
+		D87482AE1AEC8F2E006FD8BB /* gswitch.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gswitch.pd; sourceTree = "<group>"; };
+		D87482AF1AEC8F2E006FD8BB /* gswitch~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gswitch~.pd"; sourceTree = "<group>"; };
+		D87482B01AEC8F2E006FD8BB /* guiadsr-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "guiadsr-help.pd"; sourceTree = "<group>"; };
+		D87482B11AEC8F2E006FD8BB /* guiadsr.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = guiadsr.pd; sourceTree = "<group>"; };
+		D87482B21AEC8F2E006FD8BB /* guifilter~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "guifilter~-help.pd"; sourceTree = "<group>"; };
+		D87482B31AEC8F2E006FD8BB /* guifilter~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "guifilter~.pd"; sourceTree = "<group>"; };
+		D87482B41AEC8F2E006FD8BB /* hann_table-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "hann_table-help.pd"; sourceTree = "<group>"; };
+		D87482B51AEC8F2E006FD8BB /* hann_table.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hann_table.pd; sourceTree = "<group>"; };
+		D87482B61AEC8F2E006FD8BB /* help_builder-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "help_builder-help.pd"; sourceTree = "<group>"; };
+		D87482B71AEC8F2E006FD8BB /* help_builder.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = help_builder.pd; sourceTree = "<group>"; };
+		D87482B81AEC8F2E006FD8BB /* hilbert~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "hilbert~-help.pd"; sourceTree = "<group>"; };
+		D87482B91AEC8F2E006FD8BB /* hilbert~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "hilbert~.pd"; sourceTree = "<group>"; };
+		D87482BA1AEC8F2E006FD8BB /* if-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "if-help.pd"; sourceTree = "<group>"; };
+		D87482BB1AEC8F2E006FD8BB /* if.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = if.pd; sourceTree = "<group>"; };
+		D87482BC1AEC8F2E006FD8BB /* iterator-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "iterator-help.pd"; sourceTree = "<group>"; };
+		D87482BD1AEC8F2E006FD8BB /* iterator.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iterator.pd; sourceTree = "<group>"; };
+		D87482BE1AEC8F2E006FD8BB /* keyboard_shortcuts.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = keyboard_shortcuts.pd; sourceTree = "<group>"; };
+		D87482BF1AEC8F2E006FD8BB /* ladd-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ladd-help.pd"; sourceTree = "<group>"; };
+		D87482C01AEC8F2E006FD8BB /* ladd.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ladd.pd; sourceTree = "<group>"; };
+		D87482C11AEC8F2E006FD8BB /* ladd2-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ladd2-help.pd"; sourceTree = "<group>"; };
+		D87482C21AEC8F2E006FD8BB /* ladd2.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ladd2.pd; sourceTree = "<group>"; };
+		D87482C31AEC8F2E006FD8BB /* ladd3-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ladd3-help.pd"; sourceTree = "<group>"; };
+		D87482C41AEC8F2E006FD8BB /* ladd3.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ladd3.pd; sourceTree = "<group>"; };
+		D87482C51AEC8F2E006FD8BB /* lapp-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lapp-help.pd"; sourceTree = "<group>"; };
+		D87482C61AEC8F2E006FD8BB /* lapp.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lapp.pd; sourceTree = "<group>"; };
+		D87482C71AEC8F2E006FD8BB /* lbuilder-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lbuilder-help.pd"; sourceTree = "<group>"; };
+		D87482C81AEC8F2E006FD8BB /* lbuilder.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lbuilder.pd; sourceTree = "<group>"; };
+		D87482C91AEC8F2E006FD8BB /* lcount.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lcount.pd; sourceTree = "<group>"; };
+		D87482CA1AEC8F2E006FD8BB /* lfl!=.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lfl!=.pd"; sourceTree = "<group>"; };
+		D87482CB1AEC8F2E006FD8BB /* lfl<.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lfl<.pd"; sourceTree = "<group>"; };
+		D87482CC1AEC8F2E006FD8BB /* lfl<=.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lfl<=.pd"; sourceTree = "<group>"; };
+		D87482CD1AEC8F2E006FD8BB /* lfl==.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lfl==.pd"; sourceTree = "<group>"; };
+		D87482CE1AEC8F2E006FD8BB /* lfl>-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lfl>-help.pd"; sourceTree = "<group>"; };
+		D87482CF1AEC8F2E006FD8BB /* lfl>.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lfl>.pd"; sourceTree = "<group>"; };
+		D87482D01AEC8F2E006FD8BB /* lfl>=.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lfl>=.pd"; sourceTree = "<group>"; };
+		D87482D11AEC8F2E006FD8BB /* lfor-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lfor-help.pd"; sourceTree = "<group>"; };
+		D87482D21AEC8F2E006FD8BB /* lfor.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lfor.pd; sourceTree = "<group>"; };
+		D87482D31AEC8F2E006FD8BB /* lindexget-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lindexget-help.pd"; sourceTree = "<group>"; };
+		D87482D41AEC8F2E006FD8BB /* lindexget.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lindexget.pd; sourceTree = "<group>"; };
+		D87482D51AEC8F2E006FD8BB /* lindexset-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lindexset-help.pd"; sourceTree = "<group>"; };
+		D87482D61AEC8F2E006FD8BB /* lindexset.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lindexset.pd; sourceTree = "<group>"; };
+		D87482D71AEC8F2E006FD8BB /* liter-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "liter-help.pd"; sourceTree = "<group>"; };
+		D87482D81AEC8F2E006FD8BB /* liter.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = liter.pd; sourceTree = "<group>"; };
+		D87482D91AEC8F2E006FD8BB /* ljoin-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ljoin-help.pd"; sourceTree = "<group>"; };
+		D87482DA1AEC8F2E006FD8BB /* ljoin.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ljoin.pd; sourceTree = "<group>"; };
+		D87482DB1AEC8F2E006FD8BB /* loadfloat-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "loadfloat-help.pd"; sourceTree = "<group>"; };
+		D87482DC1AEC8F2E006FD8BB /* loadfloat.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = loadfloat.pd; sourceTree = "<group>"; };
+		D87482DD1AEC8F2E006FD8BB /* loadmess-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "loadmess-help.pd"; sourceTree = "<group>"; };
+		D87482DE1AEC8F2E006FD8BB /* loadmess.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = loadmess.pd; sourceTree = "<group>"; };
+		D87482DF1AEC8F2E006FD8BB /* lpre-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lpre-help.pd"; sourceTree = "<group>"; };
+		D87482E01AEC8F2E006FD8BB /* lpre.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lpre.pd; sourceTree = "<group>"; };
+		D87482E11AEC8F2E006FD8BB /* lprepend-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lprepend-help.pd"; sourceTree = "<group>"; };
+		D87482E21AEC8F2E006FD8BB /* lprepend.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lprepend.pd; sourceTree = "<group>"; };
+		D87482E31AEC8F2E006FD8BB /* lprint-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lprint-help.pd"; sourceTree = "<group>"; };
+		D87482E41AEC8F2E006FD8BB /* lprint.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lprint.pd; sourceTree = "<group>"; };
+		D87482E51AEC8F2E006FD8BB /* lqueue-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lqueue-help.pd"; sourceTree = "<group>"; };
+		D87482E61AEC8F2E006FD8BB /* lqueue.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lqueue.pd; sourceTree = "<group>"; };
+		D87482E71AEC8F2E006FD8BB /* lreverse-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lreverse-help.pd"; sourceTree = "<group>"; };
+		D87482E81AEC8F2E006FD8BB /* lreverse.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lreverse.pd; sourceTree = "<group>"; };
+		D87482E91AEC8F2E006FD8BB /* lset-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lset-help.pd"; sourceTree = "<group>"; };
+		D87482EA1AEC8F2E006FD8BB /* lset.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lset.pd; sourceTree = "<group>"; };
+		D87482EB1AEC8F2E006FD8BB /* lsplit-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lsplit-help.pd"; sourceTree = "<group>"; };
+		D87482EC1AEC8F2E006FD8BB /* lsplit.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lsplit.pd; sourceTree = "<group>"; };
+		D87482ED1AEC8F2E006FD8BB /* lstack-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lstack-help.pd"; sourceTree = "<group>"; };
+		D87482EE1AEC8F2E006FD8BB /* lstack.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lstack.pd; sourceTree = "<group>"; };
+		D87482EF1AEC8F2E006FD8BB /* lswap-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lswap-help.pd"; sourceTree = "<group>"; };
+		D87482F01AEC8F2E006FD8BB /* lswap.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lswap.pd; sourceTree = "<group>"; };
+		D87482F11AEC8F2E006FD8BB /* mp3play~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mp3play~-help.pd"; sourceTree = "<group>"; };
+		D87482F21AEC8F2E006FD8BB /* multidelay~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "multidelay~-help.pd"; sourceTree = "<group>"; };
+		D87482F31AEC8F2E006FD8BB /* multidelay~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "multidelay~.pd"; sourceTree = "<group>"; };
+		D87482F41AEC8F2E006FD8BB /* multidelay~~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "multidelay~~-help.pd"; sourceTree = "<group>"; };
+		D87482F51AEC8F2E006FD8BB /* multidelay~~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "multidelay~~.pd"; sourceTree = "<group>"; };
+		D87482F61AEC8F2E006FD8BB /* multitremolo~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "multitremolo~-help.pd"; sourceTree = "<group>"; };
+		D87482F71AEC8F2E006FD8BB /* multitremolo~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "multitremolo~.pd"; sourceTree = "<group>"; };
+		D87482F81AEC8F2E006FD8BB /* multitremolo~~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "multitremolo~~-help.pd"; sourceTree = "<group>"; };
+		D87482F91AEC8F2E006FD8BB /* multitremolo~~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "multitremolo~~.pd"; sourceTree = "<group>"; };
+		D87482FA1AEC8F2E006FD8BB /* name_manager-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "name_manager-help.pd"; sourceTree = "<group>"; };
+		D87482FB1AEC8F2E006FD8BB /* name_manager.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = name_manager.pd; sourceTree = "<group>"; };
+		D87482FC1AEC8F2E006FD8BB /* normalize2~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "normalize2~-help.pd"; sourceTree = "<group>"; };
+		D87482FD1AEC8F2E006FD8BB /* normalize2~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "normalize2~.pd"; sourceTree = "<group>"; };
+		D87482FE1AEC8F2E006FD8BB /* normalize~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "normalize~-help.pd"; sourceTree = "<group>"; };
+		D87482FF1AEC8F2E006FD8BB /* normalize~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "normalize~.pd"; sourceTree = "<group>"; };
+		D87483001AEC8F2E006FD8BB /* noteflush.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = noteflush.pd; sourceTree = "<group>"; };
+		D87483011AEC8F2E006FD8BB /* number-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "number-help.pd"; sourceTree = "<group>"; };
+		D87483021AEC8F2E006FD8BB /* number.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = number.pd; sourceTree = "<group>"; };
+		D87483031AEC8F2E006FD8BB /* number2note.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = number2note.pd; sourceTree = "<group>"; };
+		D87483041AEC8F2E006FD8BB /* number~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "number~.pd"; sourceTree = "<group>"; };
+		D87483051AEC8F2E006FD8BB /* panner~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "panner~-help.pd"; sourceTree = "<group>"; };
+		D87483061AEC8F2E006FD8BB /* panner~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "panner~.pd"; sourceTree = "<group>"; };
+		D87483071AEC8F2E006FD8BB /* panner~~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "panner~~-help.pd"; sourceTree = "<group>"; };
+		D87483081AEC8F2E006FD8BB /* panner~~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "panner~~.pd"; sourceTree = "<group>"; };
+		D87483091AEC8F2E006FD8BB /* pd_for_libpd.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pd_for_libpd.pd; sourceTree = "<group>"; };
+		D874830A1AEC8F2E006FD8BB /* pi.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pi.pd; sourceTree = "<group>"; };
+		D874830B1AEC8F2E006FD8BB /* piano.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = piano.pd; sourceTree = "<group>"; };
+		D874830C1AEC8F2E006FD8BB /* pitchbend~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pitchbend~-help.pd"; sourceTree = "<group>"; };
+		D874830D1AEC8F2F006FD8BB /* pitchbend~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pitchbend~.pd"; sourceTree = "<group>"; };
+		D874830E1AEC8F2F006FD8BB /* pitchshifter~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pitchshifter~-help.pd"; sourceTree = "<group>"; };
+		D874830F1AEC8F2F006FD8BB /* pitchshifter~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pitchshifter~.pd"; sourceTree = "<group>"; };
+		D87483101AEC8F2F006FD8BB /* playground.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = playground.pd; sourceTree = "<group>"; };
+		D87483111AEC8F2F006FD8BB /* polyphonic_subtractive_synth.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = polyphonic_subtractive_synth.pd; sourceTree = "<group>"; };
+		D87483121AEC8F2F006FD8BB /* print2.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = print2.pd; sourceTree = "<group>"; };
+		D87483131AEC8F2F006FD8BB /* rect~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rect~-help.pd"; sourceTree = "<group>"; };
+		D87483141AEC8F2F006FD8BB /* rect~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rect~.pd"; sourceTree = "<group>"; };
+		D87483151AEC8F2F006FD8BB /* remove_dc_offset~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "remove_dc_offset~-help.pd"; sourceTree = "<group>"; };
+		D87483161AEC8F2F006FD8BB /* remove_dc_offset~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "remove_dc_offset~.pd"; sourceTree = "<group>"; };
+		D87483171AEC8F2F006FD8BB /* rev1-final.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rev1-final.pd"; sourceTree = "<group>"; };
+		D87483181AEC8F2F006FD8BB /* rev1-stage.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rev1-stage.pd"; sourceTree = "<group>"; };
+		D87483191AEC8F2F006FD8BB /* rev1~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rev1~-help.pd"; sourceTree = "<group>"; };
+		D874831A1AEC8F2F006FD8BB /* rev1~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rev1~.pd"; sourceTree = "<group>"; };
+		D874831B1AEC8F2F006FD8BB /* rev2~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rev2~-help.pd"; sourceTree = "<group>"; };
+		D874831C1AEC8F2F006FD8BB /* rev2~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rev2~.pd"; sourceTree = "<group>"; };
+		D874831D1AEC8F2F006FD8BB /* rev3~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rev3~-help.pd"; sourceTree = "<group>"; };
+		D874831E1AEC8F2F006FD8BB /* rev3~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rev3~.pd"; sourceTree = "<group>"; };
+		D874831F1AEC8F2F006FD8BB /* ringmod.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ringmod.pd; sourceTree = "<group>"; };
+		D87483201AEC8F2F006FD8BB /* ringmod~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ringmod~.pd"; sourceTree = "<group>"; };
+		D87483211AEC8F2F006FD8BB /* round-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "round-help.pd"; sourceTree = "<group>"; };
+		D87483221AEC8F2F006FD8BB /* round.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = round.pd; sourceTree = "<group>"; };
+		D87483231AEC8F2F006FD8BB /* sawtooth_table.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sawtooth_table.pd; sourceTree = "<group>"; };
+		D87483241AEC8F2F006FD8BB /* sbuilder.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sbuilder.pd; sourceTree = "<group>"; };
+		D87483251AEC8F2F006FD8BB /* scales-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "scales-help.pd"; sourceTree = "<group>"; };
+		D87483261AEC8F2F006FD8BB /* scales.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scales.pd; sourceTree = "<group>"; };
+		D87483271AEC8F2F006FD8BB /* sec-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sec-help.pd"; sourceTree = "<group>"; };
+		D87483281AEC8F2F006FD8BB /* sec.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sec.pd; sourceTree = "<group>"; };
+		D87483291AEC8F2F006FD8BB /* sech.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sech.pd; sourceTree = "<group>"; };
+		D874832A1AEC8F2F006FD8BB /* sech~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sech~-help.pd"; sourceTree = "<group>"; };
+		D874832B1AEC8F2F006FD8BB /* sech~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sech~.pd"; sourceTree = "<group>"; };
+		D874832C1AEC8F2F006FD8BB /* sec~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sec~-help.pd"; sourceTree = "<group>"; };
+		D874832D1AEC8F2F006FD8BB /* sec~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sec~.pd"; sourceTree = "<group>"; };
+		D874832E1AEC8F2F006FD8BB /* sigbiquad_coeff~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sigbiquad_coeff~-help.pd"; sourceTree = "<group>"; };
+		D874832F1AEC8F2F006FD8BB /* sigbiquad_coeff~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sigbiquad_coeff~.pd"; sourceTree = "<group>"; };
+		D87483301AEC8F2F006FD8BB /* sigbiquad~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sigbiquad~-help.pd"; sourceTree = "<group>"; };
+		D87483311AEC8F2F006FD8BB /* sigbiquad~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sigbiquad~.pd"; sourceTree = "<group>"; };
+		D87483321AEC8F2F006FD8BB /* sine_table.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sine_table.pd; sourceTree = "<group>"; };
+		D87483331AEC8F2F006FD8BB /* sinh.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sinh.pd; sourceTree = "<group>"; };
+		D87483341AEC8F2F006FD8BB /* sinh~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sinh~-help.pd"; sourceTree = "<group>"; };
+		D87483351AEC8F2F006FD8BB /* sinh~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sinh~.pd"; sourceTree = "<group>"; };
+		D87483361AEC8F2F006FD8BB /* smoothline~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "smoothline~.pd"; sourceTree = "<group>"; };
+		D87483371AEC8F2F006FD8BB /* soundfonts-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "soundfonts-help.pd"; sourceTree = "<group>"; };
+		D87483381AEC8F2F006FD8BB /* square_table.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = square_table.pd; sourceTree = "<group>"; };
+		D87483391AEC8F2F006FD8BB /* stack-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "stack-help.pd"; sourceTree = "<group>"; };
+		D874833A1AEC8F2F006FD8BB /* stack.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stack.pd; sourceTree = "<group>"; };
+		D874833B1AEC8F2F006FD8BB /* subtractive_synth.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = subtractive_synth.pd; sourceTree = "<group>"; };
+		D874833C1AEC8F2F006FD8BB /* subtractive_synth_interface.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = subtractive_synth_interface.pd; sourceTree = "<group>"; };
+		D874833D1AEC8F2F006FD8BB /* switch2-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch2-help.pd"; sourceTree = "<group>"; };
+		D874833E1AEC8F2F006FD8BB /* switch2.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = switch2.pd; sourceTree = "<group>"; };
+		D874833F1AEC8F2F006FD8BB /* switch2~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch2~-help.pd"; sourceTree = "<group>"; };
+		D87483401AEC8F2F006FD8BB /* switch2~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch2~.pd"; sourceTree = "<group>"; };
+		D87483411AEC8F2F006FD8BB /* switch3-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch3-help.pd"; sourceTree = "<group>"; };
+		D87483421AEC8F2F006FD8BB /* switch3.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = switch3.pd; sourceTree = "<group>"; };
+		D87483431AEC8F2F006FD8BB /* switch3~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch3~-help.pd"; sourceTree = "<group>"; };
+		D87483441AEC8F2F006FD8BB /* switch3~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch3~.pd"; sourceTree = "<group>"; };
+		D87483451AEC8F2F006FD8BB /* switch4-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch4-help.pd"; sourceTree = "<group>"; };
+		D87483461AEC8F2F006FD8BB /* switch4.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = switch4.pd; sourceTree = "<group>"; };
+		D87483471AEC8F2F006FD8BB /* switch4~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch4~-help.pd"; sourceTree = "<group>"; };
+		D87483481AEC8F2F006FD8BB /* switch4~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch4~.pd"; sourceTree = "<group>"; };
+		D87483491AEC8F2F006FD8BB /* switch5-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch5-help.pd"; sourceTree = "<group>"; };
+		D874834A1AEC8F2F006FD8BB /* switch5.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = switch5.pd; sourceTree = "<group>"; };
+		D874834B1AEC8F2F006FD8BB /* switch5~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch5~-help.pd"; sourceTree = "<group>"; };
+		D874834C1AEC8F2F006FD8BB /* switch5~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch5~.pd"; sourceTree = "<group>"; };
+		D874834D1AEC8F2F006FD8BB /* switch6-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch6-help.pd"; sourceTree = "<group>"; };
+		D874834E1AEC8F2F006FD8BB /* switch6.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = switch6.pd; sourceTree = "<group>"; };
+		D874834F1AEC8F2F006FD8BB /* switch6~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch6~-help.pd"; sourceTree = "<group>"; };
+		D87483501AEC8F2F006FD8BB /* switch6~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch6~.pd"; sourceTree = "<group>"; };
+		D87483511AEC8F2F006FD8BB /* switch7-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch7-help.pd"; sourceTree = "<group>"; };
+		D87483521AEC8F2F006FD8BB /* switch7.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = switch7.pd; sourceTree = "<group>"; };
+		D87483531AEC8F2F006FD8BB /* switch7~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch7~-help.pd"; sourceTree = "<group>"; };
+		D87483541AEC8F2F006FD8BB /* switch7~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch7~.pd"; sourceTree = "<group>"; };
+		D87483551AEC8F2F006FD8BB /* switch8-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch8-help.pd"; sourceTree = "<group>"; };
+		D87483561AEC8F2F006FD8BB /* switch8.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = switch8.pd; sourceTree = "<group>"; };
+		D87483571AEC8F2F006FD8BB /* switch8~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch8~-help.pd"; sourceTree = "<group>"; };
+		D87483581AEC8F2F006FD8BB /* switch8~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switch8~.pd"; sourceTree = "<group>"; };
+		D87483591AEC8F2F006FD8BB /* switchmaker-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switchmaker-help.pd"; sourceTree = "<group>"; };
+		D874835A1AEC8F2F006FD8BB /* switchmaker.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = switchmaker.pd; sourceTree = "<group>"; };
+		D874835B1AEC8F2F006FD8BB /* switchmaker~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switchmaker~-help.pd"; sourceTree = "<group>"; };
+		D874835C1AEC8F2F006FD8BB /* switchmaker~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "switchmaker~.pd"; sourceTree = "<group>"; };
+		D874835D1AEC8F2F006FD8BB /* synth16~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "synth16~.pd"; sourceTree = "<group>"; };
+		D874835E1AEC8F2F006FD8BB /* synth~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "synth~.pd"; sourceTree = "<group>"; };
+		D874835F1AEC8F2F006FD8BB /* tanh.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tanh.pd; sourceTree = "<group>"; };
+		D87483601AEC8F2F006FD8BB /* tanh~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "tanh~-help.pd"; sourceTree = "<group>"; };
+		D87483611AEC8F2F006FD8BB /* tanh~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "tanh~.pd"; sourceTree = "<group>"; };
+		D87483621AEC8F2F006FD8BB /* tan~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "tan~-help.pd"; sourceTree = "<group>"; };
+		D87483631AEC8F2F006FD8BB /* tan~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "tan~.pd"; sourceTree = "<group>"; };
+		D87483641AEC8F2F006FD8BB /* tb_peakcomp~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "tb_peakcomp~-help.pd"; sourceTree = "<group>"; };
+		D87483651AEC8F2F006FD8BB /* testtone~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "testtone~.pd"; sourceTree = "<group>"; };
+		D87483661AEC8F2F006FD8BB /* tone~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "tone~.pd"; sourceTree = "<group>"; };
+		D87483671AEC8F2F006FD8BB /* transistor~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "transistor~-help.pd"; sourceTree = "<group>"; };
+		D87483681AEC8F2F006FD8BB /* transistor~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "transistor~.pd"; sourceTree = "<group>"; };
+		D87483691AEC8F2F006FD8BB /* triangle_table.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = triangle_table.pd; sourceTree = "<group>"; };
+		D874836A1AEC8F2F006FD8BB /* unique_set.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unique_set.pd; sourceTree = "<group>"; };
+		D874836B1AEC8F2F006FD8BB /* uzi-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "uzi-help.pd"; sourceTree = "<group>"; };
+		D874836C1AEC8F2F006FD8BB /* uzi.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uzi.pd; sourceTree = "<group>"; };
+		D874836D1AEC8F2F006FD8BB /* view~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "view~.pd"; sourceTree = "<group>"; };
+		D874836E1AEC8F2F006FD8BB /* voice~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "voice~.pd"; sourceTree = "<group>"; };
+		D874836F1AEC8F2F006FD8BB /* volume~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "volume~-help.pd"; sourceTree = "<group>"; };
+		D87483701AEC8F2F006FD8BB /* volume~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "volume~.pd"; sourceTree = "<group>"; };
+		D87483711AEC8F2F006FD8BB /* ||~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "||~.pd"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +1028,8 @@
 		3B25B7FB1AC732BD00C1A669 = {
 			isa = PBXGroup;
 			children = (
+				D87481DE1AEC8F2D006FD8BB /* pd-for-libpd */,
+				D87481A01AEC7C1E006FD8BB /* soundfonts */,
 				3B25B8061AC732BD00C1A669 /* Pocket */,
 				3B25B81C1AC732BD00C1A669 /* PocketTests */,
 				3B25B8051AC732BD00C1A669 /* Products */,
@@ -186,10 +1062,11 @@
 				3B25B8291AC79D6600C1A669 /* CustomTabControllerViewController.swift */,
 				3B25B82D1AC8DDC200C1A669 /* RoundButton.swift */,
 				3B9BBC331ACB29D00081A443 /* MaestroView.swift */,
+				3B25B82B1AC8DCAF00C1A669 /* Maestro.swift */,
+				D85D90011AEC1E0100238117 /* PercussionViewController.swift */,
 				3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */,
 				3B5583D51AD07633009B0AAC /* DownValve.swift */,
 				3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */,
-				3B57F8FA1ACE142300A09EE0 /* padpod-Bridging-Header.h */,
 				3B5583CC1AD06BEA009B0AAC /* HydralysViewController.swift */,
 				3B5583CE1AD06C07009B0AAC /* PdBridge.h */,
 				3B5583D11AD06C3D009B0AAC /* ValveHead.swift */,
@@ -232,6 +1109,9 @@
 		3B57F8E61ACE13B000A09EE0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D85D8FFF1AEC073D00238117 /* pocket.pd */,
+				D85D8FFB1AEC038D00238117 /* bass.pd */,
+				D85D8FFC1AEC038D00238117 /* bass~.pd */,
 				3B1AAEC31AD9B71C007A7E64 /* list-seek.pd */,
 				3B5D7C201AE0118000BDD529 /* list-moses.pd */,
 				3B1AAB891AD9B448007A7E64 /* chordal.pd */,
@@ -259,6 +1139,7 @@
 		5B7628C02EA208C51D0D826B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D85D90031AEC2BAE00238117 /* PdExternals.h */,
 				3B5583DB1AD07746009B0AAC /* CoreMIDI.framework */,
 				3B5583D71AD07711009B0AAC /* CoreAudioKit.framework */,
 				3B5583C81ACE32B3009B0AAC /* AVFoundation.framework */,
@@ -277,6 +1158,462 @@
 				7736CEE71ACD8F6F008563DB /* MHTabBarSegue.m */,
 			);
 			path = MHCustomTabBarController;
+			sourceTree = "<group>";
+		};
+		D87481A01AEC7C1E006FD8BB /* soundfonts */ = {
+			isa = PBXGroup;
+			children = (
+				D87481A11AEC7C1E006FD8BB /* analog_age.sf2 */,
+				D87481A21AEC7C1E006FD8BB /* banjo_1.sf2 */,
+				D87481A31AEC7C1E006FD8BB /* beautiful_pad.sf2 */,
+				D87481A41AEC7C1E006FD8BB /* bolivianflute.sf2 */,
+				D87481A51AEC7C1E006FD8BB /* Campbells_strings.sf2 */,
+				D87481A61AEC7C1E006FD8BB /* Campbells_Verby_Vocal.sf2 */,
+				D87481A71AEC7C1E006FD8BB /* church_organ.sf2 */,
+				D87481A81AEC7C1E006FD8BB /* DCs_Mellotron_Flute.sf2 */,
+				D87481A91AEC7C1E006FD8BB /* ElPiano1.sf2 */,
+				D87481AA1AEC7C1E006FD8BB /* enigma_flute.sf2 */,
+				D87481AB1AEC7C1E006FD8BB /* flugelhorn.sf2 */,
+				D87481AC1AEC7C1E006FD8BB /* IbanezHollowbody.sf2 */,
+				D87481AD1AEC7C1E006FD8BB /* janos_lead.sf2 */,
+				D87481AE1AEC7C1E006FD8BB /* jonnypad1.sf2 */,
+				D87481AF1AEC7C1E006FD8BB /* jonnypad3.sf2 */,
+				D87481B01AEC7C1E006FD8BB /* jonnypad4.sf2 */,
+				D87481B11AEC7C1E006FD8BB /* jonnypad5.sf2 */,
+				D87481B21AEC7C1E006FD8BB /* jonnypad6.SF2 */,
+				D87481B31AEC7C1E006FD8BB /* jonnypad7.sf2 */,
+				D87481B41AEC7C1E006FD8BB /* jonnypad8.sf2 */,
+				D87481B51AEC7C1E006FD8BB /* LesPaul.SF2 */,
+				D87481B61AEC7C1E006FD8BB /* muted_trombone.sf2 */,
+				D87481B71AEC7C1E006FD8BB /* piano_1.sf2 */,
+				D87481B81AEC7C1E006FD8BB /* README.txt */,
+				D87481B91AEC7C1E006FD8BB /* saz.sf2 */,
+				D87481BA1AEC7C1E006FD8BB /* SC88Drumset.sf2 */,
+				D87481BB1AEC7C1E006FD8BB /* soundfonts-help.pd */,
+				D87481BC1AEC7C1E006FD8BB /* StomperSet.sf2 */,
+				D87481BD1AEC7C1E006FD8BB /* unpacking_soundfonts */,
+			);
+			name = soundfonts;
+			path = use/soundfonts;
+			sourceTree = "<group>";
+		};
+		D87481BD1AEC7C1E006FD8BB /* unpacking_soundfonts */ = {
+			isa = PBXGroup;
+			children = (
+				D87481BE1AEC7C1E006FD8BB /* import_sf.py */,
+				D87481BF1AEC7C1E006FD8BB /* README.txt */,
+			);
+			path = unpacking_soundfonts;
+			sourceTree = "<group>";
+		};
+		D87481DE1AEC8F2D006FD8BB /* pd-for-libpd */ = {
+			isa = PBXGroup;
+			children = (
+				D87481DF1AEC8F2D006FD8BB /* !=~.pd */,
+				D87481E01AEC8F2D006FD8BB /* &&~.pd */,
+				D87481E11AEC8F2D006FD8BB /* <=~.pd */,
+				D87481E21AEC8F2D006FD8BB /* <~.pd */,
+				D87481E31AEC8F2D006FD8BB /* ==~.pd */,
+				D87481E41AEC8F2D006FD8BB /* >=~.pd */,
+				D87481E51AEC8F2D006FD8BB /* >~.pd */,
+				D87481E61AEC8F2D006FD8BB /* abstractions-help.pd */,
+				D87481E71AEC8F2D006FD8BB /* abstractions-standalone-help.pd */,
+				D87481E81AEC8F2D006FD8BB /* abstractions-standalone.pd */,
+				D87481E91AEC8F2D006FD8BB /* abstractions.pd */,
+				D87481EA1AEC8F2D006FD8BB /* adsr~-help.pd */,
+				D87481EB1AEC8F2D006FD8BB /* adsr~.pd */,
+				D87481EC1AEC8F2D006FD8BB /* anything-help.pd */,
+				D87481ED1AEC8F2D006FD8BB /* anything.pd */,
+				D87481EE1AEC8F2D006FD8BB /* arg2method-help.pd */,
+				D87481EF1AEC8F2D006FD8BB /* arg2method.pd */,
+				D87481F01AEC8F2D006FD8BB /* argv-help.pd */,
+				D87481F11AEC8F2D006FD8BB /* argv-test.pd */,
+				D87481F21AEC8F2D006FD8BB /* autobiquad2~-help.pd */,
+				D87481F31AEC8F2D006FD8BB /* autobiquad2~.pd */,
+				D87481F41AEC8F2D006FD8BB /* autobiquad~-help.pd */,
+				D87481F51AEC8F2D006FD8BB /* autobiquad~.pd */,
+				D87481F61AEC8F2D006FD8BB /* autosampler-voice~.pd */,
+				D87481F71AEC8F2D006FD8BB /* autosampler~-help.pd */,
+				D87481F81AEC8F2D006FD8BB /* autosampler~.pd */,
+				D87481F91AEC8F2D006FD8BB /* autospectrum~-help.pd */,
+				D87481FA1AEC8F2D006FD8BB /* autospectrum~.pd */,
+				D87481FB1AEC8F2D006FD8BB /* biquad_coefficients-help.pd */,
+				D87481FC1AEC8F2D006FD8BB /* biquad_coefficients.pd */,
+				D87481FD1AEC8F2D006FD8BB /* biquad_response-help.pd */,
+				D87481FE1AEC8F2D006FD8BB /* biquad_response.pd */,
+				D87481FF1AEC8F2D006FD8BB /* cadd-help.pd */,
+				D87482001AEC8F2D006FD8BB /* cadd.pd */,
+				D87482011AEC8F2D006FD8BB /* cadd~-help.pd */,
+				D87482021AEC8F2D006FD8BB /* cadd~.pd */,
+				D87482031AEC8F2D006FD8BB /* cconj-help.pd */,
+				D87482041AEC8F2D006FD8BB /* cconj.pd */,
+				D87482051AEC8F2D006FD8BB /* cconj~-help.pd */,
+				D87482061AEC8F2D006FD8BB /* cconj~.pd */,
+				D87482071AEC8F2D006FD8BB /* cdiv-help.pd */,
+				D87482081AEC8F2D006FD8BB /* cdiv.pd */,
+				D87482091AEC8F2D006FD8BB /* cdiv~-help.pd */,
+				D874820A1AEC8F2D006FD8BB /* cdiv~.pd */,
+				D874820B1AEC8F2D006FD8BB /* ceil.pd */,
+				D874820C1AEC8F2D006FD8BB /* cexp-help.pd */,
+				D874820D1AEC8F2D006FD8BB /* cexp.pd */,
+				D874820E1AEC8F2D006FD8BB /* cexp~-help.pd */,
+				D874820F1AEC8F2D006FD8BB /* cexp~.pd */,
+				D87482101AEC8F2D006FD8BB /* channels~-help.pd */,
+				D87482111AEC8F2D006FD8BB /* channels~.pd */,
+				D87482121AEC8F2D006FD8BB /* chorus~-help.pd */,
+				D87482131AEC8F2D006FD8BB /* chorus~.pd */,
+				D87482141AEC8F2D006FD8BB /* chorus~~-help.pd */,
+				D87482151AEC8F2D006FD8BB /* chorus~~.pd */,
+				D87482161AEC8F2D006FD8BB /* circularlist-help.pd */,
+				D87482171AEC8F2D006FD8BB /* circularlist.pd */,
+				D87482181AEC8F2D006FD8BB /* cleanup~-help.pd */,
+				D87482191AEC8F2D006FD8BB /* cleanup~.pd */,
+				D874821A1AEC8F2E006FD8BB /* cmag-help.pd */,
+				D874821B1AEC8F2E006FD8BB /* cmag.pd */,
+				D874821C1AEC8F2E006FD8BB /* cmag~.pd */,
+				D874821D1AEC8F2E006FD8BB /* cmult-help.pd */,
+				D874821E1AEC8F2E006FD8BB /* cmult.pd */,
+				D874821F1AEC8F2E006FD8BB /* cmult~-help.pd */,
+				D87482201AEC8F2E006FD8BB /* cmult~.pd */,
+				D87482211AEC8F2E006FD8BB /* complex-help.pd */,
+				D87482221AEC8F2E006FD8BB /* complex-mod~-help.pd */,
+				D87482231AEC8F2E006FD8BB /* complex-mod~.pd */,
+				D87482241AEC8F2E006FD8BB /* complex.pd */,
+				D87482251AEC8F2E006FD8BB /* cosh.pd */,
+				D87482261AEC8F2E006FD8BB /* cosh~-help.pd */,
+				D87482271AEC8F2E006FD8BB /* cosh~.pd */,
+				D87482281AEC8F2E006FD8BB /* cot-help.pd */,
+				D87482291AEC8F2E006FD8BB /* cot.pd */,
+				D874822A1AEC8F2E006FD8BB /* coth.pd */,
+				D874822B1AEC8F2E006FD8BB /* coth~-help.pd */,
+				D874822C1AEC8F2E006FD8BB /* coth~.pd */,
+				D874822D1AEC8F2E006FD8BB /* cot~-help.pd */,
+				D874822E1AEC8F2E006FD8BB /* cot~.pd */,
+				D874822F1AEC8F2E006FD8BB /* counter2-help.pd */,
+				D87482301AEC8F2E006FD8BB /* counter2.pd */,
+				D87482311AEC8F2E006FD8BB /* csc-help.pd */,
+				D87482321AEC8F2E006FD8BB /* csc.pd */,
+				D87482331AEC8F2E006FD8BB /* csch.pd */,
+				D87482341AEC8F2E006FD8BB /* csch~-help.pd */,
+				D87482351AEC8F2E006FD8BB /* csch~.pd */,
+				D87482361AEC8F2E006FD8BB /* csc~-help.pd */,
+				D87482371AEC8F2E006FD8BB /* csc~.pd */,
+				D87482381AEC8F2E006FD8BB /* csub-help.pd */,
+				D87482391AEC8F2E006FD8BB /* csub.pd */,
+				D874823A1AEC8F2E006FD8BB /* csub~-help.pd */,
+				D874823B1AEC8F2E006FD8BB /* csub~.pd */,
+				D874823C1AEC8F2E006FD8BB /* csymbol-help.pd */,
+				D874823D1AEC8F2E006FD8BB /* csymbol.pd */,
+				D874823E1AEC8F2E006FD8BB /* dictionary-help.pd */,
+				D874823F1AEC8F2E006FD8BB /* dictionary-small-help.pd */,
+				D87482401AEC8F2E006FD8BB /* dictionary-small.pd */,
+				D87482411AEC8F2E006FD8BB /* dictionary-standalone-help.pd */,
+				D87482421AEC8F2E006FD8BB /* dictionary-standalone.pd */,
+				D87482431AEC8F2E006FD8BB /* dictionary.pd */,
+				D87482441AEC8F2E006FD8BB /* dpoly-help.pd */,
+				D87482451AEC8F2E006FD8BB /* dpoly.pd */,
+				D87482461AEC8F2E006FD8BB /* dprint-help.pd */,
+				D87482471AEC8F2E006FD8BB /* dprint.pd */,
+				D87482481AEC8F2E006FD8BB /* dr-help.pd */,
+				D87482491AEC8F2E006FD8BB /* dr.pd */,
+				D874824A1AEC8F2E006FD8BB /* dynamicpd-help.pd */,
+				D874824B1AEC8F2E006FD8BB /* dynamicpd.pd */,
+				D874824C1AEC8F2E006FD8BB /* evaluate-help.pd */,
+				D874824D1AEC8F2E006FD8BB /* evaluate.pd */,
+				D874824E1AEC8F2E006FD8BB /* evaluate2.pd */,
+				D874824F1AEC8F2E006FD8BB /* evaluate3.pd */,
+				D87482501AEC8F2E006FD8BB /* expscale-help.pd */,
+				D87482511AEC8F2E006FD8BB /* expscale.pd */,
+				D87482521AEC8F2E006FD8BB /* f!=-help.pd */,
+				D87482531AEC8F2E006FD8BB /* f!=.pd */,
+				D87482541AEC8F2E006FD8BB /* filt-help.pd */,
+				D87482551AEC8F2E006FD8BB /* filt.pd */,
+				D87482561AEC8F2E006FD8BB /* for++-help.pd */,
+				D87482571AEC8F2E006FD8BB /* for++.pd */,
+				D87482581AEC8F2E006FD8BB /* gain~-help.pd */,
+				D87482591AEC8F2E006FD8BB /* gain~.pd */,
+				D874825A1AEC8F2E006FD8BB /* gate10-help.pd */,
+				D874825B1AEC8F2E006FD8BB /* gate10.pd */,
+				D874825C1AEC8F2E006FD8BB /* gate11-help.pd */,
+				D874825D1AEC8F2E006FD8BB /* gate11.pd */,
+				D874825E1AEC8F2E006FD8BB /* gate12-help.pd */,
+				D874825F1AEC8F2E006FD8BB /* gate12.pd */,
+				D87482601AEC8F2E006FD8BB /* gate13-help.pd */,
+				D87482611AEC8F2E006FD8BB /* gate13.pd */,
+				D87482621AEC8F2E006FD8BB /* gate14-help.pd */,
+				D87482631AEC8F2E006FD8BB /* gate14.pd */,
+				D87482641AEC8F2E006FD8BB /* gate15-help.pd */,
+				D87482651AEC8F2E006FD8BB /* gate15.pd */,
+				D87482661AEC8F2E006FD8BB /* gate16-help.pd */,
+				D87482671AEC8F2E006FD8BB /* gate16.pd */,
+				D87482681AEC8F2E006FD8BB /* gate17-help.pd */,
+				D87482691AEC8F2E006FD8BB /* gate17.pd */,
+				D874826A1AEC8F2E006FD8BB /* gate18-help.pd */,
+				D874826B1AEC8F2E006FD8BB /* gate18.pd */,
+				D874826C1AEC8F2E006FD8BB /* gate19-help.pd */,
+				D874826D1AEC8F2E006FD8BB /* gate19.pd */,
+				D874826E1AEC8F2E006FD8BB /* gate2-help.pd */,
+				D874826F1AEC8F2E006FD8BB /* gate2.pd */,
+				D87482701AEC8F2E006FD8BB /* gate20-help.pd */,
+				D87482711AEC8F2E006FD8BB /* gate20.pd */,
+				D87482721AEC8F2E006FD8BB /* gate21-help.pd */,
+				D87482731AEC8F2E006FD8BB /* gate21.pd */,
+				D87482741AEC8F2E006FD8BB /* gate22-help.pd */,
+				D87482751AEC8F2E006FD8BB /* gate22.pd */,
+				D87482761AEC8F2E006FD8BB /* gate23-help.pd */,
+				D87482771AEC8F2E006FD8BB /* gate23.pd */,
+				D87482781AEC8F2E006FD8BB /* gate24-help.pd */,
+				D87482791AEC8F2E006FD8BB /* gate24.pd */,
+				D874827A1AEC8F2E006FD8BB /* gate25-help.pd */,
+				D874827B1AEC8F2E006FD8BB /* gate25.pd */,
+				D874827C1AEC8F2E006FD8BB /* gate26-help.pd */,
+				D874827D1AEC8F2E006FD8BB /* gate26.pd */,
+				D874827E1AEC8F2E006FD8BB /* gate27-help.pd */,
+				D874827F1AEC8F2E006FD8BB /* gate27.pd */,
+				D87482801AEC8F2E006FD8BB /* gate28-help.pd */,
+				D87482811AEC8F2E006FD8BB /* gate28.pd */,
+				D87482821AEC8F2E006FD8BB /* gate29-help.pd */,
+				D87482831AEC8F2E006FD8BB /* gate29.pd */,
+				D87482841AEC8F2E006FD8BB /* gate2~-help.pd */,
+				D87482851AEC8F2E006FD8BB /* gate2~.pd */,
+				D87482861AEC8F2E006FD8BB /* gate3-help.pd */,
+				D87482871AEC8F2E006FD8BB /* gate3.pd */,
+				D87482881AEC8F2E006FD8BB /* gate30-help.pd */,
+				D87482891AEC8F2E006FD8BB /* gate30.pd */,
+				D874828A1AEC8F2E006FD8BB /* gate31-help.pd */,
+				D874828B1AEC8F2E006FD8BB /* gate31.pd */,
+				D874828C1AEC8F2E006FD8BB /* gate32-help.pd */,
+				D874828D1AEC8F2E006FD8BB /* gate32.pd */,
+				D874828E1AEC8F2E006FD8BB /* gate3~-help.pd */,
+				D874828F1AEC8F2E006FD8BB /* gate3~.pd */,
+				D87482901AEC8F2E006FD8BB /* gate4-help.pd */,
+				D87482911AEC8F2E006FD8BB /* gate4.pd */,
+				D87482921AEC8F2E006FD8BB /* gate4~-help.pd */,
+				D87482931AEC8F2E006FD8BB /* gate4~.pd */,
+				D87482941AEC8F2E006FD8BB /* gate5-help.pd */,
+				D87482951AEC8F2E006FD8BB /* gate5.pd */,
+				D87482961AEC8F2E006FD8BB /* gate5~-help.pd */,
+				D87482971AEC8F2E006FD8BB /* gate5~.pd */,
+				D87482981AEC8F2E006FD8BB /* gate6-help.pd */,
+				D87482991AEC8F2E006FD8BB /* gate6.pd */,
+				D874829A1AEC8F2E006FD8BB /* gate6~-help.pd */,
+				D874829B1AEC8F2E006FD8BB /* gate6~.pd */,
+				D874829C1AEC8F2E006FD8BB /* gate7-help.pd */,
+				D874829D1AEC8F2E006FD8BB /* gate7.pd */,
+				D874829E1AEC8F2E006FD8BB /* gate7~-help.pd */,
+				D874829F1AEC8F2E006FD8BB /* gate7~.pd */,
+				D87482A01AEC8F2E006FD8BB /* gate8-help.pd */,
+				D87482A11AEC8F2E006FD8BB /* gate8.pd */,
+				D87482A21AEC8F2E006FD8BB /* gate8~-help.pd */,
+				D87482A31AEC8F2E006FD8BB /* gate8~.pd */,
+				D87482A41AEC8F2E006FD8BB /* gate9-help.pd */,
+				D87482A51AEC8F2E006FD8BB /* gate9.pd */,
+				D87482A61AEC8F2E006FD8BB /* gatemaker-help.pd */,
+				D87482A71AEC8F2E006FD8BB /* gatemaker.pd */,
+				D87482A81AEC8F2E006FD8BB /* gatemaker~-help.pd */,
+				D87482A91AEC8F2E006FD8BB /* gatemaker~.pd */,
+				D87482AA1AEC8F2E006FD8BB /* ggate-help.pd */,
+				D87482AB1AEC8F2E006FD8BB /* ggate.pd */,
+				D87482AC1AEC8F2E006FD8BB /* ggate~.pd */,
+				D87482AD1AEC8F2E006FD8BB /* gswitch-help.pd */,
+				D87482AE1AEC8F2E006FD8BB /* gswitch.pd */,
+				D87482AF1AEC8F2E006FD8BB /* gswitch~.pd */,
+				D87482B01AEC8F2E006FD8BB /* guiadsr-help.pd */,
+				D87482B11AEC8F2E006FD8BB /* guiadsr.pd */,
+				D87482B21AEC8F2E006FD8BB /* guifilter~-help.pd */,
+				D87482B31AEC8F2E006FD8BB /* guifilter~.pd */,
+				D87482B41AEC8F2E006FD8BB /* hann_table-help.pd */,
+				D87482B51AEC8F2E006FD8BB /* hann_table.pd */,
+				D87482B61AEC8F2E006FD8BB /* help_builder-help.pd */,
+				D87482B71AEC8F2E006FD8BB /* help_builder.pd */,
+				D87482B81AEC8F2E006FD8BB /* hilbert~-help.pd */,
+				D87482B91AEC8F2E006FD8BB /* hilbert~.pd */,
+				D87482BA1AEC8F2E006FD8BB /* if-help.pd */,
+				D87482BB1AEC8F2E006FD8BB /* if.pd */,
+				D87482BC1AEC8F2E006FD8BB /* iterator-help.pd */,
+				D87482BD1AEC8F2E006FD8BB /* iterator.pd */,
+				D87482BE1AEC8F2E006FD8BB /* keyboard_shortcuts.pd */,
+				D87482BF1AEC8F2E006FD8BB /* ladd-help.pd */,
+				D87482C01AEC8F2E006FD8BB /* ladd.pd */,
+				D87482C11AEC8F2E006FD8BB /* ladd2-help.pd */,
+				D87482C21AEC8F2E006FD8BB /* ladd2.pd */,
+				D87482C31AEC8F2E006FD8BB /* ladd3-help.pd */,
+				D87482C41AEC8F2E006FD8BB /* ladd3.pd */,
+				D87482C51AEC8F2E006FD8BB /* lapp-help.pd */,
+				D87482C61AEC8F2E006FD8BB /* lapp.pd */,
+				D87482C71AEC8F2E006FD8BB /* lbuilder-help.pd */,
+				D87482C81AEC8F2E006FD8BB /* lbuilder.pd */,
+				D87482C91AEC8F2E006FD8BB /* lcount.pd */,
+				D87482CA1AEC8F2E006FD8BB /* lfl!=.pd */,
+				D87482CB1AEC8F2E006FD8BB /* lfl<.pd */,
+				D87482CC1AEC8F2E006FD8BB /* lfl<=.pd */,
+				D87482CD1AEC8F2E006FD8BB /* lfl==.pd */,
+				D87482CE1AEC8F2E006FD8BB /* lfl>-help.pd */,
+				D87482CF1AEC8F2E006FD8BB /* lfl>.pd */,
+				D87482D01AEC8F2E006FD8BB /* lfl>=.pd */,
+				D87482D11AEC8F2E006FD8BB /* lfor-help.pd */,
+				D87482D21AEC8F2E006FD8BB /* lfor.pd */,
+				D87482D31AEC8F2E006FD8BB /* lindexget-help.pd */,
+				D87482D41AEC8F2E006FD8BB /* lindexget.pd */,
+				D87482D51AEC8F2E006FD8BB /* lindexset-help.pd */,
+				D87482D61AEC8F2E006FD8BB /* lindexset.pd */,
+				D87482D71AEC8F2E006FD8BB /* liter-help.pd */,
+				D87482D81AEC8F2E006FD8BB /* liter.pd */,
+				D87482D91AEC8F2E006FD8BB /* ljoin-help.pd */,
+				D87482DA1AEC8F2E006FD8BB /* ljoin.pd */,
+				D87482DB1AEC8F2E006FD8BB /* loadfloat-help.pd */,
+				D87482DC1AEC8F2E006FD8BB /* loadfloat.pd */,
+				D87482DD1AEC8F2E006FD8BB /* loadmess-help.pd */,
+				D87482DE1AEC8F2E006FD8BB /* loadmess.pd */,
+				D87482DF1AEC8F2E006FD8BB /* lpre-help.pd */,
+				D87482E01AEC8F2E006FD8BB /* lpre.pd */,
+				D87482E11AEC8F2E006FD8BB /* lprepend-help.pd */,
+				D87482E21AEC8F2E006FD8BB /* lprepend.pd */,
+				D87482E31AEC8F2E006FD8BB /* lprint-help.pd */,
+				D87482E41AEC8F2E006FD8BB /* lprint.pd */,
+				D87482E51AEC8F2E006FD8BB /* lqueue-help.pd */,
+				D87482E61AEC8F2E006FD8BB /* lqueue.pd */,
+				D87482E71AEC8F2E006FD8BB /* lreverse-help.pd */,
+				D87482E81AEC8F2E006FD8BB /* lreverse.pd */,
+				D87482E91AEC8F2E006FD8BB /* lset-help.pd */,
+				D87482EA1AEC8F2E006FD8BB /* lset.pd */,
+				D87482EB1AEC8F2E006FD8BB /* lsplit-help.pd */,
+				D87482EC1AEC8F2E006FD8BB /* lsplit.pd */,
+				D87482ED1AEC8F2E006FD8BB /* lstack-help.pd */,
+				D87482EE1AEC8F2E006FD8BB /* lstack.pd */,
+				D87482EF1AEC8F2E006FD8BB /* lswap-help.pd */,
+				D87482F01AEC8F2E006FD8BB /* lswap.pd */,
+				D87482F11AEC8F2E006FD8BB /* mp3play~-help.pd */,
+				D87482F21AEC8F2E006FD8BB /* multidelay~-help.pd */,
+				D87482F31AEC8F2E006FD8BB /* multidelay~.pd */,
+				D87482F41AEC8F2E006FD8BB /* multidelay~~-help.pd */,
+				D87482F51AEC8F2E006FD8BB /* multidelay~~.pd */,
+				D87482F61AEC8F2E006FD8BB /* multitremolo~-help.pd */,
+				D87482F71AEC8F2E006FD8BB /* multitremolo~.pd */,
+				D87482F81AEC8F2E006FD8BB /* multitremolo~~-help.pd */,
+				D87482F91AEC8F2E006FD8BB /* multitremolo~~.pd */,
+				D87482FA1AEC8F2E006FD8BB /* name_manager-help.pd */,
+				D87482FB1AEC8F2E006FD8BB /* name_manager.pd */,
+				D87482FC1AEC8F2E006FD8BB /* normalize2~-help.pd */,
+				D87482FD1AEC8F2E006FD8BB /* normalize2~.pd */,
+				D87482FE1AEC8F2E006FD8BB /* normalize~-help.pd */,
+				D87482FF1AEC8F2E006FD8BB /* normalize~.pd */,
+				D87483001AEC8F2E006FD8BB /* noteflush.pd */,
+				D87483011AEC8F2E006FD8BB /* number-help.pd */,
+				D87483021AEC8F2E006FD8BB /* number.pd */,
+				D87483031AEC8F2E006FD8BB /* number2note.pd */,
+				D87483041AEC8F2E006FD8BB /* number~.pd */,
+				D87483051AEC8F2E006FD8BB /* panner~-help.pd */,
+				D87483061AEC8F2E006FD8BB /* panner~.pd */,
+				D87483071AEC8F2E006FD8BB /* panner~~-help.pd */,
+				D87483081AEC8F2E006FD8BB /* panner~~.pd */,
+				D87483091AEC8F2E006FD8BB /* pd_for_libpd.pd */,
+				D874830A1AEC8F2E006FD8BB /* pi.pd */,
+				D874830B1AEC8F2E006FD8BB /* piano.pd */,
+				D874830C1AEC8F2E006FD8BB /* pitchbend~-help.pd */,
+				D874830D1AEC8F2F006FD8BB /* pitchbend~.pd */,
+				D874830E1AEC8F2F006FD8BB /* pitchshifter~-help.pd */,
+				D874830F1AEC8F2F006FD8BB /* pitchshifter~.pd */,
+				D87483101AEC8F2F006FD8BB /* playground.pd */,
+				D87483111AEC8F2F006FD8BB /* polyphonic_subtractive_synth.pd */,
+				D87483121AEC8F2F006FD8BB /* print2.pd */,
+				D87483131AEC8F2F006FD8BB /* rect~-help.pd */,
+				D87483141AEC8F2F006FD8BB /* rect~.pd */,
+				D87483151AEC8F2F006FD8BB /* remove_dc_offset~-help.pd */,
+				D87483161AEC8F2F006FD8BB /* remove_dc_offset~.pd */,
+				D87483171AEC8F2F006FD8BB /* rev1-final.pd */,
+				D87483181AEC8F2F006FD8BB /* rev1-stage.pd */,
+				D87483191AEC8F2F006FD8BB /* rev1~-help.pd */,
+				D874831A1AEC8F2F006FD8BB /* rev1~.pd */,
+				D874831B1AEC8F2F006FD8BB /* rev2~-help.pd */,
+				D874831C1AEC8F2F006FD8BB /* rev2~.pd */,
+				D874831D1AEC8F2F006FD8BB /* rev3~-help.pd */,
+				D874831E1AEC8F2F006FD8BB /* rev3~.pd */,
+				D874831F1AEC8F2F006FD8BB /* ringmod.pd */,
+				D87483201AEC8F2F006FD8BB /* ringmod~.pd */,
+				D87483211AEC8F2F006FD8BB /* round-help.pd */,
+				D87483221AEC8F2F006FD8BB /* round.pd */,
+				D87483231AEC8F2F006FD8BB /* sawtooth_table.pd */,
+				D87483241AEC8F2F006FD8BB /* sbuilder.pd */,
+				D87483251AEC8F2F006FD8BB /* scales-help.pd */,
+				D87483261AEC8F2F006FD8BB /* scales.pd */,
+				D87483271AEC8F2F006FD8BB /* sec-help.pd */,
+				D87483281AEC8F2F006FD8BB /* sec.pd */,
+				D87483291AEC8F2F006FD8BB /* sech.pd */,
+				D874832A1AEC8F2F006FD8BB /* sech~-help.pd */,
+				D874832B1AEC8F2F006FD8BB /* sech~.pd */,
+				D874832C1AEC8F2F006FD8BB /* sec~-help.pd */,
+				D874832D1AEC8F2F006FD8BB /* sec~.pd */,
+				D874832E1AEC8F2F006FD8BB /* sigbiquad_coeff~-help.pd */,
+				D874832F1AEC8F2F006FD8BB /* sigbiquad_coeff~.pd */,
+				D87483301AEC8F2F006FD8BB /* sigbiquad~-help.pd */,
+				D87483311AEC8F2F006FD8BB /* sigbiquad~.pd */,
+				D87483321AEC8F2F006FD8BB /* sine_table.pd */,
+				D87483331AEC8F2F006FD8BB /* sinh.pd */,
+				D87483341AEC8F2F006FD8BB /* sinh~-help.pd */,
+				D87483351AEC8F2F006FD8BB /* sinh~.pd */,
+				D87483361AEC8F2F006FD8BB /* smoothline~.pd */,
+				D87483371AEC8F2F006FD8BB /* soundfonts-help.pd */,
+				D87483381AEC8F2F006FD8BB /* square_table.pd */,
+				D87483391AEC8F2F006FD8BB /* stack-help.pd */,
+				D874833A1AEC8F2F006FD8BB /* stack.pd */,
+				D874833B1AEC8F2F006FD8BB /* subtractive_synth.pd */,
+				D874833C1AEC8F2F006FD8BB /* subtractive_synth_interface.pd */,
+				D874833D1AEC8F2F006FD8BB /* switch2-help.pd */,
+				D874833E1AEC8F2F006FD8BB /* switch2.pd */,
+				D874833F1AEC8F2F006FD8BB /* switch2~-help.pd */,
+				D87483401AEC8F2F006FD8BB /* switch2~.pd */,
+				D87483411AEC8F2F006FD8BB /* switch3-help.pd */,
+				D87483421AEC8F2F006FD8BB /* switch3.pd */,
+				D87483431AEC8F2F006FD8BB /* switch3~-help.pd */,
+				D87483441AEC8F2F006FD8BB /* switch3~.pd */,
+				D87483451AEC8F2F006FD8BB /* switch4-help.pd */,
+				D87483461AEC8F2F006FD8BB /* switch4.pd */,
+				D87483471AEC8F2F006FD8BB /* switch4~-help.pd */,
+				D87483481AEC8F2F006FD8BB /* switch4~.pd */,
+				D87483491AEC8F2F006FD8BB /* switch5-help.pd */,
+				D874834A1AEC8F2F006FD8BB /* switch5.pd */,
+				D874834B1AEC8F2F006FD8BB /* switch5~-help.pd */,
+				D874834C1AEC8F2F006FD8BB /* switch5~.pd */,
+				D874834D1AEC8F2F006FD8BB /* switch6-help.pd */,
+				D874834E1AEC8F2F006FD8BB /* switch6.pd */,
+				D874834F1AEC8F2F006FD8BB /* switch6~-help.pd */,
+				D87483501AEC8F2F006FD8BB /* switch6~.pd */,
+				D87483511AEC8F2F006FD8BB /* switch7-help.pd */,
+				D87483521AEC8F2F006FD8BB /* switch7.pd */,
+				D87483531AEC8F2F006FD8BB /* switch7~-help.pd */,
+				D87483541AEC8F2F006FD8BB /* switch7~.pd */,
+				D87483551AEC8F2F006FD8BB /* switch8-help.pd */,
+				D87483561AEC8F2F006FD8BB /* switch8.pd */,
+				D87483571AEC8F2F006FD8BB /* switch8~-help.pd */,
+				D87483581AEC8F2F006FD8BB /* switch8~.pd */,
+				D87483591AEC8F2F006FD8BB /* switchmaker-help.pd */,
+				D874835A1AEC8F2F006FD8BB /* switchmaker.pd */,
+				D874835B1AEC8F2F006FD8BB /* switchmaker~-help.pd */,
+				D874835C1AEC8F2F006FD8BB /* switchmaker~.pd */,
+				D874835D1AEC8F2F006FD8BB /* synth16~.pd */,
+				D874835E1AEC8F2F006FD8BB /* synth~.pd */,
+				D874835F1AEC8F2F006FD8BB /* tanh.pd */,
+				D87483601AEC8F2F006FD8BB /* tanh~-help.pd */,
+				D87483611AEC8F2F006FD8BB /* tanh~.pd */,
+				D87483621AEC8F2F006FD8BB /* tan~-help.pd */,
+				D87483631AEC8F2F006FD8BB /* tan~.pd */,
+				D87483641AEC8F2F006FD8BB /* tb_peakcomp~-help.pd */,
+				D87483651AEC8F2F006FD8BB /* testtone~.pd */,
+				D87483661AEC8F2F006FD8BB /* tone~.pd */,
+				D87483671AEC8F2F006FD8BB /* transistor~-help.pd */,
+				D87483681AEC8F2F006FD8BB /* transistor~.pd */,
+				D87483691AEC8F2F006FD8BB /* triangle_table.pd */,
+				D874836A1AEC8F2F006FD8BB /* unique_set.pd */,
+				D874836B1AEC8F2F006FD8BB /* uzi-help.pd */,
+				D874836C1AEC8F2F006FD8BB /* uzi.pd */,
+				D874836D1AEC8F2F006FD8BB /* view~.pd */,
+				D874836E1AEC8F2F006FD8BB /* voice~.pd */,
+				D874836F1AEC8F2F006FD8BB /* volume~-help.pd */,
+				D87483701AEC8F2F006FD8BB /* volume~.pd */,
+				D87483711AEC8F2F006FD8BB /* ||~.pd */,
+			);
+			path = "pd-for-libpd";
 			sourceTree = "<group>";
 		};
 		E90BC40CBA3B48B25A6F5CB6 /* Pods */ = {
@@ -370,29 +1707,465 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D87484C01AEC8F2F006FD8BB /* sec~.pd in Resources */,
+				D87484B81AEC8F2F006FD8BB /* scales-help.pd in Resources */,
+				D85D8FFE1AEC038D00238117 /* bass~.pd in Resources */,
+				D87484721AEC8F2F006FD8BB /* lpre-help.pd in Resources */,
+				D87483BB1AEC8F2F006FD8BB /* cot-help.pd in Resources */,
+				D87484BE1AEC8F2F006FD8BB /* sech~.pd in Resources */,
+				D87483AB1AEC8F2F006FD8BB /* cleanup~-help.pd in Resources */,
+				D87481C81AEC7C1E006FD8BB /* ElPiano1.sf2 in Resources */,
+				D87484371AEC8F2F006FD8BB /* gate9-help.pd in Resources */,
+				D874841B1AEC8F2F006FD8BB /* gate30-help.pd in Resources */,
+				D87484391AEC8F2F006FD8BB /* gatemaker-help.pd in Resources */,
+				D87484DD1AEC8F2F006FD8BB /* switch5.pd in Resources */,
+				D87483F51AEC8F2F006FD8BB /* gate14-help.pd in Resources */,
+				D87484401AEC8F2F006FD8BB /* gswitch-help.pd in Resources */,
+				D87485041AEC8F2F006FD8BB /* ||~.pd in Resources */,
+				D87483861AEC8F2F006FD8BB /* autobiquad2~.pd in Resources */,
+				D87484241AEC8F2F006FD8BB /* gate4.pd in Resources */,
+				D87481CD1AEC7C1E006FD8BB /* jonnypad1.sf2 in Resources */,
+				D87484B91AEC8F2F006FD8BB /* scales.pd in Resources */,
+				D874837A1AEC8F2F006FD8BB /* abstractions-standalone-help.pd in Resources */,
+				D87484DC1AEC8F2F006FD8BB /* switch5-help.pd in Resources */,
+				D874848B1AEC8F2F006FD8BB /* multitremolo~~-help.pd in Resources */,
 				3B1AABA31AD9B448007A7E64 /* smoothvol.pd in Resources */,
+				D874847F1AEC8F2F006FD8BB /* lsplit.pd in Resources */,
+				D87484861AEC8F2F006FD8BB /* multidelay~.pd in Resources */,
+				D87484581AEC8F2F006FD8BB /* lapp-help.pd in Resources */,
+				D87484791AEC8F2F006FD8BB /* lqueue.pd in Resources */,
+				D87483A81AEC8F2F006FD8BB /* chorus~~.pd in Resources */,
+				D874841D1AEC8F2F006FD8BB /* gate31-help.pd in Resources */,
+				D87484011AEC8F2F006FD8BB /* gate2-help.pd in Resources */,
+				D87484F41AEC8F2F006FD8BB /* tanh~.pd in Resources */,
+				D87484EF1AEC8F2F006FD8BB /* switchmaker~.pd in Resources */,
+				D87484BC1AEC8F2F006FD8BB /* sech.pd in Resources */,
+				D87484451AEC8F2F006FD8BB /* guifilter~-help.pd in Resources */,
+				D87484A21AEC8F2F006FD8BB /* pitchshifter~.pd in Resources */,
+				D87483EE1AEC8F2F006FD8BB /* gate10.pd in Resources */,
+				D87483811AEC8F2F006FD8BB /* arg2method-help.pd in Resources */,
 				3B1AABA41AD9B448007A7E64 /* synth2.pd in Resources */,
+				D87483C11AEC8F2F006FD8BB /* cot~.pd in Resources */,
+				D87483CC1AEC8F2F006FD8BB /* csub.pd in Resources */,
+				D87481C11AEC7C1E006FD8BB /* banjo_1.sf2 in Resources */,
+				D87481D31AEC7C1E006FD8BB /* jonnypad8.sf2 in Resources */,
+				D874842E1AEC8F2F006FD8BB /* gate6~.pd in Resources */,
+				D87483F01AEC8F2F006FD8BB /* gate11.pd in Resources */,
+				D87484F11AEC8F2F006FD8BB /* synth~.pd in Resources */,
+				D874838C1AEC8F2F006FD8BB /* autospectrum~-help.pd in Resources */,
+				D87483B01AEC8F2F006FD8BB /* cmult-help.pd in Resources */,
+				D87484911AEC8F2F006FD8BB /* normalize~-help.pd in Resources */,
+				D87484441AEC8F2F006FD8BB /* guiadsr.pd in Resources */,
+				D87483921AEC8F2F006FD8BB /* cadd-help.pd in Resources */,
 				3B1AABA51AD9B448007A7E64 /* transistor~.pd in Resources */,
+				D87483FD1AEC8F2F006FD8BB /* gate18-help.pd in Resources */,
+				D87484411AEC8F2F006FD8BB /* gswitch.pd in Resources */,
+				D87483731AEC8F2F006FD8BB /* &&~.pd in Resources */,
+				D87483F71AEC8F2F006FD8BB /* gate15-help.pd in Resources */,
+				D87483CF1AEC8F2F006FD8BB /* csymbol-help.pd in Resources */,
+				D87484491AEC8F2F006FD8BB /* help_builder-help.pd in Resources */,
+				D874838F1AEC8F2F006FD8BB /* biquad_coefficients.pd in Resources */,
 				3B1AAB9F1AD9B448007A7E64 /* lead.pd in Resources */,
+				D87484CF1AEC8F2F006FD8BB /* subtractive_synth_interface.pd in Resources */,
+				D87481CE1AEC7C1E006FD8BB /* jonnypad3.sf2 in Resources */,
+				D87483781AEC8F2F006FD8BB /* >~.pd in Resources */,
+				D874838E1AEC8F2F006FD8BB /* biquad_coefficients-help.pd in Resources */,
+				D87484FC1AEC8F2F006FD8BB /* triangle_table.pd in Resources */,
+				D87484951AEC8F2F006FD8BB /* number.pd in Resources */,
+				D87484431AEC8F2F006FD8BB /* guiadsr-help.pd in Resources */,
+				D87484231AEC8F2F006FD8BB /* gate4-help.pd in Resources */,
+				D87481DA1AEC7C1E006FD8BB /* soundfonts-help.pd in Resources */,
+				D874843C1AEC8F2F006FD8BB /* gatemaker~.pd in Resources */,
+				D87484DF1AEC8F2F006FD8BB /* switch5~.pd in Resources */,
+				D87484141AEC8F2F006FD8BB /* gate28.pd in Resources */,
+				D87484341AEC8F2F006FD8BB /* gate8.pd in Resources */,
+				D87484801AEC8F2F006FD8BB /* lstack-help.pd in Resources */,
+				D85D8FFD1AEC038D00238117 /* bass.pd in Resources */,
+				D87484901AEC8F2F006FD8BB /* normalize2~.pd in Resources */,
+				D87484BD1AEC8F2F006FD8BB /* sech~-help.pd in Resources */,
+				D87484C11AEC8F2F006FD8BB /* sigbiquad_coeff~-help.pd in Resources */,
+				D87483801AEC8F2F006FD8BB /* anything.pd in Resources */,
+				D87484B71AEC8F2F006FD8BB /* sbuilder.pd in Resources */,
+				D87484161AEC8F2F006FD8BB /* gate29.pd in Resources */,
+				D87481D21AEC7C1E006FD8BB /* jonnypad7.sf2 in Resources */,
+				D87484C81AEC8F2F006FD8BB /* sinh~.pd in Resources */,
+				D874842C1AEC8F2F006FD8BB /* gate6.pd in Resources */,
+				D874849B1AEC8F2F006FD8BB /* panner~~.pd in Resources */,
+				D85D90001AEC073D00238117 /* pocket.pd in Resources */,
+				D87484D01AEC8F2F006FD8BB /* switch2-help.pd in Resources */,
+				D87483C31AEC8F2F006FD8BB /* counter2.pd in Resources */,
+				D87484681AEC8F2F006FD8BB /* lindexset-help.pd in Resources */,
+				D874839E1AEC8F2F006FD8BB /* ceil.pd in Resources */,
+				D87484F51AEC8F2F006FD8BB /* tan~-help.pd in Resources */,
+				D874847E1AEC8F2F006FD8BB /* lsplit-help.pd in Resources */,
+				D87484121AEC8F2F006FD8BB /* gate27.pd in Resources */,
+				D87484F71AEC8F2F006FD8BB /* tb_peakcomp~-help.pd in Resources */,
+				D87484731AEC8F2F006FD8BB /* lpre.pd in Resources */,
+				D874837D1AEC8F2F006FD8BB /* adsr~-help.pd in Resources */,
+				D87483D51AEC8F2F006FD8BB /* dictionary-standalone.pd in Resources */,
+				D87483DD1AEC8F2F006FD8BB /* dynamicpd-help.pd in Resources */,
+				D87483761AEC8F2F006FD8BB /* ==~.pd in Resources */,
+				D87484AB1AEC8F2F006FD8BB /* rev1-stage.pd in Resources */,
+				D87484F31AEC8F2F006FD8BB /* tanh~-help.pd in Resources */,
+				D87484421AEC8F2F006FD8BB /* gswitch~.pd in Resources */,
+				D87484661AEC8F2F006FD8BB /* lindexget-help.pd in Resources */,
+				D87484D21AEC8F2F006FD8BB /* switch2~-help.pd in Resources */,
+				D87483E61AEC8F2F006FD8BB /* f!=.pd in Resources */,
+				D87484251AEC8F2F006FD8BB /* gate4~-help.pd in Resources */,
+				D87484051AEC8F2F006FD8BB /* gate21-help.pd in Resources */,
+				D87483DB1AEC8F2F006FD8BB /* dr-help.pd in Resources */,
+				D87483FC1AEC8F2F006FD8BB /* gate17.pd in Resources */,
+				D87483A71AEC8F2F006FD8BB /* chorus~~-help.pd in Resources */,
+				D87484601AEC8F2F006FD8BB /* lfl==.pd in Resources */,
+				D87484E51AEC8F2F006FD8BB /* switch7.pd in Resources */,
+				D87483F41AEC8F2F006FD8BB /* gate13.pd in Resources */,
+				D87484C31AEC8F2F006FD8BB /* sigbiquad~-help.pd in Resources */,
+				D87483CA1AEC8F2F006FD8BB /* csc~.pd in Resources */,
+				D87483DE1AEC8F2F006FD8BB /* dynamicpd.pd in Resources */,
+				D87481C51AEC7C1E006FD8BB /* Campbells_Verby_Vocal.sf2 in Resources */,
+				D87484871AEC8F2F006FD8BB /* multidelay~~-help.pd in Resources */,
+				D874845A1AEC8F2F006FD8BB /* lbuilder-help.pd in Resources */,
+				D87484091AEC8F2F006FD8BB /* gate23-help.pd in Resources */,
+				D87483ED1AEC8F2F006FD8BB /* gate10-help.pd in Resources */,
+				D87484501AEC8F2F006FD8BB /* iterator.pd in Resources */,
+				D874846E1AEC8F2F006FD8BB /* loadfloat-help.pd in Resources */,
+				D874837C1AEC8F2F006FD8BB /* abstractions.pd in Resources */,
+				D87484511AEC8F2F006FD8BB /* keyboard_shortcuts.pd in Resources */,
+				D87483C81AEC8F2F006FD8BB /* csch~.pd in Resources */,
+				D87483D31AEC8F2F006FD8BB /* dictionary-small.pd in Resources */,
+				D87484741AEC8F2F006FD8BB /* lprepend-help.pd in Resources */,
+				D87484B31AEC8F2F006FD8BB /* ringmod~.pd in Resources */,
+				D874837F1AEC8F2F006FD8BB /* anything-help.pd in Resources */,
+				D87481D81AEC7C1E006FD8BB /* saz.sf2 in Resources */,
+				D87484A51AEC8F2F006FD8BB /* print2.pd in Resources */,
+				D87483B41AEC8F2F006FD8BB /* complex-help.pd in Resources */,
+				D87483891AEC8F2F006FD8BB /* autosampler-voice~.pd in Resources */,
+				D874837B1AEC8F2F006FD8BB /* abstractions-standalone.pd in Resources */,
+				D87484971AEC8F2F006FD8BB /* number~.pd in Resources */,
+				D87483FF1AEC8F2F006FD8BB /* gate19-help.pd in Resources */,
+				D87484CC1AEC8F2F006FD8BB /* stack-help.pd in Resources */,
+				D87484201AEC8F2F006FD8BB /* gate32.pd in Resources */,
+				D87484C61AEC8F2F006FD8BB /* sinh.pd in Resources */,
+				D87484EC1AEC8F2F006FD8BB /* switchmaker-help.pd in Resources */,
+				D87483F91AEC8F2F006FD8BB /* gate16-help.pd in Resources */,
+				D87481C91AEC7C1E006FD8BB /* enigma_flute.sf2 in Resources */,
+				D87484E11AEC8F2F006FD8BB /* switch6.pd in Resources */,
+				D87483E81AEC8F2F006FD8BB /* filt.pd in Resources */,
+				D87483DA1AEC8F2F006FD8BB /* dprint.pd in Resources */,
+				D87483D81AEC8F2F006FD8BB /* dpoly.pd in Resources */,
+				D874847B1AEC8F2F006FD8BB /* lreverse.pd in Resources */,
+				D87483B91AEC8F2F006FD8BB /* cosh~-help.pd in Resources */,
+				D874843D1AEC8F2F006FD8BB /* ggate-help.pd in Resources */,
+				D87483DF1AEC8F2F006FD8BB /* evaluate-help.pd in Resources */,
+				D87484621AEC8F2F006FD8BB /* lfl>.pd in Resources */,
+				D874845C1AEC8F2F006FD8BB /* lcount.pd in Resources */,
+				D87484CD1AEC8F2F006FD8BB /* stack.pd in Resources */,
+				D874842D1AEC8F2F006FD8BB /* gate6~-help.pd in Resources */,
+				D874840A1AEC8F2F006FD8BB /* gate23.pd in Resources */,
+				D874844F1AEC8F2F006FD8BB /* iterator-help.pd in Resources */,
+				D87483C41AEC8F2F006FD8BB /* csc-help.pd in Resources */,
+				D87484FE1AEC8F2F006FD8BB /* uzi-help.pd in Resources */,
+				D87484541AEC8F2F006FD8BB /* ladd2-help.pd in Resources */,
 				3B1AAEC81AD9B898007A7E64 /* list-len.pd in Resources */,
+				D87484831AEC8F2F006FD8BB /* lswap.pd in Resources */,
+				D87484A81AEC8F2F006FD8BB /* remove_dc_offset~-help.pd in Resources */,
+				D87483A41AEC8F2F006FD8BB /* channels~.pd in Resources */,
+				D87484641AEC8F2F006FD8BB /* lfor-help.pd in Resources */,
+				D87483911AEC8F2F006FD8BB /* biquad_response.pd in Resources */,
+				D87481D51AEC7C1E006FD8BB /* muted_trombone.sf2 in Resources */,
+				D87483FE1AEC8F2F006FD8BB /* gate18.pd in Resources */,
+				D87484351AEC8F2F006FD8BB /* gate8~-help.pd in Resources */,
+				D87484BF1AEC8F2F006FD8BB /* sec~-help.pd in Resources */,
+				D87483981AEC8F2F006FD8BB /* cconj~-help.pd in Resources */,
 				3B1AABA21AD9B448007A7E64 /* notoname2.pd in Resources */,
+				D87484991AEC8F2F006FD8BB /* panner~.pd in Resources */,
+				D87484151AEC8F2F006FD8BB /* gate29-help.pd in Resources */,
+				D874838A1AEC8F2F006FD8BB /* autosampler~-help.pd in Resources */,
+				D874845D1AEC8F2F006FD8BB /* lfl!=.pd in Resources */,
+				D874849E1AEC8F2F006FD8BB /* piano.pd in Resources */,
+				D87484E81AEC8F2F006FD8BB /* switch8-help.pd in Resources */,
+				D87483FA1AEC8F2F006FD8BB /* gate16.pd in Resources */,
+				D87483F31AEC8F2F006FD8BB /* gate13-help.pd in Resources */,
+				D87484D71AEC8F2F006FD8BB /* switch3~.pd in Resources */,
+				D87483881AEC8F2F006FD8BB /* autobiquad~.pd in Resources */,
+				D87483AD1AEC8F2F006FD8BB /* cmag-help.pd in Resources */,
+				D87484071AEC8F2F006FD8BB /* gate22-help.pd in Resources */,
+				D87484BB1AEC8F2F006FD8BB /* sec.pd in Resources */,
+				D87483BD1AEC8F2F006FD8BB /* coth.pd in Resources */,
+				D87484E01AEC8F2F006FD8BB /* switch6-help.pd in Resources */,
+				D87483DC1AEC8F2F006FD8BB /* dr.pd in Resources */,
+				D87483C51AEC8F2F006FD8BB /* csc.pd in Resources */,
+				D87484221AEC8F2F006FD8BB /* gate3~.pd in Resources */,
+				D87484471AEC8F2F006FD8BB /* hann_table-help.pd in Resources */,
+				D87481C21AEC7C1E006FD8BB /* beautiful_pad.sf2 in Resources */,
+				D87484E71AEC8F2F006FD8BB /* switch7~.pd in Resources */,
+				D87483B21AEC8F2F006FD8BB /* cmult~-help.pd in Resources */,
+				D874844E1AEC8F2F006FD8BB /* if.pd in Resources */,
+				D874844C1AEC8F2F006FD8BB /* hilbert~.pd in Resources */,
+				D874839A1AEC8F2F006FD8BB /* cdiv-help.pd in Resources */,
+				D87484171AEC8F2F006FD8BB /* gate2~-help.pd in Resources */,
+				D87484ED1AEC8F2F006FD8BB /* switchmaker.pd in Resources */,
+				D87484941AEC8F2F006FD8BB /* number-help.pd in Resources */,
+				D87481D61AEC7C1E006FD8BB /* piano_1.sf2 in Resources */,
+				D87484571AEC8F2F006FD8BB /* ladd3.pd in Resources */,
+				D87483741AEC8F2F006FD8BB /* <=~.pd in Resources */,
+				D87484211AEC8F2F006FD8BB /* gate3~-help.pd in Resources */,
+				D874847C1AEC8F2F006FD8BB /* lset-help.pd in Resources */,
+				D87483941AEC8F2F006FD8BB /* cadd~-help.pd in Resources */,
+				D87484551AEC8F2F006FD8BB /* ladd2.pd in Resources */,
+				D874849F1AEC8F2F006FD8BB /* pitchbend~-help.pd in Resources */,
+				D87481D41AEC7C1E006FD8BB /* LesPaul.SF2 in Resources */,
+				D87484CB1AEC8F2F006FD8BB /* square_table.pd in Resources */,
+				D87484AF1AEC8F2F006FD8BB /* rev2~.pd in Resources */,
+				D87484F01AEC8F2F006FD8BB /* synth16~.pd in Resources */,
+				D87483851AEC8F2F006FD8BB /* autobiquad2~-help.pd in Resources */,
+				D87484F61AEC8F2F006FD8BB /* tan~.pd in Resources */,
+				D87481DC1AEC7C1E006FD8BB /* import_sf.py in Resources */,
+				D87484031AEC8F2F006FD8BB /* gate20-help.pd in Resources */,
+				D87484701AEC8F2F006FD8BB /* loadmess-help.pd in Resources */,
 				3B1AAB9C1AD9B448007A7E64 /* generator~.pd in Resources */,
+				D87484DB1AEC8F2F006FD8BB /* switch4~.pd in Resources */,
 				3B25B80F1AC732BD00C1A669 /* Main.storyboard in Resources */,
+				D87481C41AEC7C1E006FD8BB /* Campbells_strings.sf2 in Resources */,
+				D87484331AEC8F2F006FD8BB /* gate8-help.pd in Resources */,
+				D87484311AEC8F2F006FD8BB /* gate7~-help.pd in Resources */,
+				D87483CD1AEC8F2F006FD8BB /* csub~-help.pd in Resources */,
+				D874846F1AEC8F2F006FD8BB /* loadfloat.pd in Resources */,
+				D87483B31AEC8F2F006FD8BB /* cmult~.pd in Resources */,
+				D87484E41AEC8F2F006FD8BB /* switch7-help.pd in Resources */,
+				D87483A31AEC8F2F006FD8BB /* channels~-help.pd in Resources */,
+				D87483961AEC8F2F006FD8BB /* cconj-help.pd in Resources */,
+				D87484651AEC8F2F006FD8BB /* lfor.pd in Resources */,
+				D87483E31AEC8F2F006FD8BB /* expscale-help.pd in Resources */,
+				D87484B41AEC8F2F006FD8BB /* round-help.pd in Resources */,
+				D87483C01AEC8F2F006FD8BB /* cot~-help.pd in Resources */,
+				D87484A41AEC8F2F006FD8BB /* polyphonic_subtractive_synth.pd in Resources */,
+				D87484A71AEC8F2F006FD8BB /* rect~.pd in Resources */,
+				D874838B1AEC8F2F006FD8BB /* autosampler~.pd in Resources */,
+				D87484961AEC8F2F006FD8BB /* number2note.pd in Resources */,
+				D87484A11AEC8F2F006FD8BB /* pitchshifter~-help.pd in Resources */,
+				D874845B1AEC8F2F006FD8BB /* lbuilder.pd in Resources */,
+				D87484671AEC8F2F006FD8BB /* lindexget.pd in Resources */,
+				D87484131AEC8F2F006FD8BB /* gate28-help.pd in Resources */,
+				D87483931AEC8F2F006FD8BB /* cadd.pd in Resources */,
+				D87483EA1AEC8F2F006FD8BB /* for++.pd in Resources */,
+				D87483E01AEC8F2F006FD8BB /* evaluate.pd in Resources */,
+				D87484561AEC8F2F006FD8BB /* ladd3-help.pd in Resources */,
+				D87483D11AEC8F2F006FD8BB /* dictionary-help.pd in Resources */,
+				D87484E21AEC8F2F006FD8BB /* switch6~-help.pd in Resources */,
+				D87483791AEC8F2F006FD8BB /* abstractions-help.pd in Resources */,
+				D87484A01AEC8F2F006FD8BB /* pitchbend~.pd in Resources */,
+				D87481CC1AEC7C1E006FD8BB /* janos_lead.sf2 in Resources */,
+				D87484021AEC8F2F006FD8BB /* gate2.pd in Resources */,
+				D87484E31AEC8F2F006FD8BB /* switch6~.pd in Resources */,
+				D87485021AEC8F2F006FD8BB /* volume~-help.pd in Resources */,
+				D874841C1AEC8F2F006FD8BB /* gate30.pd in Resources */,
 				3B1AAB9B1AD9B448007A7E64 /* generator.pd in Resources */,
+				D874846D1AEC8F2F006FD8BB /* ljoin.pd in Resources */,
+				D87484271AEC8F2F006FD8BB /* gate5-help.pd in Resources */,
+				D87483C71AEC8F2F006FD8BB /* csch~-help.pd in Resources */,
+				D87484931AEC8F2F006FD8BB /* noteflush.pd in Resources */,
+				D87484711AEC8F2F006FD8BB /* loadmess.pd in Resources */,
+				D87484591AEC8F2F006FD8BB /* lapp.pd in Resources */,
+				D87484D41AEC8F2F006FD8BB /* switch3-help.pd in Resources */,
+				D874840B1AEC8F2F006FD8BB /* gate24-help.pd in Resources */,
+				D87481D91AEC7C1E006FD8BB /* SC88Drumset.sf2 in Resources */,
+				D874837E1AEC8F2F006FD8BB /* adsr~.pd in Resources */,
+				D874841A1AEC8F2F006FD8BB /* gate3.pd in Resources */,
+				D87483B81AEC8F2F006FD8BB /* cosh.pd in Resources */,
+				D87483D61AEC8F2F006FD8BB /* dictionary.pd in Resources */,
+				D874848E1AEC8F2F006FD8BB /* name_manager.pd in Resources */,
 				3B1AABA11AD9B448007A7E64 /* notesender2.pd in Resources */,
+				D87483B71AEC8F2F006FD8BB /* complex.pd in Resources */,
 				3B1AAEC61AD9B7C9007A7E64 /* list-idx.pd in Resources */,
 				3B1AAEC41AD9B71C007A7E64 /* list-seek.pd in Resources */,
+				D874844A1AEC8F2F006FD8BB /* help_builder.pd in Resources */,
+				D87483FB1AEC8F2F006FD8BB /* gate17-help.pd in Resources */,
+				D874841F1AEC8F2F006FD8BB /* gate32-help.pd in Resources */,
+				D87483A51AEC8F2F006FD8BB /* chorus~-help.pd in Resources */,
+				D87483991AEC8F2F006FD8BB /* cconj~.pd in Resources */,
+				D87484CE1AEC8F2F006FD8BB /* subtractive_synth.pd in Resources */,
+				D874843F1AEC8F2F006FD8BB /* ggate~.pd in Resources */,
+				D87483F81AEC8F2F006FD8BB /* gate15.pd in Resources */,
+				D87484041AEC8F2F006FD8BB /* gate20.pd in Resources */,
+				D87484081AEC8F2F006FD8BB /* gate22.pd in Resources */,
+				D87483F21AEC8F2F006FD8BB /* gate12.pd in Resources */,
+				D87481DB1AEC7C1E006FD8BB /* StomperSet.sf2 in Resources */,
+				D87483751AEC8F2F006FD8BB /* <~.pd in Resources */,
+				D87484821AEC8F2F006FD8BB /* lswap-help.pd in Resources */,
 				3B1AAB991AD9B448007A7E64 /* chorus.pd in Resources */,
+				D87483E51AEC8F2F006FD8BB /* f!=-help.pd in Resources */,
+				D87484691AEC8F2F006FD8BB /* lindexset.pd in Resources */,
+				D87484611AEC8F2F006FD8BB /* lfl>-help.pd in Resources */,
+				D87483AC1AEC8F2F006FD8BB /* cleanup~.pd in Resources */,
+				D87484921AEC8F2F006FD8BB /* normalize~.pd in Resources */,
+				D87483BA1AEC8F2F006FD8BB /* cosh~.pd in Resources */,
+				D87481C31AEC7C1E006FD8BB /* bolivianflute.sf2 in Resources */,
+				D87483D21AEC8F2F006FD8BB /* dictionary-small-help.pd in Resources */,
+				D87484D81AEC8F2F006FD8BB /* switch4-help.pd in Resources */,
+				D87484291AEC8F2F006FD8BB /* gate5~-help.pd in Resources */,
+				D87484111AEC8F2F006FD8BB /* gate27-help.pd in Resources */,
 				3B1AAB9E1AD9B448007A7E64 /* gswitch~.pd in Resources */,
 				3B5D7C211AE0118000BDD529 /* list-moses.pd in Resources */,
+				D87483EB1AEC8F2F006FD8BB /* gain~-help.pd in Resources */,
+				D874838D1AEC8F2F006FD8BB /* autospectrum~.pd in Resources */,
+				D87484301AEC8F2F006FD8BB /* gate7.pd in Resources */,
+				D87484631AEC8F2F006FD8BB /* lfl>=.pd in Resources */,
+				D87483AF1AEC8F2F006FD8BB /* cmag~.pd in Resources */,
+				D87483771AEC8F2F006FD8BB /* >=~.pd in Resources */,
+				D87484191AEC8F2F006FD8BB /* gate3-help.pd in Resources */,
+				D87484761AEC8F2F006FD8BB /* lprint-help.pd in Resources */,
+				D87484D51AEC8F2F006FD8BB /* switch3.pd in Resources */,
+				D87483C21AEC8F2F006FD8BB /* counter2-help.pd in Resources */,
+				D87484B01AEC8F2F006FD8BB /* rev3~-help.pd in Resources */,
+				D87484A31AEC8F2F006FD8BB /* playground.pd in Resources */,
+				D87484851AEC8F2F006FD8BB /* multidelay~-help.pd in Resources */,
+				D87483E91AEC8F2F006FD8BB /* for++-help.pd in Resources */,
+				D87484D91AEC8F2F006FD8BB /* switch4.pd in Resources */,
+				D87484AC1AEC8F2F006FD8BB /* rev1~-help.pd in Resources */,
+				D87483721AEC8F2F006FD8BB /* !=~.pd in Resources */,
+				D87483F11AEC8F2F006FD8BB /* gate12-help.pd in Resources */,
+				D87484531AEC8F2F006FD8BB /* ladd.pd in Resources */,
+				D87483BF1AEC8F2F006FD8BB /* coth~.pd in Resources */,
+				D87484101AEC8F2F006FD8BB /* gate26.pd in Resources */,
+				D87484881AEC8F2F006FD8BB /* multidelay~~.pd in Resources */,
+				D87484261AEC8F2F006FD8BB /* gate4~.pd in Resources */,
+				D87484A91AEC8F2F006FD8BB /* remove_dc_offset~.pd in Resources */,
+				D87484751AEC8F2F006FD8BB /* lprepend.pd in Resources */,
 				3B25B8141AC732BD00C1A669 /* LaunchScreen.xib in Resources */,
+				D87484181AEC8F2F006FD8BB /* gate2~.pd in Resources */,
+				D87484F21AEC8F2F006FD8BB /* tanh.pd in Resources */,
+				D874843B1AEC8F2F006FD8BB /* gatemaker~-help.pd in Resources */,
+				D87484FB1AEC8F2F006FD8BB /* transistor~.pd in Resources */,
+				D87484A61AEC8F2F006FD8BB /* rect~-help.pd in Resources */,
+				D87484EE1AEC8F2F006FD8BB /* switchmaker~-help.pd in Resources */,
+				D874848A1AEC8F2F006FD8BB /* multitremolo~.pd in Resources */,
+				D87484B61AEC8F2F006FD8BB /* sawtooth_table.pd in Resources */,
 				3B1AABA61AD9B448007A7E64 /* tremolo~.pd in Resources */,
+				D874848D1AEC8F2F006FD8BB /* name_manager-help.pd in Resources */,
+				D87483A91AEC8F2F006FD8BB /* circularlist-help.pd in Resources */,
+				D87481CF1AEC7C1E006FD8BB /* jonnypad4.sf2 in Resources */,
+				D87483E11AEC8F2F006FD8BB /* evaluate2.pd in Resources */,
+				D874846A1AEC8F2F006FD8BB /* liter-help.pd in Resources */,
+				D87485011AEC8F2F006FD8BB /* voice~.pd in Resources */,
+				D874849D1AEC8F2F006FD8BB /* pi.pd in Resources */,
+				D87483F61AEC8F2F006FD8BB /* gate14.pd in Resources */,
+				D87484381AEC8F2F006FD8BB /* gate9.pd in Resources */,
+				D87483951AEC8F2F006FD8BB /* cadd~.pd in Resources */,
+				D87484E61AEC8F2F006FD8BB /* switch7~-help.pd in Resources */,
+				D874846C1AEC8F2F006FD8BB /* ljoin-help.pd in Resources */,
+				D87483821AEC8F2F006FD8BB /* arg2method.pd in Resources */,
+				D87481C61AEC7C1E006FD8BB /* church_organ.sf2 in Resources */,
+				D87484EA1AEC8F2F006FD8BB /* switch8~-help.pd in Resources */,
+				D874840D1AEC8F2F006FD8BB /* gate25-help.pd in Resources */,
+				D87485031AEC8F2F006FD8BB /* volume~.pd in Resources */,
+				D874849A1AEC8F2F006FD8BB /* panner~~-help.pd in Resources */,
+				D87483BE1AEC8F2F006FD8BB /* coth~-help.pd in Resources */,
+				D87481D71AEC7C1E006FD8BB /* README.txt in Resources */,
+				D87481CB1AEC7C1E006FD8BB /* IbanezHollowbody.sf2 in Resources */,
+				D874839D1AEC8F2F006FD8BB /* cdiv~.pd in Resources */,
+				D87484321AEC8F2F006FD8BB /* gate7~.pd in Resources */,
+				D874843A1AEC8F2F006FD8BB /* gatemaker.pd in Resources */,
+				D87483D71AEC8F2F006FD8BB /* dpoly-help.pd in Resources */,
+				D874845F1AEC8F2F006FD8BB /* lfl<=.pd in Resources */,
+				D87484B51AEC8F2F006FD8BB /* round.pd in Resources */,
+				D87483AE1AEC8F2F006FD8BB /* cmag.pd in Resources */,
+				D87484521AEC8F2F006FD8BB /* ladd-help.pd in Resources */,
+				D87483A21AEC8F2F006FD8BB /* cexp~.pd in Resources */,
+				D87484C51AEC8F2F006FD8BB /* sine_table.pd in Resources */,
+				D87483901AEC8F2F006FD8BB /* biquad_response-help.pd in Resources */,
+				D87483D01AEC8F2F006FD8BB /* csymbol.pd in Resources */,
+				D87481DD1AEC7C1E006FD8BB /* README.txt in Resources */,
+				D874848F1AEC8F2F006FD8BB /* normalize2~-help.pd in Resources */,
+				D87483EF1AEC8F2F006FD8BB /* gate11-help.pd in Resources */,
+				D874844D1AEC8F2F006FD8BB /* if-help.pd in Resources */,
+				D87481C01AEC7C1E006FD8BB /* analog_age.sf2 in Resources */,
+				D87484D31AEC8F2F006FD8BB /* switch2~.pd in Resources */,
+				D87483EC1AEC8F2F006FD8BB /* gain~.pd in Resources */,
+				D87483D91AEC8F2F006FD8BB /* dprint-help.pd in Resources */,
+				D87483841AEC8F2F006FD8BB /* argv-test.pd in Resources */,
+				D874839F1AEC8F2F006FD8BB /* cexp-help.pd in Resources */,
+				D87484361AEC8F2F006FD8BB /* gate8~.pd in Resources */,
+				D87483E21AEC8F2F006FD8BB /* evaluate3.pd in Resources */,
+				D87484C71AEC8F2F006FD8BB /* sinh~-help.pd in Resources */,
+				D87483CE1AEC8F2F006FD8BB /* csub~.pd in Resources */,
+				D874843E1AEC8F2F006FD8BB /* ggate.pd in Resources */,
+				D87484EB1AEC8F2F006FD8BB /* switch8~.pd in Resources */,
+				D874847D1AEC8F2F006FD8BB /* lset.pd in Resources */,
+				D87484981AEC8F2F006FD8BB /* panner~-help.pd in Resources */,
+				D87484AD1AEC8F2F006FD8BB /* rev1~.pd in Resources */,
+				D87484811AEC8F2F006FD8BB /* lstack.pd in Resources */,
 				3B1AABA01AD9B448007A7E64 /* notesender.pd in Resources */,
+				D87484B11AEC8F2F006FD8BB /* rev3~.pd in Resources */,
+				D87481CA1AEC7C1E006FD8BB /* flugelhorn.sf2 in Resources */,
+				D874839C1AEC8F2F006FD8BB /* cdiv~-help.pd in Resources */,
+				D87484481AEC8F2F006FD8BB /* hann_table.pd in Resources */,
+				D874842A1AEC8F2F006FD8BB /* gate5~.pd in Resources */,
+				D87484B21AEC8F2F006FD8BB /* ringmod.pd in Resources */,
+				D87484E91AEC8F2F006FD8BB /* switch8.pd in Resources */,
+				D87484CA1AEC8F2F006FD8BB /* soundfonts-help.pd in Resources */,
+				D87484AE1AEC8F2F006FD8BB /* rev2~-help.pd in Resources */,
+				D874842F1AEC8F2F006FD8BB /* gate7-help.pd in Resources */,
+				D87483CB1AEC8F2F006FD8BB /* csub-help.pd in Resources */,
+				D87483B11AEC8F2F006FD8BB /* cmult.pd in Resources */,
+				D87483971AEC8F2F006FD8BB /* cconj.pd in Resources */,
+				D87484771AEC8F2F006FD8BB /* lprint.pd in Resources */,
+				D87484061AEC8F2F006FD8BB /* gate21.pd in Resources */,
+				D87483A11AEC8F2F006FD8BB /* cexp~-help.pd in Resources */,
+				D874848C1AEC8F2F006FD8BB /* multitremolo~~.pd in Resources */,
+				D87484C41AEC8F2F006FD8BB /* sigbiquad~.pd in Resources */,
+				D87484DA1AEC8F2F006FD8BB /* switch4~-help.pd in Resources */,
+				D87484461AEC8F2F006FD8BB /* guifilter~.pd in Resources */,
+				D87484001AEC8F2F006FD8BB /* gate19.pd in Resources */,
+				D87484C91AEC8F2F006FD8BB /* smoothline~.pd in Resources */,
+				D87483C61AEC8F2F006FD8BB /* csch.pd in Resources */,
+				D874846B1AEC8F2F006FD8BB /* liter.pd in Resources */,
+				D87484DE1AEC8F2F006FD8BB /* switch5~-help.pd in Resources */,
 				3B25B8111AC732BD00C1A669 /* Images.xcassets in Resources */,
+				D87484FA1AEC8F2F006FD8BB /* transistor~-help.pd in Resources */,
+				D87483831AEC8F2F006FD8BB /* argv-help.pd in Resources */,
 				3B1AAB9A1AD9B448007A7E64 /* drums.pd in Resources */,
+				D874842B1AEC8F2F006FD8BB /* gate6-help.pd in Resources */,
+				D874849C1AEC8F2F006FD8BB /* pd_for_libpd.pd in Resources */,
+				D87484FD1AEC8F2F006FD8BB /* unique_set.pd in Resources */,
+				D87483BC1AEC8F2F006FD8BB /* cot.pd in Resources */,
+				D87483E41AEC8F2F006FD8BB /* expscale.pd in Resources */,
+				D87483A61AEC8F2F006FD8BB /* chorus~.pd in Resources */,
+				D87484BA1AEC8F2F006FD8BB /* sec-help.pd in Resources */,
+				D87483D41AEC8F2F006FD8BB /* dictionary-standalone-help.pd in Resources */,
+				D87483C91AEC8F2F006FD8BB /* csc~-help.pd in Resources */,
+				D87483B61AEC8F2F006FD8BB /* complex-mod~.pd in Resources */,
+				D87484D11AEC8F2F006FD8BB /* switch2.pd in Resources */,
 				3B1AAECA1AD9B8AF007A7E64 /* list-splat.pd in Resources */,
+				D87481D01AEC7C1E006FD8BB /* jonnypad5.sf2 in Resources */,
+				D874839B1AEC8F2F006FD8BB /* cdiv.pd in Resources */,
+				D874844B1AEC8F2F006FD8BB /* hilbert~-help.pd in Resources */,
+				D87484C21AEC8F2F006FD8BB /* sigbiquad_coeff~.pd in Resources */,
+				D87481D11AEC7C1E006FD8BB /* jonnypad6.SF2 in Resources */,
+				D874840C1AEC8F2F006FD8BB /* gate24.pd in Resources */,
+				D87484841AEC8F2F006FD8BB /* mp3play~-help.pd in Resources */,
 				3B1AAB981AD9B448007A7E64 /* chordal.pd in Resources */,
 				3B1AAB9D1AD9B448007A7E64 /* generator2~.pd in Resources */,
+				D87483871AEC8F2F006FD8BB /* autobiquad~-help.pd in Resources */,
+				D87484FF1AEC8F2F006FD8BB /* uzi.pd in Resources */,
+				D87484F81AEC8F2F006FD8BB /* testtone~.pd in Resources */,
+				D87483E71AEC8F2F006FD8BB /* filt-help.pd in Resources */,
+				D874847A1AEC8F2F006FD8BB /* lreverse-help.pd in Resources */,
+				D87484D61AEC8F2F006FD8BB /* switch3~-help.pd in Resources */,
+				D87484891AEC8F2F006FD8BB /* multitremolo~-help.pd in Resources */,
+				D87485001AEC8F2F006FD8BB /* view~.pd in Resources */,
+				D87483B51AEC8F2F006FD8BB /* complex-mod~-help.pd in Resources */,
+				D874840E1AEC8F2F006FD8BB /* gate25.pd in Resources */,
+				D874845E1AEC8F2F006FD8BB /* lfl<.pd in Resources */,
+				D87484AA1AEC8F2F006FD8BB /* rev1-final.pd in Resources */,
+				D874840F1AEC8F2F006FD8BB /* gate26-help.pd in Resources */,
+				D874841E1AEC8F2F006FD8BB /* gate31.pd in Resources */,
+				D87483A01AEC8F2F006FD8BB /* cexp.pd in Resources */,
+				D87484F91AEC8F2F006FD8BB /* tone~.pd in Resources */,
+				D87481C71AEC7C1E006FD8BB /* DCs_Mellotron_Flute.sf2 in Resources */,
+				D87484281AEC8F2F006FD8BB /* gate5.pd in Resources */,
+				D87484781AEC8F2F006FD8BB /* lqueue-help.pd in Resources */,
+				D87483AA1AEC8F2F006FD8BB /* circularlist.pd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +2221,7 @@
 				3B5583D21AD06C3D009B0AAC /* ValveHead.swift in Sources */,
 				3B9BBC321ACB28C30081A443 /* MaestroInstrumentView.swift in Sources */,
 				3B5583D41AD07122009B0AAC /* MaestroPureDataBridge.swift in Sources */,
+				D85D90021AEC1E0100238117 /* PercussionViewController.swift in Sources */,
 				3B9BBC341ACB29D00081A443 /* MaestroView.swift in Sources */,
 				7736CEE81ACD8F6F008563DB /* MHCustomTabBarController.m in Sources */,
 				3B5583E11AD1C38A009B0AAC /* BluetoothViewController.m in Sources */,
