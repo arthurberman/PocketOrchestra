@@ -37,7 +37,7 @@ public class MaestroPuredataBridge {
             if let d = instrumentDelegate {
                 vol = d.volumeForChannel(Int(channel))
             }
-            PdBase.sendNoteOn(channel, pitch: pitch, velocity: Int32(Float(velocity) * vol))
+            PdBase.sendNoteOn(channel, pitch: pitch, velocity: Int32(Float(velocity) * instrumentDelegate!.volumeForChannel(Int(channel))))
         }
     }
     class func sendNoteOff(channel : Int32, pitch : Int32) {

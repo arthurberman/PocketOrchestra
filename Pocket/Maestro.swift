@@ -20,7 +20,7 @@ class Maestro: UIViewController, MaestroDelegate, MaestroInstrumentDelegate {
     }
     
     func volumeForChannel(channel : Int) -> Float{
-        return 1.0
+        return instruments[channel].volume
     }
     
 
