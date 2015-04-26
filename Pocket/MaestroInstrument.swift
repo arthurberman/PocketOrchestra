@@ -10,10 +10,12 @@ import UIKit
 import Foundation
 class MaestroInstrument: NSObject {
     var color : CGColor = UIColor.greenColor().CGColor
+    var volume : Float = 1.0
     
     convenience init(color : CGColor) {
         self.init()
         self.color = color
+        self.volume = 1.0
         
     }
     func draw(context : CGContext, rect: CGRect) {
