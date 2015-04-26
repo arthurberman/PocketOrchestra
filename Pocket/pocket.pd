@@ -1,4 +1,4 @@
-#N canvas 131 359 750 431 10;
+#N canvas 510 156 750 431 10;
 #X obj 160 284 chordal;
 #X obj 245 336 lead;
 #X obj 351 368 drums;

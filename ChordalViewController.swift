@@ -67,10 +67,12 @@ class ChordalViewController: UIViewController, UIScrollViewDelegate, UIPickerVie
         valveScroller.panGestureRecognizer.minimumNumberOfTouches = 3
         valveScroller.panGestureRecognizer.maximumNumberOfTouches = 3
         
-        // Start with 100% volume, shimmer and filter matching sliders
+        // Start with 100% volume, shimmer, filter, tremolo matching sliders
         MaestroPuredataBridge.sendControlChange(1, controller: 1, value: 100)
         MaestroPuredataBridge.sendControlChange(1, controller: 3, value: 50)
         MaestroPuredataBridge.sendControlChange(1, controller: 2, value: 2)
+        MaestroPuredataBridge.sendControlChange(1, controller: 4, value: 0)
+        MaestroPuredataBridge.sendControlChange(1, controller: 5, value: 2)
         
     }
     
@@ -87,6 +89,13 @@ class ChordalViewController: UIViewController, UIScrollViewDelegate, UIPickerVie
     @IBAction func shimmerSlider(sender: UISlider) {
         MaestroPuredataBridge.sendControlChange(1, controller: 2, value: Int32(sender.value))
     }
+    @IBAction func tremoloRate(sender: UISlider) {
+        MaestroPuredataBridge.sendControlChange(1, controller: 4, value: Int32(sender.value))
+        
+    }
+    @IBAction func tremoloDepth(sender: UISlider) {
+        MaestroPuredataBridge.sendControlChange(1, controller: 5, value: Int32(sender.value))
+    }
     
     @IBAction func resetPressed(sender: UIButton) {
         for v in sliders {
@@ -95,6 +104,15 @@ class ChordalViewController: UIViewController, UIScrollViewDelegate, UIPickerVie
                 v.returning = true
                 v.update()
             }
+        }
+    }
+    @IBAction func tremoloToggle(sender: UISwitch) {
+        if sender.on {
+            MaestroPuredataBridge.sendControlChange(1, controller: 6, value: 1)
+        }
+            
+        else {
+            MaestroPuredataBridge.sendControlChange(1, controller: 6, value: 0)
         }
     }
     

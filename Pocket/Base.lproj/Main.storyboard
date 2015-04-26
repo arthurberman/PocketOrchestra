@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="7yC-W9-J7E"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Mm8-2l-TG0">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vFD-9r-FVu">
@@ -35,21 +35,21 @@
                                 </variation>
                             </scrollView>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="28" maxValue="145" translatesAutoresizingMaskIntoConstraints="NO" id="DAY-Xt-v0m">
-                                <rect key="frame" x="402" y="450" width="184" height="31"/>
+                                <rect key="frame" x="724" y="475" width="184" height="31"/>
                                 <color key="tintColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="filterSlider:" destination="osV-No-Gwm" eventType="valueChanged" id="tgu-aJ-LHt"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.0" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="vdi-qy-jTV">
-                                <rect key="frame" x="402" y="529" width="184" height="31"/>
+                                <rect key="frame" x="724" y="536" width="184" height="31"/>
                                 <color key="tintColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="shimmerSlider:" destination="osV-No-Gwm" eventType="valueChanged" id="S2B-wa-Wqj"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="G2b-i4-c1v">
-                                <rect key="frame" x="30" y="450" width="178" height="31"/>
+                                <rect key="frame" x="29" y="445" width="178" height="31"/>
                                 <color key="tintColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="volumeSlider:" destination="osV-No-Gwm" eventType="valueChanged" id="mXC-kw-Rur"/>
@@ -67,7 +67,25 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Volume" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbL-5X-p15">
-                                <rect key="frame" x="91" y="427" width="57" height="21"/>
+                                <rect key="frame" x="90" y="422" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ripples" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2s-L7-gpJ">
+                                <rect key="frame" x="415" y="422" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ripples" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FA-0l-io5">
+                                <rect key="frame" x="440" y="456" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Depth" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kM2-M0-UBs">
+                                <rect key="frame" x="446" y="513" width="47" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -87,13 +105,41 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pipe Size" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCt-NV-vsI">
-                                <rect key="frame" x="458" y="427" width="72" height="21"/>
+                                <rect key="frame" x="780" y="454" width="72" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shimmer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZz-Ds-Vo9">
-                                <rect key="frame" x="460" y="500" width="69" height="21"/>
+                                <rect key="frame" x="782" y="513" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="iP7-cv-jOf">
+                                <rect key="frame" x="380" y="475" width="178" height="31"/>
+                                <color key="tintColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="tremoloRate:" destination="osV-No-Gwm" eventType="valueChanged" id="jc8-gq-lgs"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="xtR-LG-Dok">
+                                <rect key="frame" x="380" y="536" width="178" height="31"/>
+                                <color key="tintColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="tremoloDepth:" destination="osV-No-Gwm" eventType="valueChanged" id="QGR-62-8Fk"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2cS-Fv-Gat">
+                                <rect key="frame" x="487" y="417" width="51" height="31"/>
+                                <color key="tintColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="tremoloToggle:" destination="osV-No-Gwm" eventType="valueChanged" id="GVt-O5-WAr"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Synth Controls" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMw-h2-nV6">
+                                <rect key="frame" x="759" y="422" width="114" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -101,6 +147,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="valveScroller" destination="vFD-9r-FVu" id="9Ly-md-fmu"/>
                         <outlet property="volSlider" destination="G2b-i4-c1v" id="Vfu-aK-d6H"/>

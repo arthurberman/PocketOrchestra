@@ -13,7 +13,7 @@
 #X obj 208 326 outlet~;
 #X text 364 75 filter freq;
 #X obj 372 122 * 7;
-#X obj 372 94 ctlin 21;
+#X obj 372 94 ctlin 22;
 #X connect 0 0 3 0;
 #X connect 1 0 6 0;
 #X connect 1 0 7 0;
