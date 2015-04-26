@@ -108,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E5n-Sb-Tac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1932" y="498"/>
+            <point key="canvasLocation" x="-2151" y="387"/>
         </scene>
         <!--Hydralys View Controller-->
         <scene sceneID="Jkk-5t-4aW">

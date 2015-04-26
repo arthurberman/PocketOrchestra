@@ -25,9 +25,10 @@
 #X obj 556 324 generator2~;
 #X obj 630 324 generator2~;
 #X obj 375 460 tremolo~;
-#X obj 520 432 ctlin 4;
-#X obj 524 469 ctlin 5;
-#X obj 527 504 ctlin 6;
+#X obj 479 408 ctlin 4;
+#X obj 489 429 ctlin 5;
+#X obj 531 473 ctlin 6;
+#X obj 476 451 * 10;
 #X connect 0 0 4 0;
 #X connect 1 0 3 1;
 #X connect 2 0 3 2;
@@ -66,3 +67,7 @@
 #X connect 23 0 9 0;
 #X connect 24 0 9 0;
 #X connect 25 0 12 1;
+#X connect 26 0 25 1;
+#X connect 27 0 29 0;
+#X connect 28 0 25 3;
+#X connect 29 0 25 2;
