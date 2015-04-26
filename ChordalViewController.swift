@@ -68,24 +68,24 @@ class ChordalViewController: UIViewController, UIScrollViewDelegate, UIPickerVie
         valveScroller.panGestureRecognizer.maximumNumberOfTouches = 3
         
         // Start with 100% volume, shimmer and filter matching sliders
-        MaestroPuredataBridge.sendControlChange(1, controller: 12, value: 100)
-        MaestroPuredataBridge.sendControlChange(1, controller: 11, value: 50)
-        MaestroPuredataBridge.sendControlChange(1, controller: 10, value: 2)
+        MaestroPuredataBridge.sendControlChange(1, controller: 1, value: 100)
+        MaestroPuredataBridge.sendControlChange(1, controller: 3, value: 50)
+        MaestroPuredataBridge.sendControlChange(1, controller: 2, value: 2)
         
     }
     
     @IBOutlet var volSlider: UISlider!
     
     @IBAction func volumeSlider(sender: UISlider) {
-        MaestroPuredataBridge.sendControlChange(1, controller: 12, value: Int32(sender.value))
+        MaestroPuredataBridge.sendControlChange(1, controller: 1, value: Int32(sender.value))
     }
     
     @IBAction func filterSlider(sender: UISlider) {
-        MaestroPuredataBridge.sendControlChange(1, controller: 11, value: Int32(sender.value))
+        MaestroPuredataBridge.sendControlChange(1, controller: 3, value: Int32(sender.value))
     }
     
     @IBAction func shimmerSlider(sender: UISlider) {
-        MaestroPuredataBridge.sendControlChange(1, controller: 10, value: Int32(sender.value))
+        MaestroPuredataBridge.sendControlChange(1, controller: 2, value: Int32(sender.value))
     }
     
     @IBAction func resetPressed(sender: UIButton) {
@@ -100,11 +100,11 @@ class ChordalViewController: UIViewController, UIScrollViewDelegate, UIPickerVie
     
     @IBAction func mutePressed(sender: UISwitch) {
         if sender.on {
-            MaestroPuredataBridge.sendControlChange(1, controller: 12, value: 0)
+            MaestroPuredataBridge.sendControlChange(1, controller: 1, value: 0)
         }
             
         else {
-            MaestroPuredataBridge.sendControlChange(1, controller: 12, value: Int32(volSlider.value))
+            MaestroPuredataBridge.sendControlChange(1, controller: 1, value: Int32(volSlider.value))
         }
     }
     
