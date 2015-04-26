@@ -22,6 +22,7 @@ class HydralysViewController: UIViewController, UIScrollViewDelegate, UIPickerVi
         super.viewDidLoad()
      //   bridge.initialize()
       //  bridge.play()
+        var on = 0
         
         
         // we can add an arbitrary number of sliders by changing the upper limit on the range
@@ -39,7 +40,11 @@ class HydralysViewController: UIViewController, UIScrollViewDelegate, UIPickerVi
                         let veloc = Int32(Int(round(x * 127)))
                         if (x > 0.01){
                             MaestroPuredataBridge.sendNoteOn(Int32(i + 9), pitch: 60+i, velocity:  veloc)
+                            on = on | 1 << i
                         } else {
+                            on = on &  (((1 << 11) - 1) ^ 1 << i)
+                        }
+                        if (on == 0) {
                             MaestroPuredataBridge.sendNoteOn(Int32(i + 9), pitch: 60+i, velocity:  0)
                         }
                         
