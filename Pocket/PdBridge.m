@@ -45,8 +45,16 @@
     [PdBase sendFloat:pitch toReceiver:@"beat"];
 }
 
+-(void) sendControlChange:(int)channel toController:(int)controller toValue:(int)value {
+    [PdBase sendControlChange:channel controller:controller value:value];
+}
+
 -(void) sendBangTo:(NSString*) name {
     [PdBase sendBangToReceiver:name];
+}
+
+-(void) addToSearchPath:(NSString*) path {
+    [PdBase addToSearchPath:path];
 }
 
 

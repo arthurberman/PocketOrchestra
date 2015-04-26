@@ -35,8 +35,9 @@ class ChordalViewController: UIViewController, UIScrollViewDelegate, UIPickerVie
                         //self.bridge.sendFloat(Float(x), toReceive: "vol"+String(i)) // change the volume
                         //PdBase.sendNoteOn(0, pitch: Int32(i+60), velocity:  Int32(127 * x))
                         //self.bridge.sendBangTo("bang"+String(i)) // make sure the note is playing
-                        let veloc = (Int32 (Int(x * 127)))
-                        if (x > 0.2){
+                        let veloc = Int32(Int(round(x * 127)))
+                        
+                        if (x > 0){
                             MaestroPuredataBridge.sendNoteOn(Int32(i - 1), pitch: 60+i, velocity:  veloc)
                         } else {
                             MaestroPuredataBridge.sendNoteOff( Int32(i - 1), pitch: 60+i)
@@ -66,17 +67,46 @@ class ChordalViewController: UIViewController, UIScrollViewDelegate, UIPickerVie
         valveScroller.panGestureRecognizer.minimumNumberOfTouches = 3
         valveScroller.panGestureRecognizer.maximumNumberOfTouches = 3
         
-        // Start off with scale in A Major, 100% volume
-        self.bridge.sendFloat(Float(57), toReceive: "rootnote")
-        self.bridge.sendString("Major", withArguments: [], toReceiver: "scalename")
-        self.bridge.sendFloat(1.0, toReceive: "mastervolume")
-        self.bridge.sendFloat(0.5, toReceive: "tremolodepth")
-        self.bridge.sendFloat(1.0, toReceive: "tremolorate")
+        // Start with 100% volume, shimmer and filter matching sliders
+        MaestroPuredataBridge.sendControlChange(1, controller: 12, value: 100)
+        MaestroPuredataBridge.sendControlChange(1, controller: 11, value: 50)
+        MaestroPuredataBridge.sendControlChange(1, controller: 10, value: 2)
         
     }
     
+    @IBOutlet var volSlider: UISlider!
     
+    @IBAction func volumeSlider(sender: UISlider) {
+        MaestroPuredataBridge.sendControlChange(1, controller: 12, value: Int32(sender.value))
+    }
     
+    @IBAction func filterSlider(sender: UISlider) {
+        MaestroPuredataBridge.sendControlChange(1, controller: 11, value: Int32(sender.value))
+    }
+    
+    @IBAction func shimmerSlider(sender: UISlider) {
+        MaestroPuredataBridge.sendControlChange(1, controller: 10, value: Int32(sender.value))
+    }
+    
+    @IBAction func resetPressed(sender: UIButton) {
+        for v in sliders {
+            if v.getValue() > 0 {
+                v.dragging = false
+                v.returning = true
+                v.update()
+            }
+        }
+    }
+    
+    @IBAction func mutePressed(sender: UISwitch) {
+        if sender.on {
+            MaestroPuredataBridge.sendControlChange(1, controller: 12, value: 0)
+        }
+            
+        else {
+            MaestroPuredataBridge.sendControlChange(1, controller: 12, value: Int32(volSlider.value))
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
