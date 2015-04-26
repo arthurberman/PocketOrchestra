@@ -68,11 +68,11 @@ class ChordalViewController: UIViewController, UIScrollViewDelegate, UIPickerVie
         valveScroller.panGestureRecognizer.maximumNumberOfTouches = 3
         
         // Start with 100% volume, shimmer, filter, tremolo matching sliders
-        MaestroPuredataBridge.sendControlChange(1, controller: 1, value: 100)
-        MaestroPuredataBridge.sendControlChange(1, controller: 3, value: 50)
-        MaestroPuredataBridge.sendControlChange(1, controller: 2, value: 2)
-        MaestroPuredataBridge.sendControlChange(1, controller: 4, value: 0)
-        MaestroPuredataBridge.sendControlChange(1, controller: 5, value: 2)
+//        MaestroPuredataBridge.sendControlChange(1, controller: 1, value: 100)
+//        MaestroPuredataBridge.sendControlChange(1, controller: 3, value: 50)
+//        MaestroPuredataBridge.sendControlChange(1, controller: 2, value: 2)
+//        MaestroPuredataBridge.sendControlChange(1, controller: 4, value: 0)
+//        MaestroPuredataBridge.sendControlChange(1, controller: 5, value: 2)
         
     }
     

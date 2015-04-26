@@ -72,8 +72,6 @@ class HydralysViewController: UIViewController, UIScrollViewDelegate, UIPickerVi
         valveScroller.panGestureRecognizer.minimumNumberOfTouches = 3
         valveScroller.panGestureRecognizer.maximumNumberOfTouches = 3
         
-        // Start with 100% volume, shimmer, filter, tremolo matching sliders
-        MaestroPuredataBridge.sendControlChange(1, controller: 21, value: 100)
 
     }
     

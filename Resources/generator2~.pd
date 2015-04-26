@@ -1,4 +1,4 @@
-#N canvas 17 225 581 393 10;
+#N canvas 866 241 581 393 10;
 #X obj 255 201 +~;
 #X obj 203 160 -~ 0.5;
 #X obj 289 160 -~ 0.5;
@@ -19,6 +19,9 @@
 #X obj 380 143 * 7;
 #X obj 380 115 ctlin 3;
 #X obj 385 27 ctlin 2;
+#X obj 493 76 loadbang;
+#X msg 493 111 50;
+#X msg 387 66 2;
 #X connect 0 0 3 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 1;
@@ -38,3 +41,7 @@
 #X connect 17 0 3 1;
 #X connect 18 0 17 0;
 #X connect 19 0 15 0;
+#X connect 20 0 21 0;
+#X connect 20 0 22 0;
+#X connect 21 0 17 0;
+#X connect 22 0 15 0;

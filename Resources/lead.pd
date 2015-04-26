@@ -24,6 +24,8 @@
 #X obj 546 314 generator~;
 #X obj 621 314 generator~;
 #X obj 696 314 generator~;
+#X obj 39 351 loadbang;
+#X msg 40 376 100;
 #X connect 0 0 4 0;
 #X connect 1 0 3 1;
 #X connect 2 0 3 2;
@@ -61,3 +63,5 @@
 #X connect 22 0 13 0;
 #X connect 23 0 13 0;
 #X connect 24 0 13 0;
+#X connect 25 0 26 0;
+#X connect 26 0 12 0;
