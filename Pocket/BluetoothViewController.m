@@ -132,6 +132,7 @@ int curnote = 0;
     
 }
 
+int i = 0;
 - (IBAction)activateReceipt:(id)sender {
     
     MIKMIDIDeviceManager *manager = [MIKMIDIDeviceManager sharedDeviceManager];
@@ -140,18 +141,34 @@ int curnote = 0;
         NSLog(@"name %@", device.name);
         for (MIKMIDIEntity *entity in device.entities) {
             NSLog(@"entities %@", entity.name);
-            int i = 0;
             for (MIKMIDISourceEndpoint *source in entity.sources){
                 NSError *error = nil;
                 NSLog(@"%@", source.name);
                 if (!([manager.connectedInputSources containsObject:source])){
                     [[NSNotificationCenter defaultCenter] postNotificationName:@"addInstrument" object:nil];
+                    int myChannel = i;
+                    NSLog(@"%i", i);
                     BOOL success = [manager connectInput:source error:&error eventHandler: //use a lambda expression to handle the incoming notes
                                     ^(MIKMIDISourceEndpoint *source, NSArray *commands) {
-                                        for (MIKMIDINoteOnCommand *command in commands) {
+                                        for (MIKMIDICommand *midiCommand in commands) {
                                             // Handle each command
-                                            NSLog(@"%lu", (unsigned long)command.note);
-                                            [MaestroPuredataBridge sendNoteOn:11 + i pitch:command.note + 12 velocity:command.velocity];
+                                            if (midiCommand.commandType == MIKMIDICommandTypeNoteOn){
+                                                
+                                                MIKMIDINoteOnCommand *command = (MIKMIDINoteOnCommand*)midiCommand;
+                                                if (command.channel >= 0 && command.channel < 11) {
+                                                
+                                                    [MaestroPuredataBridge sendNoteOn:command.channel pitch:command.note + 12 velocity:command.velocity];
+                                                } else {
+                                                    [MaestroPuredataBridge sendNoteOn:11 + myChannel pitch:command.note + 12 velocity:command.velocity];
+                                                }
+                                                NSLog(@"%@, %i, %lu", source.name, myChannel, (unsigned long)command.note);
+                                            }
+                                            if (midiCommand.commandType == MIKMIDICommandTypeControlChange){
+                                                NSLog(@"CONTROL CHANGE");
+                                                MIKMIDIControlChangeCommand *command = midiCommand;
+                                                [MaestroPuredataBridge sendControlChange:1 controller:command.controllerNumber value:command.controllerValue];
+                                                //[MaestroPuredataBridge sendNoteOn:11 + i pitch:command.note + 12 velocity:command.velocity];
+                                            }
                                         }
                                     }];
                     i++;
