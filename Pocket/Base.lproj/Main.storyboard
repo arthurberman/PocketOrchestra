@@ -224,6 +224,7 @@
                                 </state>
                                 <connections>
                                     <action selector="resetPressed:" destination="osV-No-Gwm" eventType="touchUpInside" id="CZy-K8-i6J"/>
+                                    <action selector="resetPressed:" destination="AeQ-Pp-GcI" eventType="touchUpInside" id="Icb-nc-z8B"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Volume" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cfs-6O-rVh">
@@ -269,6 +270,7 @@
                                 <rect key="frame" x="352" y="498" width="178" height="31"/>
                                 <color key="tintColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
+                                    <action selector="tremoloRate:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="lD4-Zl-8N0"/>
                                     <action selector="tremoloRate:" destination="osV-No-Gwm" eventType="valueChanged" id="nyd-Qv-h61"/>
                                 </connections>
                             </slider>
@@ -277,6 +279,7 @@
                                 <color key="tintColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="tremoloDepth:" destination="osV-No-Gwm" eventType="valueChanged" id="6gc-io-vgc"/>
+                                    <action selector="tremoloDepth:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="gSk-kf-b5n"/>
                                 </connections>
                             </slider>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XiN-Ea-Ikk">
@@ -284,6 +287,7 @@
                                 <color key="tintColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="onTintColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
+                                    <action selector="tremoloToggle:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="2LB-hQ-hAK"/>
                                     <action selector="tremoloToggle:" destination="osV-No-Gwm" eventType="valueChanged" id="Qd0-cp-dvA"/>
                                 </connections>
                             </switch>
@@ -291,14 +295,8 @@
                                 <rect key="frame" x="684" y="498" width="184" height="31"/>
                                 <color key="tintColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
+                                    <action selector="filterSlider:" destination="AeQ-Pp-GcI" eventType="valueChanged" id="29v-Ho-QUa"/>
                                     <action selector="filterSlider:" destination="osV-No-Gwm" eventType="valueChanged" id="d8B-6C-HmF"/>
-                                </connections>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.0" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="Y8M-9b-QUM">
-                                <rect key="frame" x="684" y="559" width="184" height="31"/>
-                                <color key="tintColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="shimmerSlider:" destination="osV-No-Gwm" eventType="valueChanged" id="YZI-Xa-PNR"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pipe Size" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agv-8k-qLM">
@@ -313,18 +311,13 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distortion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6V-lO-h0P">
-                                <rect key="frame" x="739" y="535" width="75" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="valveScroller" destination="P4Q-kj-O3m" id="Gbj-se-WTM"/>
+                        <outlet property="volSlider" destination="feA-Ot-Mv5" id="Mf0-qz-ZUV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rkx-Ry-cRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -519,6 +512,15 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="bda-Pj-aTM" eventType="touchUpInside" id="4iB-xK-ZVr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8g6-SZ-liS">
+                                <rect key="frame" x="110" y="111" width="117" height="30"/>
+                                <state key="normal" title="Test Soundfont 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button2Pressed:" destination="bda-Pj-aTM" eventType="touchUpInside" id="jpa-yB-crx"/>
                                 </connections>
                             </button>
                         </subviews>

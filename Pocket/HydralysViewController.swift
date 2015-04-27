@@ -74,13 +74,52 @@ class HydralysViewController: UIViewController, UIScrollViewDelegate, UIPickerVi
         
 
     }
+    @IBOutlet var volSlider: UISlider!
     
     @IBAction func volumeSlider(sender: UISlider) {
+        MaestroPuredataBridge.sendControlChange(1, controller: 11, value: Int32(sender.value))
     }
     
     @IBAction func mutePressed(sender: UISwitch) {
+        if sender.on {
+            MaestroPuredataBridge.sendControlChange(1, controller: 11, value: 0)
+        }
+            
+        else {
+            MaestroPuredataBridge.sendControlChange(1, controller: 11, value: Int32(volSlider.value))
+        }
     }
     
+    @IBAction func filterSlider(sender: UISlider) {
+        MaestroPuredataBridge.sendControlChange(1, controller: 11, value: Int32(sender.value))
+    }
+    @IBAction func tremoloToggle(sender: UISwitch) {
+        if sender.on {
+            MaestroPuredataBridge.sendControlChange(1, controller: 16, value: 1)
+        }
+            
+        else {
+            MaestroPuredataBridge.sendControlChange(1, controller: 16, value: 0)
+        }
+    }
+    
+    @IBAction func tremoloRate(sender: UISlider) {
+        MaestroPuredataBridge.sendControlChange(1, controller: 14, value: Int32(sender.value))
+    }
+    @IBAction func tremoloDepth(sender: UISlider) {
+        MaestroPuredataBridge.sendControlChange(1, controller: 15, value: Int32(sender.value))
+    }
+    
+    
+    @IBAction func resetPressed(sender: UIButton) {
+        for v in sliders {
+            if v.getValue() > 0 {
+                v.dragging = false
+                v.returning = true
+                v.update()
+            }
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

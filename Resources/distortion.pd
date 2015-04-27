@@ -1,0 +1,20 @@
+#N canvas -7 30 450 300 10;
+#X obj 122 44 inlet~;
+#X obj 118 208 outlet~;
+#X obj 204 76 inlet;
+#X text 201 57 amount;
+#X obj 305 107 inlet;
+#X text 302 88 toggle;
+#X obj 158 104 *~ 40;
+#X obj 289 142 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 119 164 gswitch~;
+#X obj 148 130 clip~ -0.5 0.5;
+#X connect 0 0 6 0;
+#X connect 0 0 8 0;
+#X connect 2 0 6 1;
+#X connect 4 0 7 0;
+#X connect 6 0 9 0;
+#X connect 7 0 8 2;
+#X connect 8 0 1 0;
+#X connect 9 0 8 1;

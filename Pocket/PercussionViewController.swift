@@ -12,17 +12,16 @@ class PercussionViewController: UIViewController {
     
     let path = NSBundle.mainBundle().resourcePath! + "/"
     
-//    
-//    required init(coder aDecoder: NSCoder) {
-//        
-//        // Add all patches in the main bundle to Pd's search path, set up externals (needed for [soundfonts])
-//        PdBase.addToSearchPath(NSBundle.mainBundle().resourcePath)
-//        PdExternals.setup()
-//        
-//        super.init(coder: aDecoder)
-//        var file = "jonnypad1.sf2"
-//        PdBase.sendList(["set", path + file], toReceiver: "soundfonts")
-//    }
+    
+    required init(coder aDecoder: NSCoder) {
+        
+        // Add all patches in the main bundle to Pd's search path, set up externals (needed for [soundfonts])
+        PdBase.addToSearchPath(NSBundle.mainBundle().resourcePath)
+        
+        super.init(coder: aDecoder)
+        var file = "SC88Drumset.sf2"
+        PdBase.sendList(["set", path + file], toReceiver: "soundfonts")
+    }
     
     
 
@@ -39,7 +38,11 @@ class PercussionViewController: UIViewController {
     }
     
     @IBAction func buttonPressed(sender: UIButton) {
-        MaestroPuredataBridge.sendNoteOn(35, pitch: 60, velocity: 100)
+        MaestroPuredataBridge.sendNoteOn(34, pitch: 60, velocity: 100)
+        //PdBase.sendList([60, 127], toReceiver: "soundfonts")
+    }
+    @IBAction func button2Pressed(sender: UIButton) {
+        MaestroPuredataBridge.sendNoteOn(34, pitch: 50, velocity: 100)
     }
 
     /*
