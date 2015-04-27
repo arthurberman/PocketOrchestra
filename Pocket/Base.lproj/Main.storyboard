@@ -349,6 +349,7 @@
                                         <rect key="frame" x="17" y="16" width="75" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
+                                        <color key="tintColor" red="0.30045854187971699" green="0.87608890807575757" blue="0.34036598345617303" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
                                         <state key="normal" title="🎺 Melody">
                                             <color key="titleColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -362,18 +363,20 @@
                                         <rect key="frame" x="118" y="16" width="79" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
+                                        <color key="tintColor" red="0.30045854187971699" green="0.87608890807575757" blue="0.34036598345617303" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
                                         <state key="normal" title="🎹 Chordal">
                                             <color key="titleColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="osV-No-Gwm" kind="custom" identifier="viewController4" customClass="MHTabBarSegue" id="Hzz-9W-fvb"/>
+                                            <segue destination="osV-No-Gwm" kind="custom" identifier="viewController2" customClass="MHTabBarSegue" id="Hzz-9W-fvb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfC-ci-6GE">
                                         <rect key="frame" x="213" y="16" width="59" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
+                                        <color key="tintColor" red="0.30045854187971699" green="0.87608890807575757" blue="0.34036598345617303" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
                                         <state key="normal" title="🎸 Bass">
                                             <color key="titleColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -383,6 +386,7 @@
                                         <rect key="frame" x="659" y="16" width="81" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
+                                        <color key="tintColor" red="0.30045854187971699" green="0.87608890807575757" blue="0.34036598345617303" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
                                         <state key="normal" title="🎼 Maestro">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -407,8 +411,9 @@
                                         <rect key="frame" x="290" y="16" width="100" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
+                                        <color key="tintColor" red="0.30045854187971699" green="0.87608890807575757" blue="0.34036598345617303" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
-                                        <state key="normal" title="🍼 Percussion">
+                                        <state key="normal" title="🎶 Percussion">
                                             <color key="titleColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -436,7 +441,16 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
+                        <outlet property="bassButton" destination="HfC-ci-6GE" id="hfJ-Sn-OsX"/>
+                        <outlet property="chordalButton" destination="wwz-01-YbI" id="M8w-Ab-quj"/>
                         <outlet property="container" destination="9ds-F8-JSG" id="p6k-89-LQ7"/>
+                        <outlet property="melodyButton" destination="Xiq-fy-agR" id="uCX-Hx-5eh"/>
+                        <outlet property="percussionButton" destination="xPL-rp-T0M" id="Ms5-Ap-oNC"/>
+                        <outletCollection property="buttons" destination="Xiq-fy-agR" id="WKN-hT-d3z"/>
+                        <outletCollection property="buttons" destination="wwz-01-YbI" id="OTT-EB-S6G"/>
+                        <outletCollection property="buttons" destination="HfC-ci-6GE" id="GON-AL-jqV"/>
+                        <outletCollection property="buttons" destination="xPL-rp-T0M" id="Ddg-ra-UEu"/>
+                        <outletCollection property="buttons" destination="8tq-ez-rpz" id="CSO-2y-YT4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -491,7 +505,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1oa-5f-m4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-139.5" y="180"/>
+            <point key="canvasLocation" x="43" y="180"/>
         </scene>
         <!--Percussion View Controller-->
         <scene sceneID="30t-Jw-w9m">

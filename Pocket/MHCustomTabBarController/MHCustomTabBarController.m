@@ -23,11 +23,16 @@
 #import "MHCustomTabBarController.h"
 
 #import "MHTabBarSegue.h"
+@import UIKit;
 
 NSString *const MHCustomTabBarControllerViewControllerChangedNotification = @"MHCustomTabBarControllerViewControllerChangedNotification";
 NSString *const MHCustomTabBarControllerViewControllerAlreadyVisibleNotification = @"MHCustomTabBarControllerViewControllerAlreadyVisibleNotification";
 
 @interface MHCustomTabBarController ()
+@property (strong, nonatomic) IBOutlet UIButton *melodyButton;
+@property (strong, nonatomic) IBOutlet UIButton *chordalButton;
+@property (strong, nonatomic) IBOutlet UIButton *bassButton;
+@property (strong, nonatomic) IBOutlet UIButton *percussionButton;
 
 @property (nonatomic, strong) NSMutableDictionary *viewControllersByIdentifier;
 @property (strong, nonatomic) NSString *destinationIdentifier;
@@ -41,11 +46,11 @@ NSString *const MHCustomTabBarControllerViewControllerAlreadyVisibleNotification
     [super viewDidLoad];
     
     self.viewControllersByIdentifier = [NSMutableDictionary dictionary];
-    
 }
 
 -(void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
     if (self.childViewControllers.count < 1) {
         [self performSegueWithIdentifier:@"viewController1" sender:[self.buttons objectAtIndex:0]];
     }
@@ -60,7 +65,7 @@ NSString *const MHCustomTabBarControllerViewControllerAlreadyVisibleNotification
 #pragma mark - Segue
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-   
+    
     if (![segue isKindOfClass:[MHTabBarSegue class]]) {
         [super prepareForSegue:segue sender:sender];
         return;
@@ -73,15 +78,17 @@ NSString *const MHCustomTabBarControllerViewControllerAlreadyVisibleNotification
         [self.viewControllersByIdentifier setObject:segue.destinationViewController forKey:segue.identifier];
     }
     
+    
     [self.buttons setValue:@NO forKeyPath:@"selected"];
+    
     [sender setSelected:YES];
     self.selectedIndex = [self.buttons indexOfObject:sender];
-
+    
     self.destinationIdentifier = segue.identifier;
     self.destinationViewController = [self.viewControllersByIdentifier objectForKey:self.destinationIdentifier];
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:MHCustomTabBarControllerViewControllerChangedNotification object:nil]; 
-
+    [[NSNotificationCenter defaultCenter] postNotificationName:MHCustomTabBarControllerViewControllerChangedNotification object:nil];
+    
     
 }
 
