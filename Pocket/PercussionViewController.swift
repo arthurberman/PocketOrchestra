@@ -233,18 +233,7 @@ class PercussionViewController: UIViewController {
     }
     
     func NoteOff(currNote: Int) { //currNote = note currently playing + 0.75
-        println("NoteOff called")
-        for i in 0...6 {
-            if(collectionOfButtons[(i * 16) + currNote].backgroundColor == onColor) {
-                /*
-                if (i==0){
-                    //MaestroPuredataBridge.sendNoteOn(34, pitch: 60, velocity: 0) }
-                else if (i==1) {
-                    //MaestroPuredataBridge.sendNoteOn(34, pitch: 68, velocity: 0)
-                }  */
-                NSLog("sendNoteOff %u", currNote)
-            }
-        }
+      //  PdBase.sendList(["flush"], toReceiver: "soundfonts")
     }
     
     

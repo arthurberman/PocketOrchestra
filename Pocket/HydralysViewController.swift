@@ -39,13 +39,13 @@ class HydralysViewController: UIViewController, UIScrollViewDelegate, UIPickerVi
                         //let veloc = (Int32 (Int(x * 127)))
                         let veloc = Int32(Int(round(x * 127)))
                         if (x > 0.01){
-                            MaestroPuredataBridge.sendNoteOn(Int32(i + 9), pitch: 60+i, velocity:  veloc)
+                            MaestroPuredataBridge.sendNoteOn(Int32(i + 10), pitch: 60+i, velocity:  veloc)
                             on = on | 1 << i
                         } else {
                             on = on &  (((1 << 11) - 1) ^ 1 << i)
                         }
                         if (on == 0) {
-                            MaestroPuredataBridge.sendNoteOn(Int32(i + 9), pitch: 60+i, velocity:  0)
+                            MaestroPuredataBridge.sendNoteOn(Int32(i + 10), pitch: 60+i, velocity:  0)
                         }
                         
                         

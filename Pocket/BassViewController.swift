@@ -20,7 +20,7 @@ class BassViewController: UIViewController {
     
     let xOffset = CGFloat(55)
     let yOffset = CGFloat(55)
-    let instruments = ["Bass","Snare","Tom","Ride","Crash","Hi-Hat","Cowbell"]
+    let instruments = ["C","B","Bb","A","Ab","G","Gb","F", "E"]
     let outlineColor = UIColor(red:112/255, green:173/255, blue:238/255, alpha:1.0)
     let onColor = UIColor(red:109/255, green:232/255, blue:84/255, alpha:1.0)
     let offColor = UIColor(red:219/255, green:70/255, blue:70/255, alpha:1.0)
@@ -79,7 +79,7 @@ class BassViewController: UIViewController {
         
         collectionOfButtons = Array<SeqButton>()
         
-        for i in 0...6 {
+        for i in 0...instruments.count - 1 {
             for j in 0...15 {
                 let button = SeqButton()
                 button.frame = CGRectMake(x, y, 45, 45)
@@ -200,9 +200,9 @@ class BassViewController: UIViewController {
     
     func NoteOn(currNote: Int){
         println("NoteOn called")
-        for i in 0...6 {
+        for i in 0...instruments.count - 1 {
             if(collectionOfButtons[(i * 16) + currNote].backgroundColor == onColor) {
-                MaestroPuredataBridge.sendNoteOn(21 + i, pitch: 30 + i, velocity: 100)
+                MaestroPuredataBridge.sendNoteOn(21 , pitch: 36 - i, velocity: 100)
                 NSLog("sendNoteOn %u", currNote)
                 
             }
@@ -211,9 +211,9 @@ class BassViewController: UIViewController {
     
     func NoteOff(currNote: Int) { //currNote = note currently playing + 0.75
         println("NoteOff called")
-        for i in 0...6 {
+        for i in 0...instruments.count - 1{
             if(collectionOfButtons[(i * 16) + currNote].backgroundColor == onColor) {
-                MaestroPuredataBridge.sendNoteOn(21 + i, pitch: 30 + i, velocity: 0)
+                MaestroPuredataBridge.sendNoteOn(21 , pitch: 36 - i, velocity: 0)
                 NSLog("sendNoteOff %u", currNote)
             }
         }

@@ -40,7 +40,7 @@ class ChordalViewController: UIViewController, UIScrollViewDelegate, UIPickerVie
                         if (x > 0){
                             MaestroPuredataBridge.sendNoteOn(Int32(i - 1), pitch: 60+i, velocity:  veloc)
                         } else {
-                            MaestroPuredataBridge.sendNoteOff( Int32(i - 1), pitch: 60+i)
+                            MaestroPuredataBridge.sendNoteOn( Int32(i - 1), pitch: 60+i, velocity: 0)
                         }
                         
                         
