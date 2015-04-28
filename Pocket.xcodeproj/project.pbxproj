@@ -459,6 +459,8 @@
 		D87485021AEC8F2F006FD8BB /* volume~-help.pd in Resources */ = {isa = PBXBuildFile; fileRef = D874836F1AEC8F2F006FD8BB /* volume~-help.pd */; };
 		D87485031AEC8F2F006FD8BB /* volume~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483701AEC8F2F006FD8BB /* volume~.pd */; };
 		D87485041AEC8F2F006FD8BB /* ||~.pd in Resources */ = {isa = PBXBuildFile; fileRef = D87483711AEC8F2F006FD8BB /* ||~.pd */; };
+		D886B0481AF01C610043F30E /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = D886B0471AF01C610043F30E /* line.png */; };
+		D886B04A1AF01CF60043F30E /* scrubline.png in Resources */ = {isa = PBXBuildFile; fileRef = D886B0491AF01CF60043F30E /* scrubline.png */; };
 		D8A7E0F71AED706E00205C24 /* build_counter in Resources */ = {isa = PBXBuildFile; fileRef = D8A7DE661AED706D00205C24 /* build_counter */; };
 		D8A7E0F81AED706E00205C24 /* accum.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A7DE681AED706D00205C24 /* accum.c */; };
 		D8A7E0F91AED706E00205C24 /* acos.c in Sources */ = {isa = PBXBuildFile; fileRef = D8A7DE691AED706D00205C24 /* acos.c */; };
@@ -939,7 +941,6 @@
 		D8A7E30C1AED746C00205C24 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D8A7E2EE1AED746C00205C24 /* README.txt */; };
 		D8A7E30F1AEDB33B00205C24 /* distortion.pd in Resources */ = {isa = PBXBuildFile; fileRef = D8A7E30E1AEDB33B00205C24 /* distortion.pd */; };
 		D8C28F441AEF02A70033715E /* SeqButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C28F431AEF02A70033715E /* SeqButton.swift */; };
-		D8C28F461AEF02AE0033715E /* scrubline.png in Resources */ = {isa = PBXBuildFile; fileRef = D8C28F451AEF02AE0033715E /* scrubline.png */; };
 		D8D47FED1AEF2E31003C9643 /* drums.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D8D47FEC1AEF2E31003C9643 /* drums.sf2 */; };
 		E546C985097F5FC30569996E /* libPods-Pocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F70F64B7185668548E6742 /* libPods-Pocket.a */; };
 /* End PBXBuildFile section */
@@ -1421,6 +1422,8 @@
 		D874836F1AEC8F2F006FD8BB /* volume~-help.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "volume~-help.pd"; sourceTree = "<group>"; };
 		D87483701AEC8F2F006FD8BB /* volume~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "volume~.pd"; sourceTree = "<group>"; };
 		D87483711AEC8F2F006FD8BB /* ||~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "||~.pd"; sourceTree = "<group>"; };
+		D886B0471AF01C610043F30E /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = line.png; path = ../../../../Desktop/EMID/line.png; sourceTree = "<group>"; };
+		D886B0491AF01CF60043F30E /* scrubline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scrubline.png; path = ../../../../Desktop/EMID/scrubline.png; sourceTree = "<group>"; };
 		D8A7DE661AED706D00205C24 /* build_counter */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = build_counter; sourceTree = "<group>"; };
 		D8A7DE681AED706D00205C24 /* accum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = accum.c; sourceTree = "<group>"; };
 		D8A7DE691AED706D00205C24 /* acos.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = acos.c; sourceTree = "<group>"; };
@@ -2062,7 +2065,6 @@
 		D8A7E2EE1AED746C00205C24 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		D8A7E30E1AEDB33B00205C24 /* distortion.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = distortion.pd; path = Resources/distortion.pd; sourceTree = "<group>"; };
 		D8C28F431AEF02A70033715E /* SeqButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeqButton.swift; sourceTree = "<group>"; };
-		D8C28F451AEF02AE0033715E /* scrubline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrubline.png; sourceTree = "<group>"; };
 		D8D47FEC1AEF2E31003C9643 /* drums.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = drums.sf2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2121,12 +2123,13 @@
 				3B25B8091AC732BD00C1A669 /* AppDelegate.swift */,
 				3B5583DF1AD1C38A009B0AAC /* BluetoothViewController.h */,
 				3B5583E01AD1C38A009B0AAC /* BluetoothViewController.m */,
-				D8C28F451AEF02AE0033715E /* scrubline.png */,
 				3B5583D31AD07122009B0AAC /* MaestroPureDataBridge.swift */,
 				3B25B80B1AC732BD00C1A669 /* ViewController.swift */,
 				D854994D1AE02F2600A33985 /* ChordalViewController.swift */,
 				3B25B8291AC79D6600C1A669 /* CustomTabControllerViewController.swift */,
 				D8C28F431AEF02A70033715E /* SeqButton.swift */,
+				D886B0471AF01C610043F30E /* line.png */,
+				D886B0491AF01CF60043F30E /* scrubline.png */,
 				3B25B82D1AC8DDC200C1A669 /* RoundButton.swift */,
 				3B9BBC331ACB29D00081A443 /* MaestroView.swift */,
 				3B25B82B1AC8DCAF00C1A669 /* Maestro.swift */,
@@ -3744,6 +3747,7 @@
 				D87484091AEC8F2F006FD8BB /* gate23-help.pd in Resources */,
 				D87483ED1AEC8F2F006FD8BB /* gate10-help.pd in Resources */,
 				D87484501AEC8F2F006FD8BB /* iterator.pd in Resources */,
+				D886B0481AF01C610043F30E /* line.png in Resources */,
 				D874846E1AEC8F2F006FD8BB /* loadfloat-help.pd in Resources */,
 				D874837C1AEC8F2F006FD8BB /* abstractions.pd in Resources */,
 				D8A7E1C81AED706E00205C24 /* switch-help.pd in Resources */,
@@ -3779,6 +3783,7 @@
 				D8A7E1891AED706E00205C24 /* kink~-help.pd in Resources */,
 				D8A7E1531AED706E00205C24 /* atan2~-help.pd in Resources */,
 				D87483B91AEC8F2F006FD8BB /* cosh~-help.pd in Resources */,
+				D886B04A1AF01CF60043F30E /* scrubline.png in Resources */,
 				D874843D1AEC8F2F006FD8BB /* ggate-help.pd in Resources */,
 				D87483DF1AEC8F2F006FD8BB /* evaluate-help.pd in Resources */,
 				D87484621AEC8F2F006FD8BB /* lfl>.pd in Resources */,
@@ -3878,7 +3883,6 @@
 				D87484F61AEC8F2F006FD8BB /* tan~.pd in Resources */,
 				D8A7E1D61AED706E00205C24 /* urn-help.pd in Resources */,
 				D87484031AEC8F2F006FD8BB /* gate20-help.pd in Resources */,
-				D8C28F461AEF02AE0033715E /* scrubline.png in Resources */,
 				D8A7E19E1AED706E00205C24 /* next-help.pd in Resources */,
 				D8A7E1DD1AED706E00205C24 /* xbendout2-help.pd in Resources */,
 				D8A7E30B1AED746C00205C24 /* import_sf.py in Resources */,
