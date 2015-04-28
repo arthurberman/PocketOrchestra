@@ -940,6 +940,7 @@
 		D8A7E30F1AEDB33B00205C24 /* distortion.pd in Resources */ = {isa = PBXBuildFile; fileRef = D8A7E30E1AEDB33B00205C24 /* distortion.pd */; };
 		D8C28F441AEF02A70033715E /* SeqButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C28F431AEF02A70033715E /* SeqButton.swift */; };
 		D8C28F461AEF02AE0033715E /* scrubline.png in Resources */ = {isa = PBXBuildFile; fileRef = D8C28F451AEF02AE0033715E /* scrubline.png */; };
+		D8D47FED1AEF2E31003C9643 /* drums.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = D8D47FEC1AEF2E31003C9643 /* drums.sf2 */; };
 		E546C985097F5FC30569996E /* libPods-Pocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F70F64B7185668548E6742 /* libPods-Pocket.a */; };
 /* End PBXBuildFile section */
 
@@ -2059,10 +2060,10 @@
 		D8A7E2EB1AED746C00205C24 /* StomperSet.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = StomperSet.sf2; sourceTree = "<group>"; };
 		D8A7E2ED1AED746C00205C24 /* import_sf.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = import_sf.py; sourceTree = "<group>"; };
 		D8A7E2EE1AED746C00205C24 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		D8A7E30D1AED941400205C24 /* drums.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = drums.sf2; sourceTree = "<group>"; };
 		D8A7E30E1AEDB33B00205C24 /* distortion.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = distortion.pd; path = Resources/distortion.pd; sourceTree = "<group>"; };
 		D8C28F431AEF02A70033715E /* SeqButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeqButton.swift; sourceTree = "<group>"; };
 		D8C28F451AEF02AE0033715E /* scrubline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrubline.png; sourceTree = "<group>"; };
+		D8D47FEC1AEF2E31003C9643 /* drums.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = drums.sf2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3478,9 +3479,9 @@
 		D8A7E2CF1AED746C00205C24 /* soundfonts */ = {
 			isa = PBXGroup;
 			children = (
-				D8A7E30D1AED941400205C24 /* drums.sf2 */,
 				D8A7E2E71AED746C00205C24 /* README.txt */,
 				D8A7E2E91AED746C00205C24 /* SC88Drumset.sf2 */,
+				D8D47FEC1AEF2E31003C9643 /* drums.sf2 */,
 				D8A7E2EA1AED746C00205C24 /* soundfonts-help.pd */,
 				D8A7E2EB1AED746C00205C24 /* StomperSet.sf2 */,
 				D8A7E2EC1AED746C00205C24 /* unpacking_soundfonts */,
@@ -3697,6 +3698,7 @@
 				D8A7E1961AED706E00205C24 /* midiformat-help.pd in Resources */,
 				D8A7E1C21AED706E00205C24 /* split-help.pd in Resources */,
 				D874849B1AEC8F2F006FD8BB /* panner~~.pd in Resources */,
+				D8D47FED1AEF2E31003C9643 /* drums.sf2 in Resources */,
 				D85D90001AEC073D00238117 /* pocket.pd in Resources */,
 				D87484D01AEC8F2F006FD8BB /* switch2-help.pd in Resources */,
 				D87483C31AEC8F2F006FD8BB /* counter2.pd in Resources */,

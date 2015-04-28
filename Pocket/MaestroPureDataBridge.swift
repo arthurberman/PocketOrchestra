@@ -30,6 +30,7 @@ public class MaestroPuredataBridge {
             delegate!.sendNote(channel, pitch: pitch, velocity: velocity)
             
         } else {
+            println("sent note")
             PdBase.sendNoteOn(channel, pitch: pitch, velocity: velocity)
         }
     }

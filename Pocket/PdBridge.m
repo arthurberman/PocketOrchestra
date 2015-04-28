@@ -36,7 +36,7 @@
 }
 -(void) play { // start playing sound from PD
     
-    [PdBase openFile:@"synth.pd" path: [[NSBundle mainBundle] resourcePath]];
+    [PdBase openFile:@"pocket.pd" path: [[NSBundle mainBundle] resourcePath]];
     NSLog(@"play");
 }
 

@@ -7,7 +7,7 @@
 #X obj 62 142 t b f;
 #X obj 122 142 t b f;
 #X obj 39 248 route 1 2 3 4 5 6 7 8 9 10;
-#X obj 359 526 dac~;
+#X obj 353 542 dac~;
 #X obj 370 430 +~;
 #X text 150 381 volume;
 #X obj 244 441 smoothvol;
@@ -34,6 +34,7 @@
 #X obj 482 324 generator2~;
 #X obj 556 324 generator2~;
 #X obj 630 324 generator2~;
+#X obj 357 515 *~ 0.6;
 #X connect 0 0 4 0;
 #X connect 1 0 3 1;
 #X connect 2 0 3 2;
@@ -57,8 +58,7 @@
 #X connect 7 9 30 0;
 #X connect 9 0 15 0;
 #X connect 11 0 12 0;
-#X connect 12 0 8 0;
-#X connect 12 0 8 1;
+#X connect 12 0 35 0;
 #X connect 13 0 11 0;
 #X connect 14 0 13 0;
 #X connect 15 0 12 1;
@@ -82,3 +82,5 @@
 #X connect 32 0 9 0;
 #X connect 33 0 9 0;
 #X connect 34 0 9 0;
+#X connect 35 0 8 0;
+#X connect 35 0 8 1;
