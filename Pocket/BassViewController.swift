@@ -53,6 +53,7 @@ class BassViewController: UIViewController {
         super.init(coder: aDecoder)
         var file = "SC88Drumset.sf2"
         PdBase.sendList(["set", path + file], toReceiver: "soundfonts")
+        timer = NSTimer.scheduledTimerWithTimeInterval(tempo, target:self, selector: "scrubberMove", userInfo: nil, repeats: true)
     }
     
     override func viewDidLoad() {
@@ -61,8 +62,7 @@ class BassViewController: UIViewController {
         
         
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(tempo, target:self, selector: "scrubberMove", userInfo: nil, repeats: true)
-        
+ 
         tempoSlider.minimumValue = 1
         tempoSlider.maximumValue = 3000
         tempoSlider.value = 1500
@@ -175,6 +175,7 @@ class BassViewController: UIViewController {
             playing = true
             
         }
+        NSNotificationCenter.defaultCenter().postNotificationName("playSequencer", object:nil);
     }
     
     func scrubberMove() {

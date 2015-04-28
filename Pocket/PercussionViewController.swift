@@ -53,13 +53,12 @@ class PercussionViewController: UIViewController {
         super.init(coder: aDecoder)
         var file = "drums.sf2"
         PdBase.sendList(["set", path + file], toReceiver: "soundfonts")
+        timer = NSTimer.scheduledTimerWithTimeInterval(tempo, target:self, selector: "scrubberMove", userInfo: nil, repeats: true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        timer = NSTimer.scheduledTimerWithTimeInterval(tempo, target:self, selector: "scrubberMove", userInfo: nil, repeats: true)
         
         tempoSlider.minimumValue = 1
         tempoSlider.maximumValue = 3000
@@ -76,7 +75,8 @@ class PercussionViewController: UIViewController {
         playPause.setTitleColor(onColor, forState: UIControlState.Normal)
         
         collectionOfButtons = Array<SeqButton>()
-        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("playButton"), name: "playSequencer", object: nil)
+ 
         for i in 0...8 {
             for j in 0...15 {
                 let button = SeqButton()
@@ -175,7 +175,9 @@ class PercussionViewController: UIViewController {
             
         }
     }
-    
+    func playButton() {
+        playing = !playing
+    }
     func scrubberMove() {
         if playing {
             currentNote = scrubber.value
