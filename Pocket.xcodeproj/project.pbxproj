@@ -938,6 +938,8 @@
 		D8A7E30B1AED746C00205C24 /* import_sf.py in Resources */ = {isa = PBXBuildFile; fileRef = D8A7E2ED1AED746C00205C24 /* import_sf.py */; };
 		D8A7E30C1AED746C00205C24 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D8A7E2EE1AED746C00205C24 /* README.txt */; };
 		D8A7E30F1AEDB33B00205C24 /* distortion.pd in Resources */ = {isa = PBXBuildFile; fileRef = D8A7E30E1AEDB33B00205C24 /* distortion.pd */; };
+		D8C28F441AEF02A70033715E /* SeqButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C28F431AEF02A70033715E /* SeqButton.swift */; };
+		D8C28F461AEF02AE0033715E /* scrubline.png in Resources */ = {isa = PBXBuildFile; fileRef = D8C28F451AEF02AE0033715E /* scrubline.png */; };
 		E546C985097F5FC30569996E /* libPods-Pocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F70F64B7185668548E6742 /* libPods-Pocket.a */; };
 /* End PBXBuildFile section */
 
@@ -2059,6 +2061,8 @@
 		D8A7E2EE1AED746C00205C24 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		D8A7E30D1AED941400205C24 /* drums.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = drums.sf2; sourceTree = "<group>"; };
 		D8A7E30E1AEDB33B00205C24 /* distortion.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = distortion.pd; path = Resources/distortion.pd; sourceTree = "<group>"; };
+		D8C28F431AEF02A70033715E /* SeqButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeqButton.swift; sourceTree = "<group>"; };
+		D8C28F451AEF02AE0033715E /* scrubline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrubline.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2116,10 +2120,12 @@
 				3B25B8091AC732BD00C1A669 /* AppDelegate.swift */,
 				3B5583DF1AD1C38A009B0AAC /* BluetoothViewController.h */,
 				3B5583E01AD1C38A009B0AAC /* BluetoothViewController.m */,
+				D8C28F451AEF02AE0033715E /* scrubline.png */,
 				3B5583D31AD07122009B0AAC /* MaestroPureDataBridge.swift */,
 				3B25B80B1AC732BD00C1A669 /* ViewController.swift */,
 				D854994D1AE02F2600A33985 /* ChordalViewController.swift */,
 				3B25B8291AC79D6600C1A669 /* CustomTabControllerViewController.swift */,
+				D8C28F431AEF02A70033715E /* SeqButton.swift */,
 				3B25B82D1AC8DDC200C1A669 /* RoundButton.swift */,
 				3B9BBC331ACB29D00081A443 /* MaestroView.swift */,
 				3B25B82B1AC8DCAF00C1A669 /* Maestro.swift */,
@@ -3870,6 +3876,7 @@
 				D87484F61AEC8F2F006FD8BB /* tan~.pd in Resources */,
 				D8A7E1D61AED706E00205C24 /* urn-help.pd in Resources */,
 				D87484031AEC8F2F006FD8BB /* gate20-help.pd in Resources */,
+				D8C28F461AEF02AE0033715E /* scrubline.png in Resources */,
 				D8A7E19E1AED706E00205C24 /* next-help.pd in Resources */,
 				D8A7E1DD1AED706E00205C24 /* xbendout2-help.pd in Resources */,
 				D8A7E30B1AED746C00205C24 /* import_sf.py in Resources */,
@@ -4527,6 +4534,7 @@
 				D8A7E2431AED706E00205C24 /* reson.c in Sources */,
 				D8A7E1461AED706E00205C24 /* zl.c in Sources */,
 				D8A7E1FE1AED706E00205C24 /* sic.c in Sources */,
+				D8C28F441AEF02A70033715E /* SeqButton.swift in Sources */,
 				D8A7E1041AED706E00205C24 /* capture.c in Sources */,
 				3B5583D01AD06C07009B0AAC /* PdBridge.m in Sources */,
 				D8A7E2A61AED706E00205C24 /* ghook.c in Sources */,
