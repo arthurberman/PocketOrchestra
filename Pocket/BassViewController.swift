@@ -16,7 +16,7 @@
 
 import UIKit
 
-class PercussionViewController: UIViewController {
+class BassViewController: UIViewController {
     
     let xOffset = CGFloat(55)
     let yOffset = CGFloat(55)
@@ -202,7 +202,7 @@ class PercussionViewController: UIViewController {
         println("NoteOn called")
         for i in 0...6 {
             if(collectionOfButtons[(i * 16) + currNote].backgroundColor == onColor) {
-                MaestroPuredataBridge.sendNoteOn(34, pitch: 60, velocity: 100)
+                MaestroPuredataBridge.sendNoteOn(21 + i, pitch: 30 + i, velocity: 100)
                 NSLog("sendNoteOn %u", currNote)
                 
             }
@@ -213,12 +213,7 @@ class PercussionViewController: UIViewController {
         println("NoteOff called")
         for i in 0...6 {
             if(collectionOfButtons[(i * 16) + currNote].backgroundColor == onColor) {
-                /*
-                if (i==0){
-                    //MaestroPuredataBridge.sendNoteOn(34, pitch: 60, velocity: 0) }
-                else if (i==1) {
-                    //MaestroPuredataBridge.sendNoteOn(34, pitch: 68, velocity: 0)
-                }  */
+                MaestroPuredataBridge.sendNoteOn(21 + i, pitch: 30 + i, velocity: 0)
                 NSLog("sendNoteOff %u", currNote)
             }
         }

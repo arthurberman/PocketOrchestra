@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment version="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--Chordal View Controller-->
@@ -381,6 +381,9 @@
                                         <state key="normal" title="🎸 Bass">
                                             <color key="titleColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="OCe-Ec-KLz" kind="custom" identifier="viewControllerBass" customClass="MHTabBarSegue" id="c1H-hx-VHg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tq-ez-rpz">
                                         <rect key="frame" x="659" y="16" width="81" height="30"/>
@@ -544,7 +547,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="clearAll:" destination="bda-Pj-aTM" eventType="touchUpInside" id="cPC-cL-Iw7"/>
+                                    <action selector="clearAll:" destination="bda-Pj-aTM" eventType="touchUpInside" id="MK1-Yv-3bl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -553,13 +556,13 @@
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
-                        <outlet property="playPause" destination="K8d-Pu-w2N" id="uCY-yr-s21"/>
+                        <outlet property="playPause" destination="K8d-Pu-w2N" id="Lr7-YW-Fuf"/>
                         <outlet property="tempoSlider" destination="kKO-Bv-0zQ" id="WoA-fW-Cch"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uuf-rs-izf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-746" y="1059"/>
+            <point key="canvasLocation" x="-1221" y="1059"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1E3-Bt-Xhu">
@@ -670,6 +673,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Dy-Ha-YkG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-444" y="-280.5"/>
+        </scene>
+        <!--Bass View Controller-->
+        <scene sceneID="h2w-TB-ydT">
+            <objects>
+                <viewController id="OCe-Ec-KLz" customClass="BassViewController" customModule="Pocket" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SLH-oD-C7z"/>
+                        <viewControllerLayoutGuide type="bottom" id="cxM-jP-ryT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hbM-x3-Z7y">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="120" minValue="60" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="m9f-A4-T3h">
+                                <rect key="frame" x="441" y="576" width="200" height="31"/>
+                                <color key="tintColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tempo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqO-AV-VKS">
+                                <rect key="frame" x="315" y="578" width="52" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M70-lf-08q">
+                                <rect key="frame" x="892" y="573" width="78" height="30"/>
+                                <state key="normal" title="Clear All">
+                                    <color key="titleColor" red="0.3506471048" green="0.54293133270000005" blue="0.74509805439999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearAll:" destination="bda-Pj-aTM" eventType="touchUpInside" id="gcP-Xe-SPY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWQ-Mz-Xil">
+                                <rect key="frame" x="132" y="576" width="30" height="30"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="playPause" destination="XWQ-Mz-Xil" id="DGK-yF-UBn"/>
+                        <outlet property="tempoSlider" destination="m9f-A4-T3h" id="rPf-CV-9zw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ttr-RS-aax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-120" y="1059"/>
         </scene>
     </scenes>
 </document>

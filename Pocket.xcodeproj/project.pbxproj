@@ -46,6 +46,7 @@
 		3B5583DC1AD07746009B0AAC /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5583DB1AD07746009B0AAC /* CoreMIDI.framework */; };
 		3B5583E11AD1C38A009B0AAC /* BluetoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5583E01AD1C38A009B0AAC /* BluetoothViewController.m */; };
 		3B5D7C211AE0118000BDD529 /* list-moses.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3B5D7C201AE0118000BDD529 /* list-moses.pd */; };
+		3B8500CD1AEF07E700EF58EA /* BassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8500CC1AEF07E700EF58EA /* BassViewController.swift */; };
 		3B9BBC301ACB01340081A443 /* MaestroInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */; };
 		3B9BBC321ACB28C30081A443 /* MaestroInstrumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */; };
 		3B9BBC341ACB29D00081A443 /* MaestroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BBC331ACB29D00081A443 /* MaestroView.swift */; };
@@ -1002,6 +1003,7 @@
 		3B5583E01AD1C38A009B0AAC /* BluetoothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothViewController.m; sourceTree = "<group>"; };
 		3B57F8FB1ACE164400A09EE0 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		3B5D7C201AE0118000BDD529 /* list-moses.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "list-moses.pd"; path = "Resources/list-moses.pd"; sourceTree = SOURCE_ROOT; };
+		3B8500CC1AEF07E700EF58EA /* BassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BassViewController.swift; sourceTree = "<group>"; };
 		3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroInstrument.swift; sourceTree = "<group>"; };
 		3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroInstrumentView.swift; sourceTree = "<group>"; };
 		3B9BBC331ACB29D00081A443 /* MaestroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaestroView.swift; sourceTree = "<group>"; };
@@ -2130,6 +2132,7 @@
 				3B9BBC331ACB29D00081A443 /* MaestroView.swift */,
 				3B25B82B1AC8DCAF00C1A669 /* Maestro.swift */,
 				D85D90011AEC1E0100238117 /* PercussionViewController.swift */,
+				3B8500CC1AEF07E700EF58EA /* BassViewController.swift */,
 				3B9BBC311ACB28C30081A443 /* MaestroInstrumentView.swift */,
 				3B5583D51AD07633009B0AAC /* DownValve.swift */,
 				3B9BBC2F1ACB01340081A443 /* MaestroInstrument.swift */,
@@ -4454,6 +4457,7 @@
 				D8A7E2CD1AED706E00205C24 /* tb_peakcomp~.c in Sources */,
 				D8A7E27E1AED706E00205C24 /* fluid_midi_router.c in Sources */,
 				D8A7E2AF1AED706E00205C24 /* gnode.c in Sources */,
+				3B8500CD1AEF07E700EF58EA /* BassViewController.swift in Sources */,
 				D8A7E10C1AED706E00205C24 /* decide.c in Sources */,
 				D8A7E2171AED706E00205C24 /* capture.c in Sources */,
 				D8A7E0FA1AED706E00205C24 /* active.c in Sources */,
