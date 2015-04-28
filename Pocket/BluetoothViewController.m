@@ -155,9 +155,9 @@ int i = 0;
                                             if (midiCommand.commandType == MIKMIDICommandTypeNoteOn){
                                                 
                                                 MIKMIDINoteOnCommand *command = (MIKMIDINoteOnCommand*)midiCommand;
-                                                if (command.channel >= 0 && command.channel < 11) {
+                                                if (command.channel >= 0 && command.channel < 10) {
                                                 
-                                                    [MaestroPuredataBridge sendNoteOn:command.channel pitch:command.note + 12 velocity:command.velocity];
+                                                    [MaestroPuredataBridge sendNoteOn:command.channel pitch:command.note  velocity:command.velocity];
                                                 } else {
                                                     [MaestroPuredataBridge sendNoteOn:11 + myChannel pitch:command.note + 12 velocity:command.velocity];
                                                 }

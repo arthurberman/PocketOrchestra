@@ -7,7 +7,7 @@
 //
 
 //
-//  SequenceViewController.swift
+//  ViewController.swift
 //  sequenceui
 //
 //  Created by Joe Sanford on 3/29/15.
@@ -16,11 +16,11 @@
 
 import UIKit
 
-class PercussionViewController: UIViewController {
+class BassViewController: UIViewController {
     
     let xOffset = CGFloat(55)
     let yOffset = CGFloat(55)
-    let instruments = ["Bass","Snare","Rim","Tom","Ride","Crash","Hi-Hat","Cowbell","Cabasa"]
+    let instruments = ["C","B","Bb","A","Ab","G","Gb","F", "E"]
     let outlineColor = UIColor(red:112/255, green:173/255, blue:238/255, alpha:1.0)
     let onColor = UIColor(red:109/255, green:232/255, blue:84/255, alpha:1.0)
     let offColor = UIColor(red:219/255, green:70/255, blue:70/255, alpha:1.0)
@@ -51,12 +51,14 @@ class PercussionViewController: UIViewController {
         PdBase.addToSearchPath(NSBundle.mainBundle().resourcePath)
         
         super.init(coder: aDecoder)
-        var file = "drums.sf2"
+        var file = "SC88Drumset.sf2"
         PdBase.sendList(["set", path + file], toReceiver: "soundfonts")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         
         timer = NSTimer.scheduledTimerWithTimeInterval(tempo, target:self, selector: "scrubberMove", userInfo: nil, repeats: true)
@@ -77,7 +79,7 @@ class PercussionViewController: UIViewController {
         
         collectionOfButtons = Array<SeqButton>()
         
-        for i in 0...8 {
+        for i in 0...instruments.count - 1 {
             for j in 0...15 {
                 let button = SeqButton()
                 button.frame = CGRectMake(x, y, 45, 45)
@@ -143,7 +145,6 @@ class PercussionViewController: UIViewController {
         }
     }
     
-
     override func supportedInterfaceOrientations() -> Int {
         return Int(UIInterfaceOrientationMask.All.rawValue)
     }
@@ -198,44 +199,25 @@ class PercussionViewController: UIViewController {
     
     
     func NoteOn(currNote: Int){
-        for i in 0...8 {
+        println("NoteOn called")
+        for i in 0...instruments.count - 1 {
             if(collectionOfButtons[(i * 16) + currNote].backgroundColor == onColor) {
-                println("send " + String(i))
-                if (i == 0){
-                    MaestroPuredataBridge.sendNoteOn(34, pitch: 36, velocity: 100)
-                } else if (i == 1) {
-                    MaestroPuredataBridge.sendNoteOn(34, pitch: 40, velocity: 100)
-                }
-                else if (i == 2) {
-                    MaestroPuredataBridge.sendNoteOn(34, pitch: 31, velocity: 100)
-                }
-                else if (i == 3) {
-                    MaestroPuredataBridge.sendNoteOn(34, pitch: 48, velocity: 100)
-                }
-                else if (i == 4) {
-                    MaestroPuredataBridge.sendNoteOn(34, pitch: 51, velocity: 100)
-                }
-                else if (i == 5) {
-                    MaestroPuredataBridge.sendNoteOn(34, pitch: 49, velocity: 100)
-                }
-                else if (i == 6) {
-                    MaestroPuredataBridge.sendNoteOn(34, pitch: 44, velocity: 100)
-                }
-                else if (i == 7) {
-                    MaestroPuredataBridge.sendNoteOn(34, pitch: 56, velocity: 100)
-                }
-                else if (i == 8) {
-                    MaestroPuredataBridge.sendNoteOn(34, pitch: 69, velocity: 100)
-                }
+                MaestroPuredataBridge.sendNoteOn(21 , pitch: 36 - i, velocity: 100)
+                NSLog("sendNoteOn %u", currNote)
                 
             }
         }
     }
     
     func NoteOff(currNote: Int) { //currNote = note currently playing + 0.75
-      //  PdBase.sendList(["flush"], toReceiver: "soundfonts")
+        println("NoteOff called")
+        for i in 0...instruments.count - 1{
+            if(collectionOfButtons[(i * 16) + currNote].backgroundColor == onColor) {
+                MaestroPuredataBridge.sendNoteOn(21 , pitch: 36 - i, velocity: 0)
+                NSLog("sendNoteOff %u", currNote)
+            }
+        }
     }
-    
     
     @IBAction func clearAll(sender: UIButton) {
         for button in collectionOfButtons {
